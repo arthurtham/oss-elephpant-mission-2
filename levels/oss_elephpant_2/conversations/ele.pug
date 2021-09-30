@@ -1,0 +1,25 @@
+- const worldState = getState('oss_elephpant2WorldState');
+- const ele = worldState.ossElephpant2.conversations.ele;
+
+// Responses
+conversation(display_name="ELE-AI")  
+  case ele.current 
+    when "default_welcome"
+      statement#poggers
+      resposnes
+    default 
+      statement.
+        Hello world 
+      responses
+
+  statements 
+    statement#default
+      text.
+        Hello, nice to meet you!
+    statement#poggers
+      text.
+        Hello, I got summoned!
+
+// Flush world state changes, if any
+- worldState.ossElephpant2.conversations.ele = ele;
+- setState('oss_elephpant2WorldState.ossElephpant2', worldState);
