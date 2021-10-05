@@ -2,11 +2,28 @@
 - const ele = worldState.ossElephpant2.conversations.ele;
 
 // Responses
-conversation(display_name="ELE-AI")  
+conversation(display_name="ELE-AI")
+  case lastResponse 
+    when "poggers"
+      statement#poggers 
+      responses 
+
+    default 
+      statement.
+        Hello world!
+      responses
+
   case ele.current 
     when "default_welcome"
       statement#poggers
-      resposnes
+      responses 
+
+    when "turtle_facts"
+      statement#turtle 
+      responses 
+        response#poggers.
+          Welcome friend!
+
     default 
       statement.
         Hello world 
@@ -19,6 +36,9 @@ conversation(display_name="ELE-AI")
     statement#poggers
       text.
         Hello, I got summoned!
+    statement#turtle 
+      text.
+        So, what do you think about my turtles?
 
 // Flush world state changes, if any
 - worldState.ossElephpant2.conversations.ele = ele;

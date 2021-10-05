@@ -9,6 +9,7 @@ const DEFAULT_MISSION_STATE = {
         current: 'none',
         all: false,
         default_welcome: false,
+        turtle_facts: false,
       }
     }
   }
@@ -38,7 +39,21 @@ module.exports = function(event, world) {
     event.target &&
     event.target.key === 'ele_terminal'
   ) {
-    world.startConversation('ele', 'ele');
+    world.startConversation('ele', 'cedricNeutral.png');
+  }
+
+  if (
+    (event.name === 'objectiveCompleted' || event.name === "objectiveCompletedAgain") &&
+    event.objective &&
+    event.objective === "turtle_facts"
+  ) {
+    console.log(event.objective);
+    console.log("owo");
+    //if (worldState.ossElephpant2.conversations.ele["turtle_facts"] === false) {
+      worldState.ossElephpant2.conversations.ele["turtle_facts"] = false;
+      worldState.ossElephpant2.conversations.ele.current = "turtle_facts";
+      world.startConversation('ele', 'cedricNeutral.png');
+    //} 
   }
 
 

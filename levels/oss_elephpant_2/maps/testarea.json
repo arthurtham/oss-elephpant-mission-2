@@ -59,7 +59,7 @@
                  "visible":true,
                  "width":0,
                  "x":65.3434196543431,
-                 "y":266.216846579786
+                 "y":268.716846579786
                 }, 
                 {
                  "height":42.9416634039935,
@@ -69,7 +69,12 @@
                         {
                          "name":"levelName",
                          "type":"string",
-                         "value":"fog_owl"
+                         "value":"oss_elephpant_2"
+                        }, 
+                        {
+                         "name":"mapName",
+                         "type":"string",
+                         "value":"default"
                         }, 
                         {
                          "name":"playerEntryPoint",
