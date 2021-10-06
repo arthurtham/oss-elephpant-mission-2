@@ -103,12 +103,18 @@
                  "height":32,
                  "id":118,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"ele"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":88.8333333333337,
-                 "y":138.833333333333
+                 "x":470.833333333334,
+                 "y":303.833333333333
                 }, 
                 {
                  "height":0,
@@ -143,20 +149,26 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":14.8333333333333,
-                 "y":262.833333333333
+                 "x":256.833333333333,
+                 "y":330.833333333333
                 }, 
                 {
                  "gid":10013,
                  "height":72,
                  "id":137,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"turtle_facts"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":55.3333333333334,
-                 "y":121
+                 "x":314.333333333333,
+                 "y":321
                 }],
          "opacity":1,
          "type":"objectgroup",

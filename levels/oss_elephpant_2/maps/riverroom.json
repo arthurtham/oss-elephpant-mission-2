@@ -155,7 +155,7 @@
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"barracks"
+                         "value":"cryo"
                         }, 
                         {
                          "name":"playerEntryPoint",
