@@ -1,22 +1,17 @@
-- const worldState = getState('oss_elephpant2WorldState');
+- const worldState = getState('com.twilioquest.osselephpant2');
 - const ele = worldState.ossElephpant2.conversations.ele;
 
 // Responses
 conversation(display_name="ELE-AI")
-  case lastResponse 
-    when "poggers"
-      statement#poggers 
-      responses 
-
-    default 
-      statement.
-        Hello world!
-      responses
-
   case ele.current 
     when "default_welcome"
       statement#poggers
       responses 
+
+    when "objective1_photo_pre"
+      statement#objective1
+      responses
+
 
     when "turtle_facts"
       statement#turtle 
@@ -26,7 +21,13 @@ conversation(display_name="ELE-AI")
 
     default 
       statement.
-        Hello world 
+        ELE.CURRENT Hello world, what's up? 
+      responses
+
+  case lastResponse 
+    default 
+      statement.
+        LASTRESPONSE Hello world! What's up?
       responses
 
   statements 
@@ -39,7 +40,10 @@ conversation(display_name="ELE-AI")
     statement#turtle 
       text.
         So, what do you think about my turtles?
+    statement#objective1 
+      text.
+        The Evil Legacy System has spent many years programming society to benefit the system. According to the Evil Legacy, a good citizen follows directions and doesn’t ask questions. The analysts, explorers, and settlers will need to learn to think for themselves again. The first step in unlearning the evil ways of the Legacy System will be to revisit the process of critical thinking.  A new planet is going to bring new experiences like never before! Who knows what you might encounter! Let's explore how we interpret and process information to ensure we are thinking critically as we embark on this early exploration.
 
 // Flush world state changes, if any
 - worldState.ossElephpant2.conversations.ele = ele;
-- setState('oss_elephpant2WorldState.ossElephpant2', worldState);
+- setState('com.twilioquest.osselephpant2', worldState);

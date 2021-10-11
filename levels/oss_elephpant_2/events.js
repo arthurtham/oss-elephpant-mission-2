@@ -10,7 +10,10 @@ const DEFAULT_MISSION_STATE = {
         all: false,
         default_welcome: false,
         turtle_facts: false,
-      }
+      },
+    },
+    photos: {
+      challenge_1_1_photo: false
     }
   }
 }
@@ -20,29 +23,32 @@ module.exports = function(event, world) {
   console.log(`OSS Elephpant 2: ${event.name}`);
   console.log(event);
 
-  if (event.name === 'levelDidLoad') {
+  //DEBUG: Disable cache
+  window.reloadExternalNodules = true;
+
+  /*if (event.name === 'levelDidLoad') {
     // reset mission on levelDidLoad for testing
     console.log('reset mission on levelDidLoad for testing');
     completedObjectives = world.getContext('completedObjectives');
     console.log(completedObjectives);
-    world.setState('oss_elephpant2WorldState', DEFAULT_MISSION_STATE);
-  }
+    world.setState('com.twilioquest.osselephpant2', DEFAULT_MISSION_STATE);
+  }*/
 
-  const worldState = world.getState("oss_elephpant2WorldState") || DEFAULT_MISSION_STATE;
-  //const worldState = DEFAULT_MISSION_STATE;
+  //const worldState = world.getState("com.twilioquest.osselephpant2") || DEFAULT_MISSION_STATE;
+  const worldState = DEFAULT_MISSION_STATE;
   console.log("World State");
   console.log(worldState);
 
 
-  if (
+  /*if (
     event.name === 'playerDidInteract' &&
     event.target &&
     event.target.key === 'ele_terminal'
   ) {
     world.startConversation('ele', 'cedricNeutral.png');
-  }
+  }*/
 
-  if (
+  /*if (
     (event.name === 'objectiveCompleted' || event.name === "objectiveCompletedAgain") &&
     event.objective &&
     event.objective === "turtle_facts"
@@ -52,9 +58,10 @@ module.exports = function(event, world) {
     //if (worldState.ossElephpant2.conversations.ele["turtle_facts"] === false) {
       worldState.ossElephpant2.conversations.ele["turtle_facts"] = false;
       worldState.ossElephpant2.conversations.ele.current = "turtle_facts";
-      world.startConversation('ele', 'cedricNeutral.png');
+      //world.startConversation('ele', 'cedricNeutral.png');
+      processConversationEvents(event, world, worldState, "turtle_facts")
     //} 
-  }
+  }*/
 
 
   if (
@@ -65,7 +72,7 @@ module.exports = function(event, world) {
     console.log("completed");
   }
 
-  world.setState("oss_elephpant2WorldState", worldState);
+  world.setState("com.twilioquest.osselephpant2", worldState);
 
   console.log(world);
 }
