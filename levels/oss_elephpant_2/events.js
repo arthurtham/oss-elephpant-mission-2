@@ -2,6 +2,8 @@ const { remove } = require("ramda");
 
 const { processConversationEvents } = require("./events/conversations");
 
+const levelJson = require("./level.json");
+
 const DEFAULT_MISSION_STATE = {
   ossElephpant2: {
     conversations: {
@@ -9,11 +11,12 @@ const DEFAULT_MISSION_STATE = {
         current: 'none',
         all: false,
         default_welcome: false,
+        objective1_photo_pre: false,
+        objective1_photo_post: false,
         turtle_facts: false,
       },
     },
     photos: {
-      challenge_1_1_photo: false
     }
   }
 }
@@ -26,13 +29,14 @@ module.exports = function(event, world) {
   //DEBUG: Disable cache
   window.reloadExternalNodules = true;
 
-  /*if (event.name === 'levelDidLoad') {
-    // reset mission on levelDidLoad for testing
-    console.log('reset mission on levelDidLoad for testing');
-    completedObjectives = world.getContext('completedObjectives');
-    console.log(completedObjectives);
-    world.setState('com.twilioquest.osselephpant2', DEFAULT_MISSION_STATE);
-  }*/
+  //DEBUG: Reset all objectives
+  if (event.name === 'levelDidLoad') {
+    levelJson.objectives.forEach (objective => {
+      if (world.isObjectiveCompleted(objective)) {
+        world.removeObjective("oss_elephpant_2", objective);
+      }
+    })
+  }
 
   //const worldState = world.getState("com.twilioquest.osselephpant2") || DEFAULT_MISSION_STATE;
   const worldState = DEFAULT_MISSION_STATE;
@@ -48,20 +52,16 @@ module.exports = function(event, world) {
     world.startConversation('ele', 'cedricNeutral.png');
   }*/
 
-  /*if (
-    (event.name === 'objectiveCompleted' || event.name === "objectiveCompletedAgain") &&
-    event.objective &&
-    event.objective === "turtle_facts"
+  // Some missions can be completed and prompt a conversational dialogue.
+  if (
+    (event.name === 'objectiveCompleted' || event.name === 'objectiveCompletedAgain') &&
+    event.objective
   ) {
     console.log(event.objective);
-    console.log("owo");
-    //if (worldState.ossElephpant2.conversations.ele["turtle_facts"] === false) {
-      worldState.ossElephpant2.conversations.ele["turtle_facts"] = false;
-      worldState.ossElephpant2.conversations.ele.current = "turtle_facts";
-      //world.startConversation('ele', 'cedricNeutral.png');
-      processConversationEvents(event, world, worldState, "turtle_facts")
-    //} 
-  }*/
+    if (event.objective === "objective1_photo") {    
+      world.startConversation("ele_objective1_photo_post", "cedricNeutral.png");
+    }
+  }
 
 
   if (

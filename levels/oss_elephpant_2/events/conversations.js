@@ -8,7 +8,7 @@ function setupConversation(world, worldState, name) {
   
   function processConversationEvents(event, world, worldState, name) {
     console.log('processConversationEvents (' + name + ')');
-    const key = event.target.key;//event.target ? event.target.key : name;
+    const key = event.target ? event.target.key : name;
     console.log('key: ' + key);
     if (worldState.ossElephpant2.conversations.ele[key] === false) {
       setupConversation(world, worldState, key);

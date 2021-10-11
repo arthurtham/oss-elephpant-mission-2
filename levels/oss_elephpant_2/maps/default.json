@@ -131,7 +131,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"challenge_1_1_photo"
+                         "value":"objective1_photo"
                         }],
                  "rotation":0,
                  "type":"",
@@ -149,7 +149,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"challenge_1_1_photo"
+                         "value":"objective1_photo"
                         }],
                  "rotation":0,
                  "type":"",
@@ -166,7 +166,7 @@
                         {
                          "name":"key",
                          "type":"string",
-                         "value":"default_welcome"
+                         "value":"objective1_photo_pre"
                         }],
                  "rotation":0,
                  "type":"triggerArea",
@@ -239,7 +239,7 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":159,
+ "nextobjectid":160,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",

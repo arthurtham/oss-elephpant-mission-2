@@ -38,12 +38,6 @@ module.exports = async function (helper) {
   // the end, we know the user got all the answers right!
 
   helper.success(`
-    <p>The original caption reads:</p>
-
-    <p><blockquote>Chen Kecai, left and Jin Songhao, wearing shorts and sanding in containers filled with ice on Tianmen Mountain in Zhangjiajie, China, 
-    competed for the record in enduring the cold. Mr. Jin, with 120 minutes, outscored Mr. Chen’s 118 minutes. 
-    On March 14, 2010 Mr. Chen set the record for the longest time spent in direct full body contact with ice: 1 hour 48 minutes 21 seconds.</blockquote></p>
-
-    <p>What was different and similar between the original caption of the image and your analysis of the image? Notice these differences and explore what might have been driving your interpretations.</p>
+    Great work! How'd you do?
   `);
 };
