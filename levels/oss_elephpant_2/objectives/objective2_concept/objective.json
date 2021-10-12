@@ -1,0 +1,30 @@
+{
+  "title": "Concept Traits",
+  "description": "Identify what \"critical thinking\" *IS* and what is it *NOT*",
+  "validation_fields": [
+    {
+      "name": "criticalIsHeader",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "*Mark _True_ if the label represents critical thinking*"
+    },
+    {
+      "name": "criticalIs1",
+      "type": "boolean",
+      "label": "Embracing other thinking"
+    },
+    {
+      "name": "criticalNot1",
+      "type": "boolean",
+      "label": "Questioning other thinking"
+    },
+    {
+      "name": "criticalNot2",
+      "type": "boolean",
+      "label": "Simply mimicking other thinking"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

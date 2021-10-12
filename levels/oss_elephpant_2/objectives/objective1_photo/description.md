@@ -1,4 +1,4 @@
-# Example Objective
+
 
 <div class="aside">
 <h3>To-Do List</h3>
