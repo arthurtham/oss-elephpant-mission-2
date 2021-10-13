@@ -14,5 +14,5 @@
   "flavorTextOverrides": {
     "bookshelf": "There's nothing like a good book."
   },
-  "objectives": ["turtle_facts", "objective1_photo"]
+  "objectives": ["objective1_photo", "objective2_concept"]
 }
