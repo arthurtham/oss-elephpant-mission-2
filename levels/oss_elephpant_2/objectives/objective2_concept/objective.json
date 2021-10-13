@@ -6,22 +6,77 @@
       "name": "criticalIsHeader",
       "type": "prompt",
       "placeholder": "Put notes here",
-      "label": "*Mark _True_ if the label represents critical thinking*"
-    },
-    {
-      "name": "criticalIs1",
-      "type": "boolean",
-      "label": "Embracing other thinking"
+      "label": "*Mark _True_ if the label represents critical thinking!*"
     },
     {
       "name": "criticalNot1",
       "type": "boolean",
-      "label": "Questioning other thinking"
+      "label": "Simply mimicking other thinking"
     },
     {
       "name": "criticalNot2",
       "type": "boolean",
-      "label": "Simply mimicking other thinking"
+      "label": "Simply agreeing with other thinking"
+    },
+    {
+      "name": "criticalNot3",
+      "type": "boolean",
+      "label": "Placing weight on insignificant details"
+    },
+    {
+      "name": "criticalNot4",
+      "type": "boolean",
+      "label": "Being biased towards one way of thinking"
+    },
+    {
+      "name": "criticalNot5",
+      "type": "boolean",
+      "label": "Being biased against one way of thinking"
+    },
+    {
+      "name": "criticalNot6",
+      "type": "boolean",
+      "label": "Drawing conclusions too quickly"
+    },
+    {
+      "name": "criticalNot7",
+      "type": "boolean",
+      "label": "Denying faults in one’s own thinking"
+    },
+    {
+      "name": "criticalIs1",
+      "type": "boolean",
+      "label": "Questioning other thinking"
+    },
+    {
+      "name": "criticalIs2",
+      "type": "boolean",
+      "label": "Embracing other thinking"
+    },
+    {
+      "name": "criticalIs3",
+      "type": "boolean",
+      "label": "Emulating other thinking"
+    },
+    {
+      "name": "criticalIs4",
+      "type": "boolean",
+      "label": "Willingness to be wrong"
+    },
+    {
+      "name": "criticalIs5",
+      "type": "boolean",
+      "label": "Questioning one’s own thinking"
+    },
+    {
+      "name": "criticalIs6",
+      "type": "boolean",
+      "label": "Putting logic before bias"
+    },
+    {
+      "name": "criticalIs7",
+      "type": "boolean",
+      "label": "Recognising contradictions"
     }
   ],
   "rewards": {
