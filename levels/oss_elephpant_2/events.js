@@ -11,12 +11,22 @@ const DEFAULT_MISSION_STATE = {
         current: 'none',
         all: false,
         default_welcome: false,
-        objective1_photo_pre: false,
-        objective1_photo_post: false,
+        objective1_1_photo_pre: false,
+        objective1_1_photo_post: false,
         turtle_facts: false,
       },
+      professor: {
+        objective1_2_professor: false,
+      }
     },
     photos: {
+    },
+    fallacies: {
+      fallacyStation1: false,
+      fallacyStation2: false,
+      fallacyStation3: false,
+      fallacyStation4: false,
+      fallacyStation5: false,
     }
   }
 }
@@ -59,7 +69,7 @@ module.exports = function(event, world) {
   ) {
     console.log(event.objective);
     if (event.objective === "objective1_photo") {    
-      world.startConversation("ele_objective1_photo_post", "cedricNeutral.png");
+      world.startConversation("ele_objective1_1_photo_post", "cedricNeutral.png");
     }
   }
 

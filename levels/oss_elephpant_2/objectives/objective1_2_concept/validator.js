@@ -51,7 +51,6 @@ module.exports = async function (helper) {
       return helper.fail(`
         Oops! Looks like you have a mistake there. 
         Think about your answers about other people's thinking and try again!
-        `+criticalIs1+criticalIs2+criticalIs3+criticalNot1+criticalNot2+`
         `);
   }
 

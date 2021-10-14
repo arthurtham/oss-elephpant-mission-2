@@ -214,7 +214,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_photo"
+                         "value":"objective1_1_photo"
                         }],
                  "rotation":0,
                  "type":"",
@@ -232,7 +232,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_photo"
+                         "value":"objective1_1_photo"
                         }],
                  "rotation":0,
                  "type":"",
@@ -249,7 +249,7 @@
                         {
                          "name":"key",
                          "type":"string",
-                         "value":"objective1_photo_pre"
+                         "value":"objective1_1_photo_pre"
                         }],
                  "rotation":0,
                  "type":"triggerArea",
