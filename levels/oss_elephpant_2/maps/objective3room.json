@@ -234,7 +234,7 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":410.645803698436,
+                 "x":94.5149359886209,
                  "y":245.615931721195
                 }, 
                 {
@@ -246,14 +246,14 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies_1"
+                         "value":"objective1_3_fallacies_4"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":409.963015647226,
-                 "y":143.778093883357
+                 "x":37.8435277382644,
+                 "y":382.753911806543
                 }, 
                 {
                  "gid":10008,
@@ -264,14 +264,14 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies_1"
+                         "value":"objective1_3_fallacies_5"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":455.027027027027,
-                 "y":476.295874822191
+                 "x":159.379800853485,
+                 "y":467.419630156473
                 }, 
                 {
                  "gid":10008,
@@ -282,14 +282,14 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies_1"
+                         "value":"objective1_3_fallacies_2"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":252.238975817923,
-                 "y":140.364153627312
+                 "x":95.8805120910382,
+                 "y":134.21906116643
                 }, 
                 {
                  "gid":10008,
@@ -318,14 +318,14 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies_1"
+                         "value":"objective1_3_fallacies_3"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":36.4779516358463,
-                 "y":468.78520625889
+                 "x":135.482219061166,
+                 "y":136.950213371266
                 }, 
                 {
                  "gid":10012,

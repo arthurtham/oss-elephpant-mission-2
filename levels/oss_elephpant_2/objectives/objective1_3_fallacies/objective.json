@@ -6,13 +6,13 @@
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Visit all *Logical Fallacies* stations, then answer the questions below. Press the __HACK__ button when you're ready!"
+      "label": "Visit at least 3 *Logical Fallacies* stations, then answer the questions below. Press the __HACK__ button when you're ready!"
     },
     {
-      "name": "answer",
-      "type": "textarea",
-      "placeholder": "",
-      "label": "What is going on in this picture?"
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "Enter text here",
+      "label": "What is the answer to this question?"
     }
   ],
   "rewards": {
