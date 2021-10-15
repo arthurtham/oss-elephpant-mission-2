@@ -131,7 +131,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies"
+                         "value":"objective1_3_fallacies_1"
                         }],
                  "rotation":0,
                  "type":"",
@@ -139,6 +139,33 @@
                  "width":24,
                  "x":341.684210526316,
                  "y":276.716927453769
+                }, 
+                {
+                 "height":45.5049786628734,
+                 "id":162,
+                 "name":"exit",
+                 "properties":[
+                        {
+                         "name":"levelName",
+                         "type":"string",
+                         "value":"oss_elephpant_2"
+                        }, 
+                        {
+                         "name":"mapName",
+                         "type":"string",
+                         "value":"objective3room"
+                        }, 
+                        {
+                         "name":"playerEntryPoint",
+                         "type":"string",
+                         "value":"player_entry_left"
+                        }],
+                 "rotation":0,
+                 "type":"levelChange",
+                 "visible":true,
+                 "width":10.3826458036984,
+                 "x":120.100284495021,
+                 "y":193.691322901849
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -186,7 +213,7 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":162,
+ "nextobjectid":163,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",

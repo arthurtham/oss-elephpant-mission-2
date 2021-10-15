@@ -68,7 +68,7 @@ module.exports = function(event, world) {
     event.objective
   ) {
     console.log(event.objective);
-    if (event.objective === "objective1_photo") {    
+    if (event.objective === "objective1_1_photo") {    
       world.startConversation("ele_objective1_1_photo_post", "cedricNeutral.png");
     }
   }
