@@ -1,18 +1,18 @@
 {
-  "title": "Logical Fallacies",
+  "title": "Logical Fallacies 1: The Rashomon Effect",
   "description": "Examine factors that impact good critical thinking!",
   "validation_fields": [
     {
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Visit all *Logical Fallacies* stations, then answer the questions below. Press the __HACK__ button when you're ready!"
+      "label": "Yes!"
     },
     {
-      "name": "answer",
+      "name": "answer1",
       "type": "textarea",
-      "placeholder": "",
-      "label": "What is going on in this picture?"
+      "placeholder": "Answer here",
+      "label": "Fallacy question"
     }
   ],
   "rewards": {

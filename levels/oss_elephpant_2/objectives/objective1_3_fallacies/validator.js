@@ -18,14 +18,14 @@ have completed the challenge as instructed.
 */
 module.exports = async function (helper) {
   // We start by getting the user input from the helper
-  const { answer1, answer2, answer3 } = helper.validationFields;
+  const { answer1 } = helper.validationFields;
 
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
 
   // Validator 1: All question blocks must have some sort of answer in them
-  if (!answer1 || !answer2 || !answer3) {
+  if (!answer1) {
     return helper.fail(`
       Please answer all three questions before submitting your answer. Try scrolling
       down on the questions panel if you don't see all the questions!
