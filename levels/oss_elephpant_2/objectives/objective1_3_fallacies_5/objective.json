@@ -1,18 +1,36 @@
 {
-  "title": "Logical Fallacies 5: Outsmarting the Fallacy 2",
+  "title": "Logical Fallacies 5: The Conjunction Fallacy",
   "description": "Examine factors that impact good critical thinking!",
   "validation_fields": [
     {
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Yes!"
+      "label": "Which of the following does NOT explain why we’re prone to the conjunction fallacy?"
     },
     {
       "name": "answer1",
-      "type": "textarea",
-      "placeholder": "Answer here",
-      "label": "What is the answer to this question?"
+      "type": "text",
+      "placeholder": "a, b, c, d, e",
+      "label": "Enter the letter corresponding to the answer:"
+    },
+    {
+      "name": "choice1",
+      "type": "prompt",
+      "placeholder": "choice1",
+      "label": "a) Making quick judgments based on what seems believable rather than a calculation"
+    },
+    {
+      "name": "choice2",
+      "type": "prompt",
+      "placeholder": "choice2",
+      "label": "b) Our need to see a narrative on a collection of details"
+    },
+    {
+      "name": "choice3",
+      "type": "prompt",
+      "placeholder": "choice3",
+      "label": "c) Less knowledge on a particular subject"
     }
   ],
   "rewards": {

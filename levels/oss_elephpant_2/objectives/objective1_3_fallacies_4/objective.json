@@ -1,18 +1,36 @@
 {
-  "title": "Logical Fallacies 4: Outsmarting the Fallacy",
+  "title": "Logical Fallacies 4: The False Cause",
   "description": "Examine factors that impact good critical thinking!",
   "validation_fields": [
     {
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Yes!"
+      "label": "\"Correlation does not imply causation\" means:"
     },
     {
       "name": "answer1",
-      "type": "textarea",
-      "placeholder": "Answer here",
-      "label": "What is the answer to this question?"
+      "type": "text",
+      "placeholder": "a, b, c, d, e",
+      "label": "Enter the letter corresponding to the answer:"
+    },
+    {
+      "name": "choice1",
+      "type": "prompt",
+      "placeholder": "choice1",
+      "label": "a) a claim is not true just because most people believe it is"
+    },
+    {
+      "name": "choice2",
+      "type": "prompt",
+      "placeholder": "choice2",
+      "label": "b) If two things happen at the same time, one is not necessarily the cause of the other"
+    },
+    {
+      "name": "choice3",
+      "type": "prompt",
+      "placeholder": "choice3",
+      "label": "c) That one step will inevitably lead to the next"
     }
   ],
   "rewards": {

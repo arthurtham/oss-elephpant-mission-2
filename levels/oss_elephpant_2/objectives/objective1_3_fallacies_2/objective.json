@@ -6,13 +6,37 @@
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Yes!"
+      "label": "All of the following statements about the slippery slope arguments are true, except:"
     },
     {
       "name": "answer1",
-      "type": "textarea",
-      "placeholder": "Answer here",
-      "label": "What is the answer to this question?"
+      "type": "text",
+      "placeholder": "a, b, c, d, e",
+      "label": "Enter the letter corresponding to the answer:"
+    },
+    {
+      "name": "choice1",
+      "type": "prompt",
+      "placeholder": "choice1",
+      "label": "a) They divert thought and attention from other possible outcomes"
+    },
+    {
+      "name": "choice2",
+      "type": "prompt",
+      "placeholder": "choice2",
+      "label": "b) They’re only used to portray a sequence of events that lead to scary outcomes"
+    },
+    {
+      "name": "choice3",
+      "type": "prompt",
+      "placeholder": "choice3",
+      "label": "c) They portray a degree of inevitability that usually doesn’t occur"
+    },
+    {
+      "name": "choice4",
+      "type": "prompt",
+      "placeholder": "choice4",
+      "label": "d) They are often used as a fear mongering strategy"
     }
   ],
   "rewards": {

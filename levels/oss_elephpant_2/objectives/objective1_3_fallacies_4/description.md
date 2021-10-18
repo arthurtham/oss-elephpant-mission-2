@@ -10,9 +10,9 @@
 </div>
 
 
-Navigate throughout the gallery of logical fallacies and check in with Ele to cash in your (loot?) to complete the challenge. 
+Navigate throughout the gallery of logical fallacies and check in with Ele to cash in your loot and complete the challenge.
 
-## Station 4: Outsmarting the Fallacy
+
 https://ed.ted.com/lessons/can-you-outsmart-the-fallacy-that-fooled-a-generation-of-doctors-elizabeth-cox
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8HLtFv_KqoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -10,9 +10,8 @@
 </div>
 
 
-Navigate throughout the gallery of logical fallacies and check in with Ele to cash in your (loot?) to complete the challenge. 
+Navigate throughout the gallery of logical fallacies and check in with Ele to cash in your loot and complete the challenge.
 
-## Station 2: Slippery Slope
 https://ed.ted.com/lessons/can-you-outsmart-the-slippery-slope-fallacy-elizabeth-cox
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qt4f7QrfRRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
