@@ -1,0 +1,45 @@
+{
+  "title": "Practice: Knowledge Check",
+  "description": "Complete the knowledge check questions to open the gate!",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Refer to the questions in the <strong>Objectives</strong> tab and answer them below!"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "a, b, c",
+      "label": "Question 1:"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "a, b, c",
+      "label": "Question 2:"
+    },
+    {
+      "name": "answer3",
+      "type": "text",
+      "placeholder": "a, b, c",
+      "label": "Question 3:"
+    },
+    {
+      "name": "answer4",
+      "type": "text",
+      "placeholder": "a, b, c",
+      "label": "Question 4:"
+    },
+    {
+      "name": "answer5",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Question 5:"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

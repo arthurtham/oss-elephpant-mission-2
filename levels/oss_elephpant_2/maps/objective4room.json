@@ -246,6 +246,12 @@
                  "height":72,
                  "id":161,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"objective1_4_knowledge"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
