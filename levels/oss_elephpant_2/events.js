@@ -76,12 +76,15 @@ module.exports = function(event, world) {
 
     // Some missions can be completed and prompt a conversational dialogue from Ele.
     if (event.objective === "objective1_1_photo") {    
-      world.startConversation("ele_objective1_1_photo_post", "cedricNeutral.png");
+      world.startConversation("ele_objective1_1_photo_post", "ele_down.gif");
+    }
+    else if (event.objective === "objective1_4_knowledge") {
+      world.startConversation("ele_objective1_4_final", "ele_down.gif");
     }
 
     // If the objective is a fallacy mission
-    console.log("Hello");
-    console.log(typeof(event.objective));
+    //console.log("Hello");
+    //console.log(typeof(event.objective));
     if (event.objective.indexOf("objective1_3_fallacies_") >= 0) {
       console.log("Fallacies");
       switch (event.objective) {
