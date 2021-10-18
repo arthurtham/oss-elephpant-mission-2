@@ -6,7 +6,12 @@
       "name": "criticalIsHeader",
       "type": "prompt",
       "placeholder": "Put notes here",
-      "label": "*Mark _True_ if the label represents critical thinking!*"
+      "label": "Select __\"True\"__ for each of the statements below if they represent what critical thinking *IS*:"
+    },
+    {
+      "name": "criticalIs6",
+      "type": "boolean",
+      "label": "Putting logic before bias"
     },
     {
       "name": "criticalNot1",
@@ -14,9 +19,14 @@
       "label": "Simply mimicking other thinking"
     },
     {
-      "name": "criticalNot2",
+      "name": "criticalNot4",
       "type": "boolean",
-      "label": "Simply agreeing with other thinking"
+      "label": "Being biased towards one way of thinking"
+    },
+    {
+      "name": "criticalIs5",
+      "type": "boolean",
+      "label": "Questioning one’s own thinking"
     },
     {
       "name": "criticalNot3",
@@ -24,24 +34,9 @@
       "label": "Placing weight on insignificant details"
     },
     {
-      "name": "criticalNot4",
-      "type": "boolean",
-      "label": "Being biased towards one way of thinking"
-    },
-    {
       "name": "criticalNot5",
       "type": "boolean",
       "label": "Being biased against one way of thinking"
-    },
-    {
-      "name": "criticalNot6",
-      "type": "boolean",
-      "label": "Drawing conclusions too quickly"
-    },
-    {
-      "name": "criticalNot7",
-      "type": "boolean",
-      "label": "Denying faults in one’s own thinking"
     },
     {
       "name": "criticalIs1",
@@ -49,9 +44,24 @@
       "label": "Questioning other thinking"
     },
     {
+      "name": "criticalNot6",
+      "type": "boolean",
+      "label": "Drawing conclusions too quickly"
+    },
+    {
       "name": "criticalIs2",
       "type": "boolean",
       "label": "Embracing other thinking"
+    },
+    {
+      "name": "criticalNot7",
+      "type": "boolean",
+      "label": "Denying faults in one’s own thinking"
+    },
+    {
+      "name": "criticalNot2",
+      "type": "boolean",
+      "label": "Simply agreeing with other thinking"
     },
     {
       "name": "criticalIs3",
@@ -62,16 +72,6 @@
       "name": "criticalIs4",
       "type": "boolean",
       "label": "Willingness to be wrong"
-    },
-    {
-      "name": "criticalIs5",
-      "type": "boolean",
-      "label": "Questioning one’s own thinking"
-    },
-    {
-      "name": "criticalIs6",
-      "type": "boolean",
-      "label": "Putting logic before bias"
     },
     {
       "name": "criticalIs7",

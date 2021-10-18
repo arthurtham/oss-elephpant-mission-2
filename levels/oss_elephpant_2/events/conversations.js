@@ -2,7 +2,7 @@ function setupConversation(world, worldState, name) {
     console.log("start conversation: " + worldState.ossElephpant2.conversations.ele.current);
     worldState.ossElephpant2.conversations.ele.current = name;
     console.log("result: " + worldState.ossElephpant2.conversations.ele.current);
-    world.startConversation('ele', 'cedricNeutral.png');
+    world.startConversation('ele', 'ele_down.gif');
     worldState.ossElephpant2.conversations.ele[name] = true;
   }
   
