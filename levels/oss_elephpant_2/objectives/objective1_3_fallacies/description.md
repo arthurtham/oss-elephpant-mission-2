@@ -6,21 +6,51 @@ const fallacies = worldState.ossElephpant2.fallacies;
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>Go to each terminal and learn more about each gate.</li>
-  <li>Click <em>HACK</em> to reveal the answer.</li>
+  <li>Interact with the 5 terminals or chalkboards to learn more about each fallacy.</li>
+  <li>Click <em>HACK</em> after hacking 3 fallacy terminals or chalkboards.</li>
 </ul>
 </div>
 
-Total: <%= fallacies.fallacyStationsCompleted %>
+In order to pass this gate, you must interact with at least 3 fallacy terminals or chalkboards
+and get their questions correctly answered. Come back here and press __HACK__ once you
+have enough of those objectives completed!
 
-Fallacy 1: <%= fallacies.fallacyStation1 %>
+To help you out, Ele has provided you with a table representing the layout of the room:
 
-Fallacy 2: <%= fallacies.fallacyStation2 %>
+<style>
+.puzzle-grid {
 
-Fallacy 3: <%= fallacies.fallacyStation3 %>
+}
 
-Fallacy 4: <%= fallacies.fallacyStation4 %>
+.puzzle-grid td {
+  width: 33%;
+  height:50px;
+  text-align:center;
+  font-weight:bold;
+}
+</style>
 
-Fallacy 5: <%= fallacies.fallacyStation5 %>
-
-Can Pass: <%= fallacies.canPass %>
+<table class="puzzle-grid" style="border:none">
+<tr><td colspan="3"><h1>Fallacy Station Map/Status</h1></td></tr>
+<tr><th colspan="3" style="text-align: center"><%= fallacies.fallacyStationsCompleted %> of 5 Stations Solved</th></tr>
+<tr>
+  <td style="font-size: 36px; background-color:<%= fallacies.fallacyStation1 ? 'lime' : 'red' %>">1</td>
+  <td style="font-size: 36px; background-color:<%= fallacies.fallacyStation2 ? 'lime' : 'red' %>">2</td>
+  <td style="font-size: 36px; background-color:<%= fallacies.fallacyStation4 ? 'lime' : 'red' %>">4</td>
+</tr>
+<tr>
+  <td style="background-color:yellow">(Exit)</td>
+  <td style="background-color:darkgreen">(Green Walkway)</td>
+  <td style="background-color:yellow">(Exit)</td>
+</tr>
+<tr>
+  <td style="font-size: 36px; background-color:<%= fallacies.fallacyStation3 ? 'lime' : 'red' %>">3</td>
+  <td style="background-color:yellow">(Exit)</td>
+  <td style="font-size: 36px; background-color:<%= fallacies.fallacyStation5 ? 'lime' : 'red' %>">5</td>
+</tr>
+<% if (fallacies.canPass) { %>
+<tr><td colspan="3" style="background-image: linear-gradient(0deg, rgba(62,214,167,1) 0%, rgba(0,255,59,1) 100%); border: 2px solid black"><h2>YOU CAN PASS! PRESS "HACK" NOW</h2></td></tr>
+<% } else { %>
+<tr><td colspan="3" style="background-color: pink">YOU CANNOT PASS</td></tr> 
+<% } %>
+</table>

@@ -7,12 +7,6 @@
       "type": "prompt",
       "placeholder": "Answer all ",
       "label": "Visit at least 3 *Logical Fallacies* stations, then answer the questions below. Press the __HACK__ button when you're ready!"
-    },
-    {
-      "name": "answer1",
-      "type": "text",
-      "placeholder": "Enter text here",
-      "label": "What is the answer to this question?"
     }
   ],
   "rewards": {
