@@ -131,14 +131,14 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies_1"
+                         "value":"objective1_4_worstauntever"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":341.684210526316,
-                 "y":276.716927453769
+                 "x":361.48506401138,
+                 "y":268.52347083926
                 }, 
                 {
                  "height":45.5049786628734,
@@ -153,7 +153,7 @@
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"objective3room"
+                         "value":"objective4room"
                         }, 
                         {
                          "name":"playerEntryPoint",

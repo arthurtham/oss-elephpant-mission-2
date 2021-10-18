@@ -76,12 +76,12 @@
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"cryo"
+                         "value":"objective4room"
                         }, 
                         {
                          "name":"playerEntryPoint",
                          "type":"string",
-                         "value":"player_entry_left_lower"
+                         "value":"player_entry_left"
                         }],
                  "rotation":0,
                  "type":"levelChange",
