@@ -40,6 +40,7 @@
     }
   ],
   "rewards": {
-    "xp": 200
+    "xp": 200,
+    "items": ["steampunk_multi_lens_goggles"]
   }
 }

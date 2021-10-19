@@ -84,6 +84,6 @@ module.exports = async function (helper) {
   // the end, we know the user got all the answers right!
 
   helper.success(`
-    Great work! How'd you do?
+    Great work! You got through those questions like a pro!
   `);
 };
