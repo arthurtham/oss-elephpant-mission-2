@@ -9,8 +9,11 @@ conversation(display_name="ELE-AI")
       responses 
 
     when "objective1_1_photo_pre"
-      statement#objective1pre
+      statement#objective1_1_pre
       responses
+
+    when "objective1_3_pre"
+      statement#objective1_3_pre
 
     default 
       statement.
@@ -21,9 +24,23 @@ conversation(display_name="ELE-AI")
     statement#default
       text.
         Hello, nice to meet you!
-    statement#objective1pre
+    statement#objective1_1_pre
       text.
-        The Evil Legacy System has spent many years programming society to benefit the system. According to the Evil Legacy, a good citizen follows directions and doesn’t ask questions. The analysts, explorers, and settlers will need to learn to think for themselves again. The first step in unlearning the evil ways of the Legacy System will be to revisit the process of critical thinking.  A new planet is going to bring new experiences like never before! Who knows what you might encounter! Let's explore how we interpret and process information to ensure we are thinking critically as we embark on this early exploration.
+        The Evil Legacy System has spent many years programming society to benefit the system. 
+        According to the Evil Legacy, a good citizen follows directions and doesn’t ask questions. 
+        The analysts, explorers, and settlers will need to learn to think for themselves again. 
+        The first step in unlearning the evil ways of the Legacy System will be to revisit the process of critical thinking.  
+        A new planet is going to bring new experiences like never before! Who knows what you might encounter! 
+        Let's explore how we interpret and process information to ensure we are thinking critically as we embark on this early exploration.
+    statement#objective1_2_pre 
+      text.
+        Welcome to the classroom! Please proceed to the right.
+    statement#objective1_3_pre 
+      text.
+        The misinformation in the Evil Legacy System was fueled by the lack of critical thinking and many claims 
+        were made that society there blindly believed. Your team of colonists needs to be able to recognize when an argument,
+         or claim, is not sound. In addition, you will want to ensure that your new colony of citizens is transparent in their 
+         communication and void of logical fallacies.  
 
 // Flush world state changes, if any
 - worldState.ossElephpant2.conversations.ele = ele;

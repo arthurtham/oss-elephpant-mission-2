@@ -369,6 +369,23 @@
                  "width":24,
                  "x":455.709815078236,
                  "y":289.314366998578
+                }, 
+                {
+                 "height":77,
+                 "id":166,
+                 "name":"eleDialogTrigger",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"objective1_3_pre"
+                        }],
+                 "rotation":0,
+                 "type":"triggerArea",
+                 "visible":true,
+                 "width":22,
+                 "x":93,
+                 "y":238.5
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -430,10 +447,10 @@
          "y":0
         }],
  "nextlayerid":48,
- "nextobjectid":166,
+ "nextobjectid":167,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
