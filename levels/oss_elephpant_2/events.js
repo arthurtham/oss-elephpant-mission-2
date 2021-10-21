@@ -13,6 +13,7 @@ const DEFAULT_MISSION_STATE = {
         default_welcome: false,
         objective1_1_photo_pre: false,
         objective1_1_photo_post: false,
+        objective1_3_pre: false,
         turtle_facts: false,
       },
       professor: {
