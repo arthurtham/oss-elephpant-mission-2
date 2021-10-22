@@ -1,0 +1,65 @@
+{
+  "title": "Concept Traits",
+  "description": "Identify what \"critical thinking\" *IS* and what is it *NOT*",
+  "validation_fields": [
+    {
+      "name": "criticalIsHeader",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Select __\"True\"__ for each of the statements below if they represent what critical thinking *IS*:"
+    },
+    {
+      "name": "criticalIs1",
+      "type": "boolean",
+      "label": "Putting logic before bias"
+    },
+    {
+      "name": "criticalIs2",
+      "type": "boolean",
+      "label": "Questioning one’s own thinking"
+    },
+    {
+      "name": "criticalNot1",
+      "type": "boolean",
+      "label": "Placing weight on insignificant details"
+    },
+    {
+      "name": "criticalIs3",
+      "type": "boolean",
+      "label": "Questioning other thinking"
+    },
+    {
+      "name": "criticalNot2",
+      "type": "boolean",
+      "label": "Drawing conclusions quickly"
+    },
+    {
+      "name": "criticalIs4",
+      "type": "boolean",
+      "label": "Being open to other thinking"
+    },
+    {
+      "name": "criticalNot3",
+      "type": "boolean",
+      "label": "Denying faults in one’s own thinking"
+    },
+    {
+      "name": "criticalIs5",
+      "type": "boolean",
+      "label": "Emulating other thinking"
+    },
+    {
+      "name": "criticalIs6",
+      "type": "boolean",
+      "label": "Willingness to be wrong"
+    },
+    {
+      "name": "criticalIs7",
+      "type": "boolean",
+      "label": "Recognising contradictions"
+    }
+  ],
+  "rewards": {
+    "xp": 300
+  }
+}

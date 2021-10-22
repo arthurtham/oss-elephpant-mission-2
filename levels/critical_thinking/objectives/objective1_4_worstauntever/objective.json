@@ -1,0 +1,21 @@
+{
+  "title": "The Case of the Worst Aunt Ever",
+  "description": "Investigate this famous court case using critical thinking and looking to identify any logical fallacies.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Answer the question below, then press the __HACK__ button."
+    },
+    {
+      "name": "answer1",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "Do you think the aunt should have sued the young boy? Why or why not?"
+    }
+  ],
+  "rewards": {
+    "xp": 1000
+  }
+}

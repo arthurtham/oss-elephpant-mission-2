@@ -1,0 +1,33 @@
+{
+  "title": "Photo Analysis",
+  "description": "Use critical thinking to analyze \"What’s Going On in This Picture\"",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Answer the three questions below based on the picture in the \"Objective\" tab, then press the __HACK__ button."
+    },
+    {
+      "name": "answer1",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "What is going on in this picture?"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "What do you see that makes you say that?"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "What more can you find?"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

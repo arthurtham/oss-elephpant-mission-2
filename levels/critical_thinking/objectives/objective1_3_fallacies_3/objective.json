@@ -1,0 +1,46 @@
+{
+  "title": "Logical Fallacies 3: The Burden of Proof",
+  "description": "Examine factors that impact good critical thinking!",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Burden of Proof means that:"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "a, b, c, d, e",
+      "label": "Enter the letter corresponding to the answer:"
+    },
+    {
+      "name": "choice1",
+      "type": "prompt",
+      "placeholder": "choice1",
+      "label": "a) Person who makes the claim has to prove it "
+    },
+    {
+      "name": "choice2",
+      "type": "prompt",
+      "placeholder": "choice2",
+      "label": "b) Claims don't need proof"
+    },
+    {
+      "name": "choice3",
+      "type": "prompt",
+      "placeholder": "choice3",
+      "label": "c) Agreeing to a claim without proof"
+    },
+    {
+      "name": "choice4",
+      "type": "prompt",
+      "placeholder": "choice4",
+      "label": "d) A claim has not been proven false so it must be true"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": ["shenanigan_goggles"]
+  }
+}

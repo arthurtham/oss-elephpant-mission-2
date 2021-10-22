@@ -1,0 +1,15 @@
+{
+  "title": "Logical Fallacies",
+  "description": "Examine factors that impact good critical thinking!",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Visit at least 3 *Logical Fallacies* stations, then answer the questions below. Press the __HACK__ button when you're ready!"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Critical Thinking Brain Teaser: Practice",
+  "description": "Use this <strong>Brain Teaser</strong> to test your critical thinking skills.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Press __HACK__ after watching the video."
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}
