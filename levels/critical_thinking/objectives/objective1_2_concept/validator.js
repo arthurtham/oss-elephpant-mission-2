@@ -7,11 +7,7 @@ module.exports = async function (helper) {
   const { 
     criticalNot1,
     criticalNot2,
-    criticalNot3, 
-    criticalNot4,
-    criticalNot5,
-    criticalNot6,
-    criticalNot7,
+    criticalNot3,
     criticalIs1,
     criticalIs2,
     criticalIs3,
@@ -27,10 +23,6 @@ module.exports = async function (helper) {
     criticalNot1 === undefined ||
     criticalNot2 === undefined ||
     criticalNot3 === undefined ||
-    criticalNot4 === undefined ||
-    criticalNot5 === undefined ||
-    criticalNot6 === undefined ||
-    criticalNot7 === undefined ||
     criticalIs1 === undefined ||
     criticalIs2 === undefined ||
     criticalIs2 === undefined ||
@@ -56,9 +48,7 @@ module.exports = async function (helper) {
 
   if (
     criticalIs4 === "false" ||
-    criticalIs5 === "false" ||
-    criticalNot6 === "true" ||
-    criticalNot7 === "true"
+    criticalIs5 === "false"
      ) {
     return helper.fail(`
       Oops! Looks like you have a mistake there. 
@@ -69,9 +59,7 @@ module.exports = async function (helper) {
   if (
     criticalIs6  === "false" ||
     criticalIs7  === "false" ||
-    criticalNot3  === "true" ||
-    criticalNot4  === "true" ||
-    criticalNot5  === "true" ) {
+    criticalNot3  === "true" ) {
     return helper.fail(`
       Oops! Looks like you have a mistake there. 
       Think about biases, contradictions and logic and try again!
@@ -84,6 +72,6 @@ module.exports = async function (helper) {
   // the end, we know the user got all the answers right!
 
   helper.success(`
-    Great work! How'd you do?
+    Great work! You got through those questions like a pro!
   `);
 };

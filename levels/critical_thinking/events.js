@@ -1,19 +1,39 @@
 const { remove } = require("ramda");
 
-const { processConversationEvents } = require("./events/conversations");
+const { processConversationEvents, setupConversation } = require("./events/conversations");
 
 const levelJson = require("./level.json");
 
 const DEFAULT_MISSION_STATE = {
-  ossElephpant2: {
+  CriticalThinking: {
     conversations: {
       ele: {
         current: 'none',
         all: false,
-        default_welcome: false,
-        objective1_1_photo_pre: false,
-        objective1_1_photo_post: false,
-        turtle_facts: false,
+        objective1_1_photo_pre: {
+          current: 'none',
+          complete: false
+        },
+        objective1_1_photo_post: {
+          current: 'none',
+          complete: false
+        },
+        objective1_2_concept_pre: {
+          current: 'none',
+          complete: false
+        },
+        objective1_3_fallacies_pre: {
+          current: 'none',
+          complete: false
+        },
+        objective1_4_knowledge_post: {
+          current: 'none',
+          complete: false
+        },
+        turtle_facts: {
+          current: 'none',
+          complete: false
+        },
       },
       professor: {
         objective1_2_professor: false,
@@ -23,36 +43,39 @@ const DEFAULT_MISSION_STATE = {
     },
     fallacies: {
       fallacyStationsCompleted: 0,
-      fallacyStation1: false,
-      fallacyStation2: false,
-      fallacyStation3: false,
-      fallacyStation4: false,
-      fallacyStation5: false,
+      objective1_3_fallacies_1: false,
+      objective1_3_fallacies_2: false,
+      objective1_3_fallacies_3: false,
+      objective1_3_fallacies_4: false,
+      objective1_3_fallacies_5: false,
       canPass: false,
     }
   }
 }
 
-
 module.exports = function(event, world) {
-  console.log(`OSS Elephpant 2: ${event.name}`);
+  console.log(`Critical Thinking: ${event.name}`);
   console.log(event);
 
   //DEBUG: Disable cache
   window.reloadExternalModules = true;
 
-  //DEBUG: Reset all objectives
+  let worldState = world.getState("com.twilioquest.CriticalThinking") || DEFAULT_MISSION_STATE;
+
   if (event.name === 'levelDidLoad') {
+    console.log("levelDidLoad: resetting default state for debugging");
+    worldState = DEFAULT_MISSION_STATE;
+    //DEBUG: Reset all objectives
+    console.log("Reset completed objectives:");
     levelJson.objectives.forEach (objective => {
       if (world.isObjectiveCompleted(objective)) {
-        world.removeObjective("oss_elephpant_2", objective);
+        console.log(objective);
+        world.removeObjective("critical_thinking", objective);
       }
     })
   }
 
-  //const worldState = world.getState("com.twilioquest.osselephpant2") || DEFAULT_MISSION_STATE;
-  const worldState = DEFAULT_MISSION_STATE;
-  fallacies = worldState.ossElephpant2.fallacies;
+  //const worldState = DEFAULT_MISSION_STATE;
   console.log("World State");
   console.log(worldState);
 
@@ -67,45 +90,37 @@ module.exports = function(event, world) {
   }*/
 
 
-  // Some missions can be completed and prompt a conversational dialogue from Ele.
-  if (
-    (event.name === 'objectiveCompleted' || event.name === 'objectiveCompletedAgain') &&
-    event.objective
-  ) {
-    console.log(event.objective);
-
+  // Some missions trigger after effects
+  if (event.name === 'objectiveCompleted' || event.name === 'objectiveCompletedAgain') {
+    // Some missions complete open conversation options even if they don't trigger new ones
+    const preObjectiveConversations = ["objective1_1_photo", "objective1_2_concept", "objective1_3_fallacies"];
+    if (preObjectiveConversations.includes(event.objective)) {
+      let pre = event.objective + "_pre";
+      worldState['CriticalThinking']['conversations']['ele'][pre]['current'] = "none";
+      worldState['CriticalThinking']['conversations']['ele'][pre]['complete'] = true;
+      worldState.CriticalThinking.conversations.ele.current = "none";
+    }
     // Some missions can be completed and prompt a conversational dialogue from Ele.
-    if (event.objective === "objective1_1_photo") {    
-      world.startConversation("ele_objective1_1_photo_post", "ele_down.gif");
+    const postObjectiveConversations = ["objective1_1_photo", "objective1_4_knowledge"];
+    if (postObjectiveConversations.includes(event.objective)) {
+      let post = 'ele_' + event.objective + "_post";
+      setupConversation(world, worldState, post)
     }
-    else if (event.objective === "objective1_4_knowledge") {
-      world.startConversation("ele_objective1_4_final", "ele_down.gif");
-    }
-
-    // If the objective is a fallacy mission
-    //console.log("Hello");
-    //console.log(typeof(event.objective));
+    // Fallacy missions are tracked as their own category
     if (event.objective.indexOf("objective1_3_fallacies_") >= 0) {
       console.log("Fallacies");
-      switch (event.objective) {
-        case "objective1_3_fallacies_1":
-          fallacies.fallacyStation1 = true;
-          break;
-        case "objective1_3_fallacies_2":
-          fallacies.fallacyStation2 = true;
-          break;
-        case "objective1_3_fallacies_3":
-          fallacies.fallacyStation3 = true;
-          break;
-        case "objective1_3_fallacies_4":
-          fallacies.fallacyStation4 = true;
-          break;
-        case "objective1_3_fallacies_5":
-          fallacies.fallacyStation5 = true;
-          break;
-        default:
-          ;
-      }
+      let fallacies = worldState.CriticalThinking.fallacies;
+      fallacies[event.objective] = true;
+      // Update count of fallacyStationsCompleted
+      fallacies.fallacyStationsCompleted = (
+          fallacies.objective1_3_fallacies_1+
+          fallacies.objective1_3_fallacies_2+
+          fallacies.objective1_3_fallacies_3+
+          fallacies.objective1_3_fallacies_4+
+          fallacies.objective1_3_fallacies_5
+      )
+      fallacies.canPass = fallacies.fallacyStationsCompleted >= 3;
+      worldState.CriticalThinking.fallacies = fallacies;
     }
   }
 
@@ -115,22 +130,9 @@ module.exports = function(event, world) {
     event.target.name === 'eleDialogTrigger'
   ) {
     processConversationEvents(event, world, worldState, event.target.key);
-    console.log("completed");
+    console.log("processConversationEvents completed");
   }
 
-  // Update count of fallacyStationsCompleted
-  fallacies.fallacyStationsCompleted = (
-    fallacies.fallacyStation1+
-    fallacies.fallacyStation2+
-    fallacies.fallacyStation3+
-    fallacies.fallacyStation4+
-    fallacies.fallacyStation5
-  )
-
-  fallacies.canPass = fallacies.fallacyStationsCompleted >= 3;
-
   // Save state
-  world.setState("com.twilioquest.osselephpant2", worldState);
-
-  console.log(world);
+  world.setState("com.twilioquest.CriticalThinking", worldState);
 }

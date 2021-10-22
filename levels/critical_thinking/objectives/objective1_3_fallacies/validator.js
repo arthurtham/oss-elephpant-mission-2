@@ -1,6 +1,6 @@
 module.exports = async function (helper) {
-  const worldState = helper.world.getState("com.twilioquest.osselephpant2");
-  const fallacies = worldState.ossElephpant2.fallacies;
+  const worldState = helper.world.getState("com.twilioquest.CriticalThinking");
+  const fallacies = worldState.CriticalThinking.fallacies;
 
   // Validator 1: Are enough stations solved?
   if (!fallacies.canPass) {

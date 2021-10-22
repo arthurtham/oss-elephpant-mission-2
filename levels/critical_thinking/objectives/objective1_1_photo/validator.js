@@ -38,6 +38,6 @@ module.exports = async function (helper) {
   // the end, we know the user got all the answers right!
 
   helper.success(`
-    Great work! How'd you do?
+    Nice thoughts! Ele thinks you're worthy of being a critical thinker.
   `);
 };

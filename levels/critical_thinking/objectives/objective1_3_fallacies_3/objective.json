@@ -40,6 +40,7 @@
     }
   ],
   "rewards": {
-    "xp": 100
+    "xp": 200,
+    "items": ["shenanigan_goggles"]
   }
 }

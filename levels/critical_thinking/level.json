@@ -1,15 +1,22 @@
 {
-  "title": "Good morning, future colonist!",
-  "description": "Equip a future colonist with the introspection and teamwork skills they need to leave their past life behind to become an effective member of an early exploration team.",
+  "title": "OSS ElePHPant",
+  "description": "Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.",
   "questTitle": "Critical Thinking",
   "questDescription": "Good morning, future colonist!",
   "mission_icon": "mission_icon.png",
   "is_mission": true,
   "priority": 10,
+  "navMap": {
+    "x": 10,
+    "y": 80,
+    "sprite": "nav_map/example_planet.png"
+  },
   "backgroundMusic": "hackertheme_104771b",
   "backgroundEffect": {
-    "key": "vr",
-    "options": {}
+    "key": "starfield",
+    "options": {
+      "direction": "leftToRight"
+    }
   },
   "flavorTextOverrides": {
     "bookshelf": "There's nothing like a good book."

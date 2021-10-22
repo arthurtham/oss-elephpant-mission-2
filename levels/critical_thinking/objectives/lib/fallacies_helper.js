@@ -33,7 +33,7 @@ function processAnswer(helper, providedCorrectAnswer) {
     }
 
     helper.success(`
-        Great work!
+        Nice answer! You've solved the puzzle at this fallacy station!
     `);
 }
   
