@@ -178,8 +178,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":468.408614523337,
-                 "y":233.360326588878
+                 "x":456.877712579681,
+                 "y":212.028157993115
                 }, 
                 {
                  "height":0,
@@ -220,25 +220,8 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":356.34042683714,
-                 "y":207.840164721946
-                }, 
-                {
-                 "height":73.6812313803379,
-                 "id":187,
-                 "name":"eleDialogTrigger",
-                 "properties":[
-                        {
-                         "name":"key",
-                         "type":"string",
-                         "value":"objective1_1_photo_pre"
-                        }],
-                 "rotation":0,
-                 "type":"triggerArea",
-                 "visible":true,
-                 "width":121.632571996028,
-                 "x":190.157048485601,
-                 "y":142.024345456802
+                 "x":345.386069990667,
+                 "y":204.957439236032
                 }, 
                 {
                  "gid":10012,
@@ -321,7 +304,7 @@
  "nextobjectid":189,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {

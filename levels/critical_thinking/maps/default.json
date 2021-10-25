@@ -50,7 +50,7 @@
          "name":"Objects",
          "objects":[
                 {
-                 "height":90.4836146971201,
+                 "height":25.3864319061177,
                  "id":157,
                  "name":"eleDialogTrigger",
                  "properties":[
@@ -63,8 +63,8 @@
                  "type":"triggerArea",
                  "visible":true,
                  "width":144.075471698113,
-                 "x":191.505461767627,
-                 "y":365.368577934911
+                 "x":189.697206690099,
+                 "y":478.685896126656
                 }, 
                 {
                  "height":10,
@@ -272,7 +272,7 @@
  "nextobjectid":172,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
@@ -301,7 +301,7 @@
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }, 
         {
-         "firstgid":12473,
+         "firstgid":11031,
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/scifi_tiles.json"
         }],
  "tilewidth":24,
