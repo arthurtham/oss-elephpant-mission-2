@@ -107,3 +107,9 @@ dist
 # Hide levels
 levels/destination_template
 levels/vr_mission_template
+
+# Hide PHP Storm files
+.idea/
+
+# Hide archive files
+levels/oss_elephpant_2/
