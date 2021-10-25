@@ -1,6 +1,6 @@
 {
-  "title": "What's Going On in This Picture",
-  "description": "Use critical thinking to analyze \"What’s Going On in This Picture\"",
+  "title": "Turtle Facts",
+  "description": "Use critical thinking to think about my favorite turtle.",
   "validation_fields": [
     {
       "name": "notes",
@@ -12,7 +12,7 @@
       "name": "answer1",
       "type": "textarea",
       "placeholder": "",
-      "label": "What is going on in this picture?"
+      "label": "What's the name of my favorite turtle?"
     },
     {
       "name": "answer2",
@@ -24,10 +24,10 @@
       "name": "answer3",
       "type": "textarea",
       "placeholder": "",
-      "label": "What more can you find?"
+      "label": "What more can you find about my turtle's abilities?"
     }
   ],
   "rewards": {
-    "xp": 1000
+    "xp": 0
   }
 }
