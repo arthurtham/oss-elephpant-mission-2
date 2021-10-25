@@ -361,6 +361,23 @@
                  "width":94.5345,
                  "x":215.927584362718,
                  "y":538.184166198765
+                }, 
+                {
+                 "height":42.7996727681078,
+                 "id":185,
+                 "name":"eleDialogTrigger",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"objective1_2_brainteaser_pre"
+                        }],
+                 "rotation":0,
+                 "type":"triggerArea",
+                 "visible":true,
+                 "width":48.640299270073,
+                 "x":123.068957608085,
+                 "y":386.37669365525
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -422,7 +439,7 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":185,
+ "nextobjectid":186,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

@@ -3,15 +3,14 @@
   "description": "Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.",
   "questTitle": "Critical Thinking",
   "questDescription": "Good morning, future colonist!",
-  "mission_icon": "mission_icon.png",
-  "is_mission": true,
+  "is_mission": false,
   "priority": 10,
   "navMap": {
-    "x": 10,
-    "y": 80,
-    "sprite": "nav_map/example_planet.png"
+    "x": 15,
+    "y": 60,
+    "sprite": "nav_map/OSSElephpantTilted.png"
   },
-  "backgroundMusic": "hackertheme_104771b",
+  "backgroundMusic": "fascinatingarea_108253b",
   "backgroundEffect": {
     "key": "starfield",
     "options": {
