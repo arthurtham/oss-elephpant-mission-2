@@ -72,8 +72,8 @@
                  "rotation":0,
                  "type":"levelChange",
                  "visible":true,
-                 "width":16.6836,
-                 "x":507.884905035554,
+                 "width":8.24507630487004,
+                 "x":516.323428730684,
                  "y":102.709414899717
                 }, 
                 {
@@ -99,8 +99,8 @@
                  "rotation":0,
                  "type":"levelChange",
                  "visible":true,
-                 "width":16.6836,
-                 "x":506.97130026892,
+                 "width":8.84782799737938,
+                 "x":514.807072271541,
                  "y":386.120283346139
                 }, 
                 {
@@ -112,8 +112,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":469.719554360353,
-                 "y":416.70380330388
+                 "x":452.842506970093,
+                 "y":382.94970852336
                 }, 
                 {
                  "height":0,
@@ -124,8 +124,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":474.172951856711,
-                 "y":135.751261324017
+                 "x":453.076642618886,
+                 "y":120.079717318776
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -176,7 +176,7 @@
  "nextobjectid":166,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
