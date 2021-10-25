@@ -79,7 +79,7 @@
                 {
                  "height":0,
                  "id":178,
-                 "name":"player_entry_upper",
+                 "name":"player_entry_top",
                  "point":true,
                  "rotation":0,
                  "type":"player",
@@ -160,7 +160,7 @@
                         {
                          "name":"playerEntryPoint",
                          "type":"string",
-                         "value":"player_entry_upper_1"
+                         "value":"player_entry_top_1"
                         }],
                  "rotation":0,
                  "type":"levelChange",
@@ -240,6 +240,24 @@
                  "width":24,
                  "x":384.503847880721,
                  "y":281.902131689535
+                }, 
+                {
+                 "gid":10011,
+                 "height":48,
+                 "id":189,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"objective1_3_fallacies"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":94.5345430824883,
+                 "x":216.624088240527,
+                 "y":346.599774654569
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -301,7 +319,7 @@
          "y":0
         }],
  "nextlayerid":47,
- "nextobjectid":189,
+ "nextobjectid":190,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
