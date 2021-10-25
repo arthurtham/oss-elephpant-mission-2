@@ -18,7 +18,7 @@ const DEFAULT_MISSION_STATE = {
           current: 'none',
           complete: false
         },
-        objective1_2_concept_pre: {
+        objective1_2_brainteaser_pre: {
           current: 'none',
           complete: false
         },
@@ -92,8 +92,8 @@ module.exports = function(event, world) {
 
   // Some missions trigger after effects
   if (event.name === 'objectiveCompleted' || event.name === 'objectiveCompletedAgain') {
-    // Some missions complete open conversation options even if they don't trigger new ones
-    const preObjectiveConversations = ["objective1_1_photo", "objective1_2_concept", "objective1_3_fallacies"];
+    // Some missions complete open or close conversation options even if they don't trigger new ones
+    const preObjectiveConversations = ["objective1_1_photo", "objective1_2_brainteaser", "objective1_3_fallacies"];
     if (preObjectiveConversations.includes(event.objective)) {
       let pre = event.objective + "_pre";
       worldState['CriticalThinking']['conversations']['ele'][pre]['current'] = "none";
