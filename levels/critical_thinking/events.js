@@ -103,8 +103,12 @@ module.exports = function(event, world) {
     // Some missions can be completed and prompt a conversational dialogue from Ele.
     const postObjectiveConversations = ["objective1_1_photo", "objective1_4_knowledge"];
     if (postObjectiveConversations.includes(event.objective)) {
-      let post = 'ele_' + event.objective + "_post";
-      setupConversation(world, worldState, post)
+      let chat = event.objective + "_post";
+      let post = 'ele_' + chat;
+      setupConversation(world, worldState, post);
+      worldState['CriticalThinking']['conversations']['ele'][chat]['current'] = "none";
+      worldState['CriticalThinking']['conversations']['ele'][chat]['complete'] = true;
+      worldState.CriticalThinking.conversations.ele.current = "none";
     }
     // Fallacy missions are tracked as their own category
     if (event.objective.indexOf("objective1_3_fallacies_") >= 0) {

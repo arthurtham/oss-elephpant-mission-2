@@ -258,6 +258,23 @@
                  "width":94.5345430824883,
                  "x":216.624088240527,
                  "y":346.599774654569
+                }, 
+                {
+                 "height":74.0531,
+                 "id":190,
+                 "name":"eleDialogTrigger",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"objective1_1_photo_pre"
+                        }],
+                 "rotation":0,
+                 "type":"triggerArea",
+                 "visible":true,
+                 "width":61.0537318231279,
+                 "x":236.067258136314,
+                 "y":148.946345439707
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -319,10 +336,10 @@
          "y":0
         }],
  "nextlayerid":47,
- "nextobjectid":190,
+ "nextobjectid":191,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.7.2",
  "tileheight":24,
  "tilesets":[
         {
