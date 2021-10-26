@@ -146,6 +146,16 @@
                  "name":"",
                  "properties":[
                         {
+                         "name":"hackable",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"objectiveName",
                          "type":"string",
                          "value":"turtle_facts"
@@ -154,8 +164,8 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":337.093691658391,
-                 "y":456.64037591857
+                 "x":396.427024991724,
+                 "y":402.64037591857
                 }, 
                 {
                  "height":68.3451191658391,
@@ -193,8 +203,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":481.198278715656,
-                 "y":441.098973849718
+                 "x":479.864945382323,
+                 "y":437.765640516385
                 }, 
                 {
                  "height":68.3451,

@@ -272,8 +272,8 @@
                  "rotation":0,
                  "type":"triggerArea",
                  "visible":true,
-                 "width":61.0537318231279,
-                 "x":236.067258136314,
+                 "width":163.102214024482,
+                 "x":173.22384254339,
                  "y":148.946345439707
                 }],
          "opacity":1,
@@ -339,7 +339,7 @@
  "nextobjectid":191,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
