@@ -32,7 +32,8 @@ To help you out, Ele has provided you with a status table:
 .puzzle-grid td.unsolved-station {
   border: 1px solid black !important;
   font-size: 36px !important;
-  background-color: Silver;
+  background: rgb(180,58,58);
+  background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 39%, rgba(252,78,69,1) 100%);
 }
 
 .puzzle-grid td.solved-station {

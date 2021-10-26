@@ -1,6 +1,6 @@
 {
   "title": "Concept Traits",
-  "description": "Identify what \"critical thinking\" *IS* and what is it *NOT*",
+  "description": "Identify what \"critical thinking\" *IS* and what it is *NOT*",
   "validation_fields": [
     {
       "name": "criticalIsHeader",

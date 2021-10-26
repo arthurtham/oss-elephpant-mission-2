@@ -261,7 +261,7 @@
                  "y":308.447064286659
                 }, 
                 {
-                 "height":369.666666666667,
+                 "height":378.333333333333,
                  "id":232,
                  "name":"eleDialogTrigger",
                  "properties":[
@@ -273,9 +273,9 @@
                  "rotation":0,
                  "type":"triggerArea",
                  "visible":true,
-                 "width":121.333333333333,
-                 "x":40.5277342975206,
-                 "y":110.136308587442
+                 "width":160,
+                 "x":33.8610676308539,
+                 "y":110.802975254108
                 }, 
                 {
                  "gid":10011,
@@ -317,6 +317,24 @@
                  "width":24,
                  "x":336,
                  "y":118
+                }, 
+                {
+                 "height":0,
+                 "id":238,
+                 "name":"fallacy_mission_complete_viewpoint",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"fallacy_mission_complete_viewpoint"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":262.666666666667,
+                 "y":489.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -378,7 +396,7 @@
          "y":0
         }],
  "nextlayerid":49,
- "nextobjectid":238,
+ "nextobjectid":239,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

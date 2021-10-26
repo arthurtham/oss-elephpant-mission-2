@@ -26,6 +26,10 @@ const DEFAULT_MISSION_STATE = {
           current: 'none',
           complete: false
         },
+        objective1_3_fallacies_post: {
+          current: 'none',
+          complete: false
+        },
         objective1_4_knowledge_post: {
           current: 'none',
           complete: false
@@ -135,6 +139,36 @@ module.exports = function(event, world) {
   ) {
     processConversationEvents(event, world, worldState, event.target.key);
     console.log("processConversationEvents completed");
+  }
+
+  // When the fallacy maze is finished, show the player that the gates have been unlocked.
+  if (
+    event.name === 'objectiveDidClose' &&
+    event.target.objectiveName === 'objective1_3_fallacies' &&
+    worldState['CriticalThinking']['conversations']['ele']['objective1_3_fallacies_post']['complete'] === false &&
+    world.isObjectiveCompleted('objective1_3_fallacies')
+  ) {
+    // Now, show that the gate has been revealed!  
+    console.log("POGGERS");
+    world.forEachEntities("fallacy_mission_complete_viewpoint", async (viewpoint) => {
+      world.disablePlayerMovement();
+
+      await world.tweenCameraToPosition({
+        x: viewpoint.startX,
+        y: viewpoint.startY,
+      });
+      await world.wait(1500);
+
+      let chat = "objective1_3_fallacies_post";
+      setupConversation(world, worldState, "ele_"+chat)
+      worldState['CriticalThinking']['conversations']['ele'][chat]['current'] = "none";
+      worldState['CriticalThinking']['conversations']['ele'][chat]['complete'] = true;
+      worldState.CriticalThinking.conversations.ele.current = "none";
+
+      await world.tweenCameraToPlayer();
+
+      world.enablePlayerMovement();
+    });
   }
 
   // Save state
