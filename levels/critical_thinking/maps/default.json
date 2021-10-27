@@ -180,7 +180,7 @@
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"objective5room"
+                         "value":"objective4room"
                         }, 
                         {
                          "name":"playerEntryPoint",
