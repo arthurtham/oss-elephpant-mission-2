@@ -6,14 +6,12 @@ const fallacies = worldState.CriticalThinking.fallacies;
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>Interact with the 5 terminals or chalkboards to learn more about each fallacy.</li>
-  <li>Click <em>HACK</em> after hacking 3 fallacy terminals or chalkboards.</li>
+  <li>Interact with the five fallacy stations to learn more about each fallacy.</li>
+  <li>Click <em>HACK</em> after hacking three fallacy stations.</li>
 </ul>
 </div>
 
-In order to pass this gate, you must interact with at least 3 fallacy chalkboards
-and get their questions correctly answered. Come back here and press __HACK__ once you
-have enough of those objectives completed!
+In order to pass this gate, you must interact with at least 3 fallacy chalkboards and get their questions correctly answered. Come back here and press __HACK__ once you have enough of those objectives completed!
 
 To help you out, Ele has provided you with a status table:
 
@@ -47,7 +45,7 @@ To help you out, Ele has provided you with a status table:
 </style>
 
 <table class="puzzle-grid" style="border:none">
-<tr><td colspan="5"><h1>Fallacy Challenge Status</h1></td></tr>
+<tr><td colspan="5"><h1>Fallacy Station Status</h1></td></tr>
 <tr><th colspan="5" style="text-align: center"><%= fallacies.fallacyStationsCompleted %> of 5 Challenges Solved</th></tr>
 <tr>
   <td class="<%= fallacies.objective1_3_fallacies_1 ? 'solved-station' : 'unsolved-station' %>">1</td>

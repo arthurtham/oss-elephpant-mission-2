@@ -10,6 +10,6 @@ module.exports = async function (helper) {
   }
 
   helper.success(`
-    Alright! You've solved the fallacy maze!
+    Alright! You've solved the logical fallacy gallery challenge!
   `);
 };

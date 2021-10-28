@@ -6,7 +6,7 @@
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Visit at least 3 *Logical Fallacies* stations, then answer the questions below. Press the __HACK__ button when you're ready!"
+      "label": "Complete the challenges in at least 3 *Logical Fallacy* stations. Press the __HACK__ button when you're done!"
     }
   ],
   "rewards": {

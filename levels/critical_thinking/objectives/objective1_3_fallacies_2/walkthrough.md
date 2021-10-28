@@ -1,7 +1,6 @@
 # Think Critically!
 
-Answer the multiple choice question correctly to succesfully complete the challenge
-at this logical fallacy station.
+Answer the multiple choice question correctly to succesfully complete the challenge at this logical fallacy station.
 
 Remember: there are five boards in the gallery. After completing at least three logical fallacy stations, go to the purple computer on the top right of the gallery to unlock the gallery's exit gate.
 
