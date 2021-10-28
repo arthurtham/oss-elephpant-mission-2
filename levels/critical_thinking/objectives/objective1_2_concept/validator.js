@@ -12,7 +12,6 @@ module.exports = async function (helper) {
     criticalIs2,
     criticalIs3,
     criticalIs4,
-    criticalIs5,
     criticalIs6,
     criticalIs7
    } = helper.validationFields;
@@ -28,7 +27,6 @@ module.exports = async function (helper) {
     criticalIs2 === undefined ||
     criticalIs3 === undefined ||
     criticalIs4 === undefined ||
-    criticalIs5 === undefined ||
     criticalIs6 === undefined ||
     criticalIs7 === undefined 
   ) {
@@ -41,18 +39,17 @@ module.exports = async function (helper) {
   criticalNot1 === "true" || 
   criticalNot2 === "true") {
       return helper.fail(`
-        Oops! Looks like you have a mistake there. 
-        Think about your answers about other people's thinking and try again!
+        Oops! Looks like you have a mistake there.
+        Review the article one more time and try again.
         `);
   }
 
   if (
-    criticalIs4 === "false" ||
-    criticalIs5 === "false"
+    criticalIs4 === "false"
      ) {
     return helper.fail(`
-      Oops! Looks like you have a mistake there. 
-      Think about your answers about your own thinking and try again!
+        Oops! Looks like you have a mistake there.
+        Review the article one more time and try again.
     `);
   }
 
@@ -61,8 +58,8 @@ module.exports = async function (helper) {
     criticalIs7  === "false" ||
     criticalNot3  === "true" ) {
     return helper.fail(`
-      Oops! Looks like you have a mistake there. 
-      Think about biases, contradictions and logic and try again!
+        Oops! Looks like you have a mistake there.
+        Review the article one more time and try again.
     `);
   }
 

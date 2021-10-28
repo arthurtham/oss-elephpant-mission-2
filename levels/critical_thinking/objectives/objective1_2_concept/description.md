@@ -3,9 +3,9 @@
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>Read the <a href="https://www.opencolleges.edu.au/informed/features/teach-critical-thinking/">article</a> on <i>Open Colleges</i> </li>
-  <li>Complete the questions on the right by click on the check boxes.</li>
-  <li>Click <em>HACK</em> when you finalize your answer.</li>
+  <li>Read the <a href="https://www.opencolleges.edu.au/informed/features/teach-critical-thinking/">article</a> on <i>Open Colleges</i>. </li>
+  <li>Answer the questions on the right by clicking on the bubbles.</li>
+  <li>Click <em>HACK</em> to submit your answers.</li>
 </ul>
 </div>
 
