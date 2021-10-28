@@ -5,12 +5,16 @@
 <ul>
   <li>Watch the video to learn more about this logical fallacy.</li>
   <li>Answer the question on the right.</li>
-  <li>Click <em>HACK</em> to reveal the answer.</li>
+  <li>Click <em>HACK</em> to check your answer.</li>
 </ul>
 </div>
 
+Navigate throughout the gallery of logical fallacies. Though each station is equally important, you'll need to complete at least three logical fallacy stations to exit the gallery. 
 
-Navigate throughout the gallery of logical fallacies and check in with Ele to cash in your loot and complete the challenge.
+There are five boards in the gallery. After completing at least three logical fallacy stations, go to the purple computer on the top right of the gallery to unlock the gallery's exit gate.  
+
+## Watch the Video
+Watch the **video** below and see how well you fare with **the slippery slope**.
 
 https://ed.ted.com/lessons/can-you-outsmart-the-slippery-slope-fallacy-elizabeth-cox
 

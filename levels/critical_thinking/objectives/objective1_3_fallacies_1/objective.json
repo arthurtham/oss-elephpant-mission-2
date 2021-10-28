@@ -24,7 +24,7 @@
       "name": "choice2",
       "type": "prompt",
       "placeholder": "choice2",
-      "label": "b) A situation in which an event is given the same descriptions by all individuals involved"
+      "label": "b) An event in which all individuals involved give the same description"
     },
     {
       "name": "choice3",

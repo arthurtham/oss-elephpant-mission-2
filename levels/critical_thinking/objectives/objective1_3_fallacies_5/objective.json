@@ -6,7 +6,7 @@
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Which of the following does NOT explain why we’re prone to the conjunction fallacy?"
+      "label": "Humans are naturally prone to the conjunction fallacy. Which of the following reasons are NOT an explanation for why we’re prone to the conjunction fallacy?"
     },
     {
       "name": "answer1",

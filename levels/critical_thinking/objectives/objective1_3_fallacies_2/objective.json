@@ -6,7 +6,7 @@
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "All of the following statements about the slippery slope arguments are true, except:"
+      "label": "All of the following statements about the slippery slope arguments are true, *except*:"
     },
     {
       "name": "answer1",
