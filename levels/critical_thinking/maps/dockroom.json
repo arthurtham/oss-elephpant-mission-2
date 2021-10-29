@@ -128,7 +128,7 @@
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"objective4room"
+                         "value":"objective5room"
                         }, 
                         {
                          "name":"playerEntryPoint",
@@ -285,7 +285,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective1_3_fallacies"
+                         "value":""
                         }],
                  "rotation":0,
                  "type":"",
