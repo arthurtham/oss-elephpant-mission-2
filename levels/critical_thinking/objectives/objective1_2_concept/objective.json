@@ -1,12 +1,12 @@
 {
   "title": "Concept Traits",
-  "description": "Identify what \"critical thinking\" *IS* and what it is *NOT*",
+  "description": "Identify what \"critical thinking\" <i>IS</i> and what it is <i>NOT</i>",
   "validation_fields": [
     {
       "name": "criticalIsHeader",
       "type": "prompt",
       "placeholder": "Put notes here",
-      "label": "Select __\"True\"__ for each of the statements below if they represent what critical thinking *IS*:"
+      "label": "Which of the following statements represent what critical thinking *IS*?<br><br>Select **\"TRUE\"** if it represents what critical thinking *IS*."
     },
     {
       "name": "criticalIs1",
@@ -42,11 +42,6 @@
       "name": "criticalNot3",
       "type": "boolean",
       "label": "Denying faults in one’s own thinking"
-    },
-    {
-      "name": "criticalIs5",
-      "type": "boolean",
-      "label": "Emulating other thinking"
     },
     {
       "name": "criticalIs6",

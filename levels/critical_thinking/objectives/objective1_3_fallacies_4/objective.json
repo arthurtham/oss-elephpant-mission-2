@@ -18,7 +18,7 @@
       "name": "choice1",
       "type": "prompt",
       "placeholder": "choice1",
-      "label": "a) a claim is not true just because most people believe it is"
+      "label": "a) A claim is not true just because most people believe it is"
     },
     {
       "name": "choice2",
