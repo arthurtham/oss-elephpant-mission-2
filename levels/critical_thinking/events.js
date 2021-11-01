@@ -34,6 +34,10 @@ const DEFAULT_MISSION_STATE = {
           current: 'none',
           complete: false
         },
+        objective1_4_worstauntever_post: {
+          current: 'none',
+          complete: false
+        },
         turtle_facts: {
           current: 'none',
           complete: false
@@ -105,7 +109,7 @@ module.exports = function(event, world) {
       worldState.CriticalThinking.conversations.ele.current = "none";
     }
     // Some missions can be completed and prompt a conversational dialogue from Ele.
-    const postObjectiveConversations = ["objective1_1_photo", "objective1_4_knowledge"];
+    const postObjectiveConversations = ["objective1_1_photo", "objective1_4_worstauntever", "objective1_4_knowledge"];
     if (postObjectiveConversations.includes(event.objective)) {
       let chat = event.objective + "_post";
       let post = 'ele_' + chat;
@@ -141,6 +145,34 @@ module.exports = function(event, world) {
     console.log("processConversationEvents completed");
   }
 
+
+  //
+  // TODO: Combine all viewpoint cutscenes for mapDidLoad into one place.
+  // 
+
+  // When the objective 1.4 room has been entered, show a quick cutscene.
+  if (
+    event.name === 'mapDidLoad' &&
+    event.mapName === 'objective4room' &&
+    !world.isObjectiveCompleted("objective1_4_knowledge")
+  ) {
+    world.forEachEntities("final_viewpoint", async (viewpoint) => {
+      world.disablePlayerMovement();
+      await world.wait(500);
+      await world.tweenCameraToPosition({
+        x: viewpoint.startX,
+        y: viewpoint.startY,
+      });
+      await world.wait(1500);
+      await world.tweenCameraToPlayer();
+      world.enablePlayerMovement();
+    });
+  }
+
+  //
+  // TODO: Combine together cutscenes when objectiveDidClose to one module
+  //
+
   // When the fallacy maze is finished, show the player that the gates have been unlocked.
   if (
     event.name === 'objectiveDidClose' &&
@@ -149,7 +181,6 @@ module.exports = function(event, world) {
     world.isObjectiveCompleted('objective1_3_fallacies')
   ) {
     // Now, show that the gate has been revealed!  
-    console.log("POGGERS");
     world.forEachEntities("fallacy_mission_complete_viewpoint", async (viewpoint) => {
       world.disablePlayerMovement();
 
@@ -167,6 +198,27 @@ module.exports = function(event, world) {
 
       await world.tweenCameraToPlayer();
 
+      world.enablePlayerMovement();
+    });
+  }
+
+  // When the concept trains objective is finished, show the player the location of the next area.
+  if (
+    event.name === 'objectiveDidClose' &&
+    event.target.objectiveName === 'objective1_2_concept' &&
+    world.isObjectiveCompleted('objective1_2_concept') &&
+    !world.isObjectiveCompleted('objective1_2_brainteaser')
+  ) {
+    // Now, show that the gate has been revealed!  
+    world.forEachEntities("viewpoint", async (viewpoint) => {
+      world.disablePlayerMovement();
+
+      await world.tweenCameraToPosition({
+        x: viewpoint.startX,
+        y: viewpoint.startY,
+      });
+      await world.wait(1500);
+      await world.tweenCameraToPlayer();
       world.enablePlayerMovement();
     });
   }

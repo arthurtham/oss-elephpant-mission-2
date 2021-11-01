@@ -18,7 +18,7 @@ module.exports = async function (helper) {
     if (!(
         isMCOptionCorrect(answer1,"c") &&
         isMCOptionCorrect(answer2,"a") &&
-        isMCOptionCorrect(answer3,"a") && 
+        answer3 === "true" &&
         isMCOptionCorrect(answer4,"b") &&
         answer5 === "false"
     )) {
