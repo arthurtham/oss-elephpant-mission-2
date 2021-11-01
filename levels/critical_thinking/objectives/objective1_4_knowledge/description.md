@@ -21,10 +21,7 @@ a) Questioning other thinking
 b) Simply mimicking other thinking
 c) Simply agreeing with other thinking
 
-<strong>3. Which of the following does NOT explain why we're prone to the conjunction fallacy?</strong>
-a) Making quick judgments based on what seems believable rather than a calculation
-b) Our need to see a narrative on a collection of details
-c) Less knowledge on a particular subject
+<strong>3. True/False: The more specific details added to an outlandish story, the more believable it seems.</strong>
 
 <strong>4. "Correlation does not imply causation" means:</strong>
 a) A claim is not true just because most people believe it is

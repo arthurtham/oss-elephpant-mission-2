@@ -6,31 +6,13 @@
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "Humans are naturally prone to the conjunction fallacy. Which of the following reasons are NOT an explanation for why we’re prone to the conjunction fallacy?"
+      "label": "True or False: The more specific details added to an outlandish story, the more believable it seems."
     },
     {
       "name": "answer1",
-      "type": "text",
+      "type": "boolean",
       "placeholder": "a, b, c, d, e",
-      "label": "Enter the letter corresponding to the answer:"
-    },
-    {
-      "name": "choice1",
-      "type": "prompt",
-      "placeholder": "choice1",
-      "label": "a) Making quick judgments based on what seems believable rather than a calculation"
-    },
-    {
-      "name": "choice2",
-      "type": "prompt",
-      "placeholder": "choice2",
-      "label": "b) Our need to see a narrative on a collection of details"
-    },
-    {
-      "name": "choice3",
-      "type": "prompt",
-      "placeholder": "choice3",
-      "label": "c) Less knowledge on a particular subject"
+      "label": ""
     }
   ],
   "rewards": {

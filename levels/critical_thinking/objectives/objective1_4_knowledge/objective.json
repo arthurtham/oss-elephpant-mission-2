@@ -22,7 +22,7 @@
     },
     {
       "name": "answer3",
-      "type": "text",
+      "type": "boolean",
       "placeholder": "a, b, c",
       "label": "Question 3:"
     },

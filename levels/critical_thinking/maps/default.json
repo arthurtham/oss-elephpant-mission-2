@@ -232,6 +232,33 @@
                  "width":10.3826,
                  "x":513.475366666667,
                  "y":433.82745
+                }, 
+                {
+                 "height":68.3451,
+                 "id":173,
+                 "name":"exit",
+                 "properties":[
+                        {
+                         "name":"levelName",
+                         "type":"string",
+                         "value":"critical_thinking"
+                        }, 
+                        {
+                         "name":"mapName",
+                         "type":"string",
+                         "value":"objective4room"
+                        }, 
+                        {
+                         "name":"playerEntryPoint",
+                         "type":"string",
+                         "value":"player_entry_left_lower"
+                        }],
+                 "rotation":0,
+                 "type":"levelChange",
+                 "visible":true,
+                 "width":10.3826,
+                 "x":104.142033333333,
+                 "y":333.160783333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -279,7 +306,7 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":173,
+ "nextobjectid":174,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

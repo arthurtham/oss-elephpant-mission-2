@@ -1,6 +1,6 @@
 {
   "title": "McDonald’s Scalding Hot Court Case",
-  "description": "Investigate this famous court case using critical thinking and looking to identify any logical fallacies.",
+  "description": "Investigate this famous court case using critical thinking while looking to identify any logical fallacies.",
   "validation_fields": [
     {
       "name": "notes",
@@ -12,7 +12,19 @@
       "name": "answer1",
       "type": "textarea",
       "placeholder": "",
-      "label": "What key details were missing in the original portrayal of the case? Was the public being misled by something? How could the public have been thinking about this in another way?"
+      "label": "What key details were missing in the original portrayal of the case?"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "Was the public being misled by something?"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "How could the public have been thinking about this in another way?"
     }
   ],
   "rewards": {

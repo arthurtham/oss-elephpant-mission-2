@@ -1,16 +1,16 @@
 
 module.exports = async function (helper) {
   // We start by getting the user input from the helper
-  const { answer1 } = helper.validationFields;
+  const { answer1, answer2, answer3} = helper.validationFields;
 
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
 
   // Validator 1: All question blocks must have some sort of answer in them
-  if (!answer1) {
+  if (!answer1 || !answer2 || !answer3) {
     return helper.fail(`
-      Please answer the question before submitting your answer.
+      Please answer all questions before submitting.
     `);
   }
 
