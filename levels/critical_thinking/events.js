@@ -147,16 +147,18 @@ module.exports = function(event, world) {
 
 
   //
-  // TODO: Objective 4
+  // TODO: Combine all viewpoint cutscenes for mapDidLoad into one place.
   // 
+
+  // When the objective 1.4 room has been entered, show a quick cutscene.
   if (
     event.name === 'mapDidLoad' &&
     event.mapName === 'objective4room' &&
     !world.isObjectiveCompleted("objective1_4_knowledge")
   ) {
     world.forEachEntities("final_viewpoint", async (viewpoint) => {
-      await world.wait(500);
       world.disablePlayerMovement();
+      await world.wait(500);
       await world.tweenCameraToPosition({
         x: viewpoint.startX,
         y: viewpoint.startY,
@@ -168,7 +170,7 @@ module.exports = function(event, world) {
   }
 
   //
-  // TODO: Combine together cutscenes when objectiveDidClose
+  // TODO: Combine together cutscenes when objectiveDidClose to one module
   //
 
   // When the fallacy maze is finished, show the player that the gates have been unlocked.

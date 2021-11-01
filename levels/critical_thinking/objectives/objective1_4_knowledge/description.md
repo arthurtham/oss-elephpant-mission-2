@@ -11,8 +11,12 @@
 
 After completing the two practice stations where you examined famous court cases in need of critical thinkinking and analysis, reviewing several logical fallacies, and gaining a deeper understanding of what critical thinking is, complete these knowledge check questions to open the gate to the next challenge. 
 
-<table style="border:none">
-<tr><th><h1 style="border:0px !important">Critical Thinking Challenge</h1></th></tr>
+<br>
+<br>
+<br>
+
+<table style="border:none !important">
+<tr><th style="border:none !important"><h1>Critical Thinking Challenge</h1></th></tr>
 <tr><td>
 <strong>1. The "Slippery Slope Fallacy" is an example of which type of critical thinking mistake: </strong>
 <ol type="a">
