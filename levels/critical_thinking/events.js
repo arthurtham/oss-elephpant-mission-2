@@ -145,6 +145,29 @@ module.exports = function(event, world) {
     console.log("processConversationEvents completed");
   }
 
+
+  //
+  // TODO: Objective 4
+  // 
+  if (
+    event.name === 'mapDidLoad' &&
+    event.mapName === 'objective4room' &&
+    !world.isObjectiveCompleted("objective1_4_knowledge")
+  ) {
+    world.forEachEntities("final_viewpoint", async (viewpoint) => {
+      await world.wait(500);
+      world.disablePlayerMovement();
+      await world.tweenCameraToPosition({
+        x: viewpoint.startX,
+        y: viewpoint.startY,
+      });
+      await world.wait(1500);
+      await world.tweenCameraToPlayer();
+      world.enablePlayerMovement();
+    });
+  }
+
+
   // When the fallacy maze is finished, show the player that the gates have been unlocked.
   if (
     event.name === 'objectiveDidClose' &&

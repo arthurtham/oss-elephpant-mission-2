@@ -307,6 +307,24 @@
                  "width":61.3333333333334,
                  "x":233.333333333333,
                  "y":120
+                }, 
+                {
+                 "height":0,
+                 "id":177,
+                 "name":"final_viewpoint",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"final_viewpoint"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":264,
+                 "y":113.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -368,7 +386,7 @@
          "y":0
         }],
  "nextlayerid":47,
- "nextobjectid":177,
+ "nextobjectid":178,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
