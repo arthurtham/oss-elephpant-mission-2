@@ -167,6 +167,9 @@ module.exports = function(event, world) {
     });
   }
 
+  //
+  // TODO: Combine together cutscenes when objectiveDidClose
+  //
 
   // When the fallacy maze is finished, show the player that the gates have been unlocked.
   if (
@@ -176,7 +179,6 @@ module.exports = function(event, world) {
     world.isObjectiveCompleted('objective1_3_fallacies')
   ) {
     // Now, show that the gate has been revealed!  
-    console.log("POGGERS");
     world.forEachEntities("fallacy_mission_complete_viewpoint", async (viewpoint) => {
       world.disablePlayerMovement();
 
@@ -194,6 +196,27 @@ module.exports = function(event, world) {
 
       await world.tweenCameraToPlayer();
 
+      world.enablePlayerMovement();
+    });
+  }
+
+  // When the concept trains objective is finished, show the player the location of the next area.
+  if (
+    event.name === 'objectiveDidClose' &&
+    event.target.objectiveName === 'objective1_2_concept' &&
+    world.isObjectiveCompleted('objective1_2_concept') &&
+    !world.isObjectiveCompleted('objective1_2_brainteaser')
+  ) {
+    // Now, show that the gate has been revealed!  
+    world.forEachEntities("viewpoint", async (viewpoint) => {
+      world.disablePlayerMovement();
+
+      await world.tweenCameraToPosition({
+        x: viewpoint.startX,
+        y: viewpoint.startY,
+      });
+      await world.wait(1500);
+      await world.tweenCameraToPlayer();
       world.enablePlayerMovement();
     });
   }

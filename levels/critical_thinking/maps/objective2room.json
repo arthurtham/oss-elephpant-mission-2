@@ -153,7 +153,7 @@
                         {
                          "name":"conversationAvatar",
                          "type":"string",
-                         "value":"meganNeutral.png"
+                         "value":"chiaraNeutral.png"
                         }, 
                         {
                          "name":"spritesheet",
@@ -164,8 +164,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":211.890834822906,
-                 "y":144.193142055611
+                 "x":211.224168156239,
+                 "y":168.193142055611
                 }, 
                 {
                  "gid":10012,
@@ -378,6 +378,24 @@
                  "width":48.640299270073,
                  "x":123.068957608085,
                  "y":386.37669365525
+                }, 
+                {
+                 "height":0,
+                 "id":186,
+                 "name":"viewpoint",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"viewpoint"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":284,
+                 "y":136
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -439,7 +457,7 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":186,
+ "nextobjectid":187,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
