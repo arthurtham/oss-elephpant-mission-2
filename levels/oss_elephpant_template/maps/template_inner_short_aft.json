@@ -50,7 +50,7 @@
          "name":"Objects",
          "objects":[
                 {
-                 "height":13.4528280085505,
+                 "height":7.69983165628369,
                  "id":138,
                  "name":"exit",
                  "properties":[
@@ -118,8 +118,8 @@
                  "rotation":0,
                  "type":"levelChange",
                  "visible":true,
-                 "width":16.3121,
-                 "x":508.34395,
+                 "width":6.08455092930349,
+                 "x":518.571499070697,
                  "y":80.2736
                 }, 
                 {
@@ -140,9 +140,67 @@
                  "rotation":0,
                  "type":"levelChange",
                  "visible":true,
-                 "width":16.3121,
+                 "width":5.44532911238493,
                  "x":2.84395,
                  "y":77.2736
+                }, 
+                {
+                 "height":0,
+                 "id":162,
+                 "name":"player_entry_left_upper",
+                 "point":true,
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":47.94163626889,
+                 "y":72.8712871287129
+                }, 
+                {
+                 "height":0,
+                 "id":163,
+                 "name":"player_entry_right_upper",
+                 "point":true,
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":455.765155462915,
+                 "y":72.2320653117943
+                }, 
+                {
+                 "height":0,
+                 "id":164,
+                 "name":"player_entry_upper",
+                 "point":true,
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":246.100399513636,
+                 "y":47.94163626889
+                }, 
+                {
+                 "height":5.11894556192463,
+                 "id":165,
+                 "name":"exit",
+                 "properties":[
+                        {
+                         "name":"levelName",
+                         "type":"string",
+                         "value":"fog_owl"
+                        }, 
+                        {
+                         "name":"playerEntryPoint",
+                         "type":"string",
+                         "value":"player_entry_lower"
+                        }],
+                 "rotation":0,
+                 "type":"levelChange",
+                 "visible":true,
+                 "width":89.183388016328,
+                 "x":219.087305470731,
+                 "y":330.155482925135
                 }],
          "opacity":1,
          "properties":[
@@ -201,10 +259,10 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":162,
+ "nextobjectid":166,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {

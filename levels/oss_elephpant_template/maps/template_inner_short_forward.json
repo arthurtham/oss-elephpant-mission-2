@@ -50,7 +50,7 @@
          "name":"Objects",
          "objects":[
                 {
-                 "height":13.4528280085505,
+                 "height":7.06060983936514,
                  "id":138,
                  "name":"exit",
                  "properties":[
@@ -73,23 +73,23 @@
                  "type":"levelChange",
                  "visible":true,
                  "width":93.312091975273,
-                 "x":215.870731989139,
-                 "y":314.177739904096
+                 "x":217.149175622976,
+                 "y":327.601398059385
                 }, 
                 {
                  "height":0,
                  "id":152,
-                 "name":"player_entry_top",
+                 "name":"player_entry_upper",
                  "point":true,
                  "rotation":0,
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":263.086395233366,
-                 "y":121.298576630256
+                 "x":241.352853458136,
+                 "y":88.6982639674108
                 }, 
                 {
-                 "height":95.051638530288,
+                 "height":47.1100022613979,
                  "id":157,
                  "name":"eleDialogTrigger",
                  "properties":[
@@ -114,8 +114,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":477.295928500497,
-                 "y":225.926514399206
+                 "x":458.119273992941,
+                 "y":193.965423553279
                 }, 
                 {
                  "height":0,
@@ -126,8 +126,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":55.5312810327706,
-                 "y":225.185700099305
+                 "x":47.2213974128297,
+                 "y":191.306943802623
                 }, 
                 {
                  "height":0,
@@ -138,8 +138,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":263.913604766634,
-                 "y":289.20953326713
+                 "x":239.62317572373,
+                 "y":264.279882407307
                 }, 
                 {
                  "height":66.4528,
@@ -164,8 +164,8 @@
                  "rotation":0,
                  "type":"levelChange",
                  "visible":true,
-                 "width":17.3121,
-                 "x":506.34395,
+                 "width":6.44532911238498,
+                 "x":517.210720887615,
                  "y":194.2736
                 }, 
                 {
@@ -191,7 +191,7 @@
                  "rotation":0,
                  "type":"levelChange",
                  "visible":true,
-                 "width":17.3121,
+                 "width":6.44532911238493,
                  "x":3.34395000000001,
                  "y":193.7736
                 }, 
@@ -219,8 +219,8 @@
                  "type":"levelChange",
                  "visible":true,
                  "width":92.337919265144,
-                 "x":217.417435600794,
-                 "y":60.2626764647468
+                 "x":216.778213783875,
+                 "y":32.7761383372498
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -271,7 +271,7 @@
  "nextobjectid":166,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
