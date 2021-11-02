@@ -11,7 +11,7 @@ const fallacies = worldState.CriticalThinking.fallacies;
 </ul>
 </div>
 
-In order to pass this gate, you must interact with at least 3 fallacy chalkboards and get their questions correctly answered. Come back here and press __HACK__ once you have enough of those objectives completed!
+In order to pass this gate, you must interact with at least 3 fallacy stations, shown as chalkboards, and get their questions correctly answered. Come back here and press __HACK__ once you have enough of those objectives completed!
 
 To help you out, Ele has provided you with a status table:
 
