@@ -223,6 +223,15 @@ module.exports = function(event, world) {
     });
   }
 
+  // Get all textareas and wrap them around
+  if (
+    event.name === "objectiveDidOpen"
+  ) {
+    document.querySelectorAll("textarea").forEach( element => {
+      element.style.whiteSpace = "normal";
+    })
+  }
+
   // Save state
   world.setState("com.twilioquest.CriticalThinking", worldState);
 }
