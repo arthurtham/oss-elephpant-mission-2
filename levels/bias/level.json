@@ -15,6 +15,7 @@
   "flavorTextOverrides": {
   },
   "objectives": [
-    "objective2_1_definebias"
+    "objective2_1_definebias",
+    "objective2_2_schemaseeds"
   ]
 }

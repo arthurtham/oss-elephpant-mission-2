@@ -1,0 +1,33 @@
+{
+  "title": "Sorting Test",
+  "description": "Sorting",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Refer to the questions in the <strong>Objectives</strong> tab and answer them below!"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "1,2,3,4,5",
+      "label": "Sorted answer 1"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "1,2,3,4,5",
+      "label": "Sorted answer 2"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "1,2,3,4,5",
+      "label": "Sorted answer 3"
+    }
+  ],
+  "rewards": {
+    "xp": 400
+  }
+}
