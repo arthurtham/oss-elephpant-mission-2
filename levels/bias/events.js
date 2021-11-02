@@ -5,36 +5,12 @@ const { processConversationEvents, setupConversation } = require("./events/conve
 const levelJson = require("./level.json");
 
 const DEFAULT_MISSION_STATE = {
-  CriticalThinking: {
+  Bias: {
     conversations: {
       ele: {
         current: 'none',
         all: false,
-        objective1_1_photo_pre: {
-          current: 'none',
-          complete: false
-        },
-        objective1_1_photo_post: {
-          current: 'none',
-          complete: false
-        },
-        objective1_2_brainteaser_pre: {
-          current: 'none',
-          complete: false
-        },
-        objective1_3_fallacies_pre: {
-          current: 'none',
-          complete: false
-        },
-        objective1_3_fallacies_post: {
-          current: 'none',
-          complete: false
-        },
-        objective1_4_knowledge_post: {
-          current: 'none',
-          complete: false
-        },
-        objective1_4_worstauntever_post: {
+        objective2_1_definebias_pre: {
           current: 'none',
           complete: false
         },
@@ -48,29 +24,20 @@ const DEFAULT_MISSION_STATE = {
       }
     },
     photos: {
-    },
-    fallacies: {
-      fallacyStationsCompleted: 0,
-      objective1_3_fallacies_1: false,
-      objective1_3_fallacies_2: false,
-      objective1_3_fallacies_3: false,
-      objective1_3_fallacies_4: false,
-      objective1_3_fallacies_5: false,
-      canPass: false,
     }
   }
 }
 
 module.exports = function(event, world) {
-  console.log(`Critical Thinking: ${event.name}`);
+  console.log(`Bias: ${event.name}`);
   console.log(event);
 
   //DEBUG: Disable cache
   window.reloadExternalModules = true;
 
-  let worldState = world.getState("com.twilioquest.CriticalThinking") || DEFAULT_MISSION_STATE;
+  let worldState = world.getState("com.twilioquest.Bias") || DEFAULT_MISSION_STATE;
 
-  /*if (event.name === 'levelDidLoad') {
+  if (event.name === 'levelDidLoad') {
     console.log("levelDidLoad: resetting default state for debugging");
     worldState = DEFAULT_MISSION_STATE;
     //DEBUG: Reset all objectives
@@ -78,10 +45,10 @@ module.exports = function(event, world) {
     levelJson.objectives.forEach (objective => {
       if (world.isObjectiveCompleted(objective)) {
         console.log(objective);
-        world.removeObjective("critical_thinking", objective);
+        world.removeObjective("bias", objective);
       }
     })
-  }*/
+  }
 
   //const worldState = DEFAULT_MISSION_STATE;
   console.log("World State");
@@ -104,9 +71,9 @@ module.exports = function(event, world) {
     const preObjectiveConversations = ["objective1_1_photo", "objective1_2_brainteaser", "objective1_3_fallacies"];
     if (preObjectiveConversations.includes(event.objective)) {
       let pre = event.objective + "_pre";
-      worldState['CriticalThinking']['conversations']['ele'][pre]['current'] = "none";
-      worldState['CriticalThinking']['conversations']['ele'][pre]['complete'] = true;
-      worldState.CriticalThinking.conversations.ele.current = "none";
+      worldState['Bias']['conversations']['ele'][pre]['current'] = "none";
+      worldState['Bias']['conversations']['ele'][pre]['complete'] = true;
+      worldState.Bias.conversations.ele.current = "none";
     }
     // Some missions can be completed and prompt a conversational dialogue from Ele.
     const postObjectiveConversations = ["objective1_1_photo", "objective1_4_worstauntever", "objective1_4_knowledge"];
@@ -114,25 +81,9 @@ module.exports = function(event, world) {
       let chat = event.objective + "_post";
       let post = 'ele_' + chat;
       setupConversation(world, worldState, post);
-      worldState['CriticalThinking']['conversations']['ele'][chat]['current'] = "none";
-      worldState['CriticalThinking']['conversations']['ele'][chat]['complete'] = true;
-      worldState.CriticalThinking.conversations.ele.current = "none";
-    }
-    // Fallacy missions are tracked as their own category
-    if (event.objective.indexOf("objective1_3_fallacies_") >= 0) {
-      console.log("Fallacies");
-      let fallacies = worldState.CriticalThinking.fallacies;
-      fallacies[event.objective] = true;
-      // Update count of fallacyStationsCompleted
-      fallacies.fallacyStationsCompleted = (
-          fallacies.objective1_3_fallacies_1+
-          fallacies.objective1_3_fallacies_2+
-          fallacies.objective1_3_fallacies_3+
-          fallacies.objective1_3_fallacies_4+
-          fallacies.objective1_3_fallacies_5
-      )
-      fallacies.canPass = fallacies.fallacyStationsCompleted >= 3;
-      worldState.CriticalThinking.fallacies = fallacies;
+      worldState['Bias']['conversations']['ele'][chat]['current'] = "none";
+      worldState['Bias']['conversations']['ele'][chat]['complete'] = true;
+      worldState.Bias.conversations.ele.current = "none";
     }
   }
 
@@ -145,84 +96,6 @@ module.exports = function(event, world) {
     console.log("processConversationEvents completed");
   }
 
-
-  //
-  // TODO: Combine all viewpoint cutscenes for mapDidLoad into one place.
-  // 
-
-  // When the objective 1.4 room has been entered, show a quick cutscene.
-  if (
-    event.name === 'mapDidLoad' &&
-    event.mapName === 'objective4room' &&
-    !world.isObjectiveCompleted("objective1_4_knowledge")
-  ) {
-    world.forEachEntities("final_viewpoint", async (viewpoint) => {
-      world.disablePlayerMovement();
-      await world.wait(500);
-      await world.tweenCameraToPosition({
-        x: viewpoint.startX,
-        y: viewpoint.startY,
-      });
-      await world.wait(1500);
-      await world.tweenCameraToPlayer();
-      world.enablePlayerMovement();
-    });
-  }
-
-  //
-  // TODO: Combine together cutscenes when objectiveDidClose to one module
-  //
-
-  // When the fallacy maze is finished, show the player that the gates have been unlocked.
-  if (
-    event.name === 'objectiveDidClose' &&
-    event.target.objectiveName === 'objective1_3_fallacies' &&
-    worldState['CriticalThinking']['conversations']['ele']['objective1_3_fallacies_post']['complete'] === false &&
-    world.isObjectiveCompleted('objective1_3_fallacies')
-  ) {
-    // Now, show that the gate has been revealed!  
-    world.forEachEntities("fallacy_mission_complete_viewpoint", async (viewpoint) => {
-      world.disablePlayerMovement();
-
-      await world.tweenCameraToPosition({
-        x: viewpoint.startX,
-        y: viewpoint.startY,
-      });
-      await world.wait(1500);
-
-      let chat = "objective1_3_fallacies_post";
-      setupConversation(world, worldState, "ele_"+chat)
-      worldState['CriticalThinking']['conversations']['ele'][chat]['current'] = "none";
-      worldState['CriticalThinking']['conversations']['ele'][chat]['complete'] = true;
-      worldState.CriticalThinking.conversations.ele.current = "none";
-
-      await world.tweenCameraToPlayer();
-
-      world.enablePlayerMovement();
-    });
-  }
-
-  // When the concept trains objective is finished, show the player the location of the next area.
-  if (
-    event.name === 'objectiveDidClose' &&
-    event.target.objectiveName === 'objective1_2_concept' &&
-    world.isObjectiveCompleted('objective1_2_concept') &&
-    !world.isObjectiveCompleted('objective1_2_brainteaser')
-  ) {
-    // Now, show that the gate has been revealed!  
-    world.forEachEntities("viewpoint", async (viewpoint) => {
-      world.disablePlayerMovement();
-
-      await world.tweenCameraToPosition({
-        x: viewpoint.startX,
-        y: viewpoint.startY,
-      });
-      await world.wait(1500);
-      await world.tweenCameraToPlayer();
-      world.enablePlayerMovement();
-    });
-  }
-
   // Get all textareas and wrap them around
   if (
     event.name === "objectiveDidOpen"
@@ -233,5 +106,5 @@ module.exports = function(event, world) {
   }
 
   // Save state
-  world.setState("com.twilioquest.CriticalThinking", worldState);
+  world.setState("com.twilioquest.Bias", worldState);
 }

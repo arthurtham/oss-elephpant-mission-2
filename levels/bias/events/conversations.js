@@ -5,11 +5,11 @@
   }
 
   function setupConversation(world, worldState, name) {
-    if (worldState.CriticalThinking.conversations.ele.current === "none") {
-      worldState.CriticalThinking.conversations.ele.current = name;
-      console.log("start ele chat: " + worldState.CriticalThinking.conversations.ele.current);
+    if (worldState.Bias.conversations.ele.current === "none") {
+      worldState.Bias.conversations.ele.current = name;
+      console.log("start ele chat: " + worldState.Bias.conversations.ele.current);
     } else {
-      console.log("continue ele chat: " + worldState.CriticalThinking.conversations.ele.current);
+      console.log("continue ele chat: " + worldState.Bias.conversations.ele.current);
     }
     if (name.indexOf("_pre") >= 0) {
       name = 'eleChats';
@@ -21,12 +21,12 @@
     //console.log('processConversationEvents (' + name + ')');
     const key = event.target ? event.target.key : name;
     console.log('key: ' + key);
-    console.log(worldState.CriticalThinking.conversations.ele);
+    console.log(worldState.Bias.conversations.ele);
 
-    if (worldState.CriticalThinking.conversations.ele[key]['complete'] === false) {
+    if (worldState.Bias.conversations.ele[key]['complete'] === false) {
       setupConversation(world, worldState, key);
     } else {
-      worldState.CriticalThinking.conversations.ele.current = "none";
+      worldState.Bias.conversations.ele.current = "none";
     }
   }
 

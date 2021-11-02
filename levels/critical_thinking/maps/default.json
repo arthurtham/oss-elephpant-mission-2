@@ -50,23 +50,6 @@
          "name":"Objects",
          "objects":[
                 {
-                 "height":74.0530985727844,
-                 "id":157,
-                 "name":"eleDialogTrigger",
-                 "properties":[
-                        {
-                         "name":"key",
-                         "type":"string",
-                         "value":"objective1_1_photo_pre"
-                        }],
-                 "rotation":0,
-                 "type":"triggerArea",
-                 "visible":true,
-                 "width":426.075471698113,
-                 "x":28.3638733567657,
-                 "y":406.685896126656
-                }, 
-                {
                  "height":10,
                  "id":162,
                  "name":"exit",
@@ -124,8 +107,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":252.387572823568,
-                 "y":407.823100182059
+                 "x":242.387572823568,
+                 "y":383.823100182059
                 }, 
                 {
                  "height":0,
@@ -136,8 +119,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":35.5918098311814,
-                 "y":431.697647351871
+                 "x":65.5918098311814,
+                 "y":429.697647351871
                 }, 
                 {
                  "gid":10013,

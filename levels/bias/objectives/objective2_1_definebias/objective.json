@@ -1,0 +1,33 @@
+{
+  "title": "Define Bias",
+  "description": "Identify types of bias and reflect on your own growth areas.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Answer the three questions below based on the video in the \"Objective\" tab, then press the __HACK__ button."
+    },
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "(a,b,c,d,e)",
+      "label": "If you have a brain, then you have a bias."
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "Which type of bias do you think you might need the most help recognising within yourself?"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "Which bias do you feel will be the most important to overcome in the new colony? Why?"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

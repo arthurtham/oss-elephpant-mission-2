@@ -1,3 +1,5 @@
+const assert = require("assert");
+
 function isMCOptionValid(playerAnswer = '') {
     if (playerAnswer.length != 1) {
         return false;

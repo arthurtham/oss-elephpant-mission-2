@@ -1,5 +1,5 @@
-- var worldState = getState('com.twilioquest.CriticalThinking');
-- var ele = worldState.CriticalThinking.conversations.ele;
+- var worldState = getState('com.twilioquest.Bias');
+- var ele = worldState.Bias.conversations.ele;
 - var step = ele[ele.current]['current']
 
 // Converstions
@@ -57,9 +57,14 @@ conversation(display_name="ELE-AI")
         <br><br>
         You must be equipped to recognize and defuse unsound conjecture before it can negatively impact your team. That will require a strong understanding of logical fallacies.
       responses
+  else if ele.current === "objective2_1_definebias_pre"
+      - ele[ele.current]['complete'] = true;
+      statement.
+        Welcome to define bias mission 
+      responses
   else
     statement.
       You've reached this conversation in error.
 // Flush world state changes, if any
-- worldState.CriticalThinking.conversations.ele = ele;
-- setState('com.twilioquest.CriticalThinking', worldState);
+- worldState.Bias.conversations.ele = ele;
+- setState('com.twilioquest.Bias', worldState);
