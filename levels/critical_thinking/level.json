@@ -1,7 +1,7 @@
 {
   "title": "OSS ElePHPant",
   "description": "Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.",
-  "questTitle": "Critical Thinking",
+  "questTitle": "OSS ElePHPant: Critical Thinking",
   "questDescription": "Good morning, future colonist!",
   "is_mission": false,
   "priority": 10,
@@ -18,7 +18,6 @@
     }
   },
   "flavorTextOverrides": {
-    "bookshelf": "There's nothing like a good book."
   },
   "objectives": [
     "objective1_1_photo",
