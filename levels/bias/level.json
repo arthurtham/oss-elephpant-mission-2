@@ -1,0 +1,19 @@
+{
+  "title": "OSS ElePHPant",
+  "description": "Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.",
+  "questTitle": "OSS ElePHPant: Bias",
+  "questDescription": "Good morning, future colonist!",
+  "is_mission": false,
+  "priority": 10,
+  "backgroundMusic": "overture_b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "direction": "leftToRight"
+    }
+  },
+  "flavorTextOverrides": {
+  },
+  "objectives": [
+  ]
+}

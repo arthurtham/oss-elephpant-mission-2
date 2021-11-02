@@ -123,12 +123,12 @@
                         {
                          "name":"levelName",
                          "type":"string",
-                         "value":"critical_thinking"
+                         "value":"bias"
                         }, 
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"objective5room"
+                         "value":"objective1room"
                         }, 
                         {
                          "name":"playerEntryPoint",
@@ -285,7 +285,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":""
+                         "value":"objective1_4_knowledge"
                         }],
                  "rotation":0,
                  "type":"",

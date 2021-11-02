@@ -148,24 +148,24 @@
                         {
                          "name":"hackable",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }, 
                         {
                          "name":"hidden",
                          "type":"bool",
-                         "value":true
+                         "value":false
                         }, 
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"turtle_facts"
+                         "value":"objective1_4_knowledge"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":396.427024991724,
-                 "y":402.64037591857
+                 "x":68.427024991724,
+                 "y":438.64037591857
                 }, 
                 {
                  "height":68.3451191658391,
@@ -175,12 +175,12 @@
                         {
                          "name":"levelName",
                          "type":"string",
-                         "value":"critical_thinking"
+                         "value":"bias"
                         }, 
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"objective5room"
+                         "value":"objective1room"
                         }, 
                         {
                          "name":"playerEntryPoint",
@@ -242,7 +242,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":""
+                         "value":"objective1_4_knowledge"
                         }],
                  "rotation":0,
                  "type":"",
