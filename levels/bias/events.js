@@ -4,6 +4,8 @@ const { processConversationEvents, setupConversation } = require("./events/conve
 
 const levelJson = require("./level.json");
 
+const { viewpointEvent } = require("./events/viewpointcutscenes");
+
 const DEFAULT_MISSION_STATE = {
   Bias: {
     conversations: {
@@ -11,6 +13,10 @@ const DEFAULT_MISSION_STATE = {
         current: 'none',
         all: false,
         objective2_1_definebias_pre: {
+          current: 'none',
+          complete: false
+        },
+        objective2_2_schemaseeds_pre: {
           current: 'none',
           complete: false
         },
@@ -104,6 +110,9 @@ module.exports = function(event, world) {
       element.style.whiteSpace = "normal";
     })
   }
+
+  // Viewpoint Cutscenes
+  viewpointEvent(world, worldState, event);
 
   // Save state
   world.setState("com.twilioquest.Bias", worldState);

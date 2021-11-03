@@ -47,20 +47,15 @@ conversation(display_name="ELE-AI")
       responses
         response#you_will_what.
           You're going to help me do what now?
-  else if ele.current === "objective1_2_brainteaser_pre"
-      statement.
-        Welcome to the classroom! Please proceed to the right.
-      responses
-  else if ele.current === "objective1_3_fallacies_pre"
-      statement.
-        The Evil Legacy Systems use misinformation to obscure their evil plots and flood communication channels with tricks designed to create confusion and cloud judgement -- preventing people from developing solid critical thinking habits.
-        <br><br>
-        You must be equipped to recognize and defuse unsound conjecture before it can negatively impact your team. That will require a strong understanding of logical fallacies.
-      responses
   else if ele.current === "objective2_1_definebias_pre"
       - ele[ele.current]['complete'] = true;
       statement.
         Welcome to define bias mission 
+      responses
+  else if ele.current === "objective2_2_schemaseeds_pre"
+      - ele[ele.current]['complete'] = true;
+      statement.
+        You should talk to them (linkedin thingy blah blah blah blah)
       responses
   else
     statement.
