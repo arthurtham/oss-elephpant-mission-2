@@ -9,7 +9,7 @@
 </ul>
 </div>
 
-After completing the two practice stations where you examined famous court cases in need of critical thinkinking and analysis, reviewing several logical fallacies, and gaining a deeper understanding of what critical thinking is, complete these knowledge check questions to open the gate to the next challenge. 
+After completing the two practice stations where you examined famous court cases in need of critical thinking and analysis, reviewing several logical fallacies, and gaining a deeper understanding of what critical thinking is, complete these knowledge check questions to open the gate to the next challenge. 
 
 <br>
 <br>
