@@ -1,3 +1,24 @@
+# OSS Elephpant: Good Morning, Future Colonist!
+
+Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.
+
+Investigate the terminals to gain knowledge on how to critically think as a future colonist on the OSS Elephpant. Interestingly, no coding is required to pass the training! 
+
+# Current Lessons
+1. Critical Thinking
+2. (Work in progress!)
+
+
+# Installation
+After cloning the repository to your local computer, install the extension's dependencies by opening your command prompt/terminal, navigating to the extension's local directory, and running:
+```
+npm install
+```
+
+# Enabling This Extension
+See [Enabling extensions](#enabling-extensions)
+
+
 # TwilioQuest Extension Template
 Interested in creating an extension for TwilioQuest? You've come to the right place! Using this repository as a template, you can create new levels, objectives, characters, and items in TwilioQuest.
 
