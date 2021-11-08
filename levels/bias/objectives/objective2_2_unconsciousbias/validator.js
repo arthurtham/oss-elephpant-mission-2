@@ -16,19 +16,18 @@ module.exports = async function (helper) {
     }
 
     if (!(
-        isMCOptionCorrect(answer1,"c") &&
-        isMCOptionCorrect(answer2,"b") &&
+        isTrueFalseCorrect(answer1, true) &&
+        isTrueFalseCorrect(answer2, false) &&
         isTrueFalseCorrect(answer3, true) &&
-        isMCOptionCorrect(answer4,"b") &&
-        isMCOptionCorrect(answer5,"a")
+        isTrueFalseCorrect(answer4, false)
     )) {
         return helper.fail(`
-        Uh oh! Looks like you missed something. Watch the videos again and try answering one more time.
+        Uh oh! Looks like you didn’t get it quite right. Try watching the videos one more time.
         `);
     }
 
     return helper.success(`
-    Great job! You are on your way to learn more about how these biases can impact you and the people around you.
+    Correct! Bias can be a sneaky little bugger. It’s great that you are embarking on this learning to be able to better recognize and identify it.
     `)
 
 };
