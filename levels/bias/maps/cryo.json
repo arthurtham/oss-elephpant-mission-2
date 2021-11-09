@@ -326,6 +326,24 @@
                  "width":24,
                  "x":766.666666666667,
                  "y":1764.66666666667
+                }, 
+                {
+                 "gid":10013,
+                 "height":72,
+                 "id":183,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"objective2_3_predictingmeasuring"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":715.333333333333,
+                 "y":1764.66666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -373,7 +391,7 @@
          "y":0
         }],
  "nextlayerid":47,
- "nextobjectid":183,
+ "nextobjectid":184,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
