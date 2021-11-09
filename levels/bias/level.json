@@ -16,6 +16,9 @@
   },
   "objectives": [
     "objective2_1_definebias",
-    "objective2_2_schemaseeds"
+    "objective2_2_schemaseeds",
+    "objective2_2_blindspots",
+    "objective2_2_unconsciousbias",
+    "objective2_2_unconsciousbiaspractice"
   ]
 }
