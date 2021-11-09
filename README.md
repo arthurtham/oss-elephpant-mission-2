@@ -8,9 +8,16 @@ Investigate the terminals to gain knowledge on how to critically think as a futu
 1. Critical Thinking
 2. (Work in progress!)
 
+# Credits
+- Senior Game Designer and Programmer: Margaret Staples
+- Junior Game Designer and Programmer: Arthur Tham
+- Cirriculum Designer: Jayla Watje
+- Japanese Translator: Amoretta Cockerham
 
 # Installation
-After cloning the repository to your local computer, install the extension's dependencies by opening your command prompt/terminal, navigating to the extension's local directory, and running:
+The project is available under the **releases** section of the repository.
+
+Alternatively, you can clone the repository to your local computer, and install the extension's dependencies by opening your command prompt/terminal, navigating to the extension's local directory, and running:
 ```
 npm install
 ```
