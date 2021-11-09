@@ -1,0 +1,40 @@
+{
+  "title": "Logical Fallacies 1: The Rashomon Effect",
+  "description": "Examine factors that impact good critical thinking!",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "What is one key idea of the Rashomon effect?"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "a, b, c, d, e",
+      "label": "Enter the letter corresponding to the answer:"
+    },
+    {
+      "name": "choice1",
+      "type": "prompt",
+      "placeholder": "choice1",
+      "label": "a) The notorious unreliability of eyewitnesses"
+    },
+    {
+      "name": "choice2",
+      "type": "prompt",
+      "placeholder": "choice2",
+      "label": "b) An event in which all individuals involved give the same description"
+    },
+    {
+      "name": "choice3",
+      "type": "prompt",
+      "placeholder": "choice3",
+      "label": "c) Eyewitness accounts are the most reliable"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": ["3d_glasses"]
+  }
+}

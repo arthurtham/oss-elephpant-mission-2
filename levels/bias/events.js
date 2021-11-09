@@ -30,6 +30,15 @@ const DEFAULT_MISSION_STATE = {
       }
     },
     photos: {
+    },
+    deepMaze: {
+      stationsCompleted: 0,
+      objective2_4_deepmaze_1: false,
+      objective2_4_deepmaze_2: false,
+      objective2_4_deepmaze_3: false,
+      objective2_4_deepmaze_4: false,
+      objective2_4_deepmaze_5: false,
+      canPass: false,
     }
   }
 }
@@ -91,6 +100,24 @@ module.exports = function(event, world) {
       worldState['Bias']['conversations']['ele'][chat]['complete'] = true;
       worldState.Bias.conversations.ele.current = "none";
     }
+
+    // Deep maze missions are tracked as their own category
+    if (event.objective.indexOf("objective2_4_deepmaze_") >= 0) {
+      console.log("Deep Maze");
+      let deepMaze = worldState.Bias.deepMaze;
+      deepMaze[event.objective] = true;
+      // Update count of fallacyStationsCompleted
+      deepMaze.fallacyStationsCompleted = (
+        deepMaze.objective1_3_fallacies_1+
+        deepMaze.objective1_3_fallacies_2+
+        deepMaze.objective1_3_fallacies_3+
+        deepMaze.objective1_3_fallacies_4+
+        deepMaze.objective1_3_fallacies_5
+      )
+      deepMaze.canPass = deepMaze.stationsCompleted >= 3;
+      worldState.Bias.deepMaze = deepMaze;
+    }
+
   }
 
   // Some areas trigger Ele to say something
