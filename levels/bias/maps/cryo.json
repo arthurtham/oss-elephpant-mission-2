@@ -354,7 +354,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"objective2_4_deepmaze"
+                         "value":"objective2_5_deepmaze"
                         }],
                  "rotation":0,
                  "type":"",
@@ -362,6 +362,18 @@
                  "width":24,
                  "x":551.333333333333,
                  "y":682
+                }, 
+                {
+                 "gid":10013,
+                 "height":72,
+                 "id":190,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":263.333333333333,
+                 "y":1733.33333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -423,7 +435,7 @@
          "y":0
         }],
  "nextlayerid":48,
- "nextobjectid":189,
+ "nextobjectid":191,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

@@ -48,11 +48,11 @@ To help you out, Ele has provided you with a status table:
 <tr><td colspan="5"><h1>Deepening Understanding Station Status</h1></td></tr>
 <tr><th colspan="5" style="text-align: center"><%= deepMaze.stationsCompleted %> of 5 Challenges Solved</th></tr>
 <tr>
-  <td class="<%= deepMaze.objective2_4_deepmaze_1 ? 'solved-station' : 'unsolved-station' %>">1</td>
-  <td class="<%= deepMaze.objective2_4_deepmaze_2 ? 'solved-station' : 'unsolved-station' %>">2</td>
-  <td class="<%= deepMaze.objective2_4_deepmaze_3 ? 'solved-station' : 'unsolved-station' %>">3</td>
-  <td class="<%= deepMaze.objective2_4_deepmaze_4 ? 'solved-station' : 'unsolved-station' %>">4</td>
-  <td class="<%= deepMaze.objective2_4_deepmaze_5 ? 'solved-station' : 'unsolved-station' %>">5</td>
+  <td class="<%= deepMaze.objective2_5_deepmaze_1 ? 'solved-station' : 'unsolved-station' %>">1</td>
+  <td class="<%= deepMaze.objective2_5_deepmaze_2 ? 'solved-station' : 'unsolved-station' %>">2</td>
+  <td class="<%= deepMaze.objective2_5_deepmaze_3 ? 'solved-station' : 'unsolved-station' %>">3</td>
+  <td class="<%= deepMaze.objective2_5_deepmaze_4 ? 'solved-station' : 'unsolved-station' %>">4</td>
+  <td class="<%= deepMaze.objective2_5_deepmaze_5 ? 'solved-station' : 'unsolved-station' %>">5</td>
 </tr>
 <% if (deepMaze.canPass) { %>
 <tr><td colspan="5" style="background-image: linear-gradient(0deg, rgba(62,214,167,1) 0%, rgba(0,255,59,1) 100%); border: 1px solid black"><h2>HACKABLE: PRESS "HACK" BUTTON </h2></td></tr>
