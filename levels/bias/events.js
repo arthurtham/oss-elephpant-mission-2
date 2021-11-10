@@ -39,6 +39,8 @@ const DEFAULT_MISSION_STATE = {
       objective2_5_deepmaze_4: false,
       objective2_5_deepmaze_5: false,
       canPass: false,
+      hasEnoughTimePassed: false,
+      current: "none"
     }
   }
 }
@@ -129,6 +131,40 @@ module.exports = function(event, world) {
     console.log("processConversationEvents completed");
   }
 
+  // Viewpoint Cutscenes
+  viewpointEvent(world, worldState, event);
+
+  // Deep Maze: Timer events (objective must be open for long enough)
+  // Open: track which one is opened and schedule a timer
+  if (
+    (event.name === "objectiveDidOpen") &&
+    (event.target.objectiveName.indexOf("objective2_5_deepmaze_") >= 0)
+  ) {
+    worldState.Bias.deepMaze.hasEnoughTimePassed = false;
+    worldState.Bias.deepMaze.current = event.target.objectiveName;
+    world.scheduleTimerEvent(payload = {type: "deepmaze", objectiveName: event.target.objectiveName}, timeout = 5000);
+    console.log("SCHEDULE TIMER");
+  }
+  // If the objective is closed, tell world state the objective isn't open anymore
+  if (
+    (event.name === "objectiveDidClose")
+  ) {
+    worldState.Bias.deepMaze.current = "none";
+    worldState.Bias.deepMaze.hasEnoughTimePassed = false;
+  }
+  // Timer: track if the objective has been opened long enough
+  if (
+    event.name === "timerDidTrigger" &&
+    event.type === "deepmaze"
+  ) {
+    if (event.objectiveName === worldState.Bias.deepMaze.current) {
+      worldState.Bias.deepMaze.hasEnoughTimePassed = true;
+      console.log("TIMER SUCCESS");
+    } else {
+      console.log("TIMER FAIL (objective name diff)");
+    }
+  }
+
   // Get all textareas and wrap them around
   if (
     event.name === "objectiveDidOpen"
@@ -137,9 +173,6 @@ module.exports = function(event, world) {
       element.style.whiteSpace = "normal";
     })
   }
-
-  // Viewpoint Cutscenes
-  viewpointEvent(world, worldState, event);
 
   // Save state
   world.setState("com.twilioquest.Bias", worldState);
