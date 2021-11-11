@@ -16,7 +16,7 @@ const DEFAULT_MISSION_STATE = {
           current: 'none',
           complete: false
         },
-        objective2_2_schemaseeds_pre: {
+        objective2_2_unconsciousbiaspractice_pre: {
           current: 'none',
           complete: false
         },

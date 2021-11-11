@@ -7,7 +7,7 @@ function viewpointEvent(world, worldState, event) {
         if (event.mapName === "cryo") {
             // TODO: criteria to introduce the player to the "LinkedIn NPCs"
             if (!world.isObjectiveCompleted("objective2_2_unconsciousbiaspractice")) {
-                    viewpointEventHelper(world, worldState, event, "viewpoint", "none")
+                    viewpointEventHelper(world, worldState, event, "viewpoint", "objective2_2_unconsciousbiaspractice_pre")
             }
         }
     }
@@ -18,6 +18,11 @@ function viewpointEvent(world, worldState, event) {
             (true) // TODO: Is objective 2.5.2 deep maze not completed?
         ) {
             viewpointEventHelper(world, worldState, event, "viewpoint_2", "none")
+        } else if (
+            (event.target.objectiveName === 'objective2_5_deepmaze') && // Is objective 2.5.2 complete?
+            (true) // TODO: Is objective 2.6 not completed?
+        ) {
+            viewpointEventHelper(world, worldState, event, "viewpoint_3", "none")
         }
     }
 }
