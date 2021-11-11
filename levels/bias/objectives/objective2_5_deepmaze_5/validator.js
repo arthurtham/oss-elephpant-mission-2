@@ -2,7 +2,7 @@ module.exports = async function (helper) {
     const worldState = helper.world.getState("com.twilioquest.Bias");
     const deepMaze = worldState.Bias.deepMaze;
 
-    if (!deepMaze.hasEnoughTimePassed) {
+    if (!worldState.Bias.objective.hasEnoughTimePassed) {
         return helper.fail(`Did you watch the video? Make sure you watch the video for a while to really understand its topics.`);
     }
     

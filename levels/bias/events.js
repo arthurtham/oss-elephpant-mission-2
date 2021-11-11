@@ -38,7 +38,9 @@ const DEFAULT_MISSION_STATE = {
       objective2_5_deepmaze_3: false,
       objective2_5_deepmaze_4: false,
       objective2_5_deepmaze_5: false,
-      canPass: false,
+      canPass: false
+    },
+    objective: {
       hasEnoughTimePassed: false,
       current: "none"
     }
@@ -137,28 +139,28 @@ module.exports = function(event, world) {
   // Deep Maze: Timer events (objective must be open for long enough)
   // Open: track which one is opened and schedule a timer
   if (
-    (event.name === "objectiveDidOpen") &&
-    (event.target.objectiveName.indexOf("objective2_5_deepmaze_") >= 0)
+    (event.name === "objectiveDidOpen") //&&
+    //(event.target.objectiveName.indexOf("objective2_5_deepmaze_") >= 0)
   ) {
-    worldState.Bias.deepMaze.hasEnoughTimePassed = false;
-    worldState.Bias.deepMaze.current = event.target.objectiveName;
-    world.scheduleTimerEvent(payload = {type: "deepmaze", objectiveName: event.target.objectiveName}, timeout = 30 * 1000);
+    worldState.Bias.objective.hasEnoughTimePassed = false;
+    worldState.Bias.objective.current = event.target.objectiveName;
+    world.scheduleTimerEvent(payload = {type: "objectiveTimer", objectiveName: event.target.objectiveName}, timeout = 5 * 1000);
     console.log("SCHEDULE TIMER");
   }
   // If the objective is closed, tell world state the objective isn't open anymore
   if (
     (event.name === "objectiveDidClose")
   ) {
-    worldState.Bias.deepMaze.current = "none";
-    worldState.Bias.deepMaze.hasEnoughTimePassed = false;
+    worldState.Bias.objective.current = "none";
+    worldState.Bias.objective.hasEnoughTimePassed = false;
   }
   // Timer: track if the objective has been opened long enough
   if (
     event.name === "timerDidTrigger" &&
-    event.type === "deepmaze"
+    event.type === "objectiveTimer"
   ) {
-    if (event.objectiveName === worldState.Bias.deepMaze.current) {
-      worldState.Bias.deepMaze.hasEnoughTimePassed = true;
+    if (event.objectiveName === worldState.Bias.objective.current) {
+      worldState.Bias.objective.hasEnoughTimePassed = true;
       console.log("TIMER SUCCESS");
     } else {
       console.log("TIMER FAIL (objective name diff)");

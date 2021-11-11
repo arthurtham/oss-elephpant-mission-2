@@ -3,8 +3,8 @@
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>View the <a href="https://www.youtube.com/watch?v=QHjsnzARgg0">video</a> on bias. </li>
-  <li>Think about the three questions listed below.</li>
+  <li>Watch the <a href="https://www.youtube.com/watch?v=hr9xAcWv790">video</a> on how to take the IAT. </li>
+  <li>Take the IAT in 2-3 categories.</li>
   <li>Click <em>HACK</em> to reveal the answer.</li>
 </ul>
 </div>
