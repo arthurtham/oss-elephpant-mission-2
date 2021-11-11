@@ -15,11 +15,13 @@ function viewpointEvent(world, worldState, event) {
     else if (event.name == "objectiveDidClose") {
         if (
             (event.target.objectiveName === 'example_objective') && // Is objective 2.5.1 complete?
+            (world.isObjectiveCompleted("example_objective")) &&
             (true) // TODO: Is objective 2.5.2 deep maze not completed?
         ) {
             viewpointEventHelper(world, worldState, event, "viewpoint_2", "none")
         } else if (
             (event.target.objectiveName === 'objective2_5_deepmaze') && // Is objective 2.5.2 complete?
+            (world.isObjectiveCompleted("objective2_5_deepmaze")) && 
             (true) // TODO: Is objective 2.6 not completed?
         ) {
             viewpointEventHelper(world, worldState, event, "viewpoint_3", "none")

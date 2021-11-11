@@ -109,7 +109,7 @@ module.exports = function(event, world) {
       let deepMaze = worldState.Bias.deepMaze;
       deepMaze[event.objective] = true;
       // Update count of fallacyStationsCompleted
-      deepMaze.fallacyStationsCompleted = (
+      deepMaze.stationsCompleted = (
         deepMaze.objective2_5_deepmaze_1+
         deepMaze.objective2_5_deepmaze_2+
         deepMaze.objective2_5_deepmaze_3+
@@ -142,7 +142,7 @@ module.exports = function(event, world) {
   ) {
     worldState.Bias.deepMaze.hasEnoughTimePassed = false;
     worldState.Bias.deepMaze.current = event.target.objectiveName;
-    world.scheduleTimerEvent(payload = {type: "deepmaze", objectiveName: event.target.objectiveName}, timeout = 5000);
+    world.scheduleTimerEvent(payload = {type: "deepmaze", objectiveName: event.target.objectiveName}, timeout = 30 * 1000);
     console.log("SCHEDULE TIMER");
   }
   // If the objective is closed, tell world state the objective isn't open anymore
