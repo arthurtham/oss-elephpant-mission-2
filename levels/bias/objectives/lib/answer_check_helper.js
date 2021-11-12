@@ -27,6 +27,9 @@ function isMCOptionCorrect(playerAnswer = '', correctAnswer = '') {
  * @returns true if the boolean answer is correct, and false otherwise.
  */
 function isTrueFalseCorrect(playerAnswer = '', correctAnswer = true) {
+    if ((!playerAnswer) || (!correctAnswer)) {
+        return false;
+    }
     assert (correctAnswer === true || correctAnswer === false);
     assert (playerAnswer === "true" || playerAnswer === "false");
     return correctAnswer === (playerAnswer === "true" ? true : false);
