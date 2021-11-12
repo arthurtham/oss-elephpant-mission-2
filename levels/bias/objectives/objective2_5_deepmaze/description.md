@@ -57,6 +57,6 @@ To help you out, Ele has provided you with a status table:
 <% if (deepMaze.canPass) { %>
 <tr><td colspan="5" style="background-image: linear-gradient(0deg, rgba(62,214,167,1) 0%, rgba(0,255,59,1) 100%); border: 1px solid black"><h2>HACKABLE: PRESS "HACK" BUTTON </h2></td></tr>
 <% } else { %>
-<tr><td colspan="5" style="background-color: pink;font-size:18px">LOCKED: 3 GREEN INDICATORS REQUIRED</td></tr> 
+<tr><td colspan="5" style="background-color: pink;font-size:18px">LOCKED: 4 GREEN INDICATORS REQUIRED</td></tr> 
 <% } %>
 </table>

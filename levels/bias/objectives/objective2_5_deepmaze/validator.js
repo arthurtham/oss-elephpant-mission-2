@@ -5,7 +5,7 @@ module.exports = async function (helper) {
   // Validator 1: Are enough stations solved?
   if (!deepMaze.canPass) {
     return helper.fail(`
-    Please visit at least 3 deepening understanding stations and hack them before hacking this station.
+    Please visit at least 4 deepening understanding stations and hack them before hacking this station.
     `);
   }
 

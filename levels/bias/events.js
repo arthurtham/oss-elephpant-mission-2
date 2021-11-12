@@ -118,7 +118,7 @@ module.exports = function(event, world) {
         deepMaze.objective2_5_deepmaze_4+
         deepMaze.objective2_5_deepmaze_5
       )
-      deepMaze.canPass = deepMaze.stationsCompleted >= 3;
+      deepMaze.canPass = deepMaze.stationsCompleted >= 4;
       worldState.Bias.deepMaze = deepMaze;
     }
 
