@@ -1,0 +1,49 @@
+script(type='text/javascript').
+  const path = require('path');
+  const fileUrl = require('file-url');
+
+  function getImageUrl(extRelativePath) {
+    try {
+      const imagePath = path.join(context.extensions.directory,'bias',extRelativePath);
+      return fileUrl(imagePath)
+    } catch (e) {
+      console.log('embedded image path not found:', path);
+      console.log(e);
+      // A default image that exists in the app bundle
+      return 'images/app/shield.png'; 
+    }
+  }
+
+conversation(display_name="Corey")
+  case lastResponse
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#corey
+      responses
+        response#nice_to_meet.
+          Nice to meet you!
+        response#you_seem_nice.
+          You seem nice!
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          Hello, who are you?
+
+  statements
+    statement#default
+      text.
+        Welcome aboard the #[span.highlight Fog Owl!]
+      speech.
+        Welcome aboard the #[break(strength="medium")] Fog Owl!
+    statement#corey
+      text.
+        Hi there! My name is Corey. And my LinkedIn is at <a href=getImageUrl("images/conversations/ryan.jpg") target="_blank">this link</a>!
+    statement#final
+      text.
+        Thank you!

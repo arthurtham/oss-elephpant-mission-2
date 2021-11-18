@@ -1,0 +1,27 @@
+{
+  "title": "Objective Simulator",
+  "description": "Description",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Fill in your team using the letter responses below:"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "(a, b, c)",
+      "label": "Candidate 1:"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "(a, b, c)",
+      "label": "Candidate 2:"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

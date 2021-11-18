@@ -1,0 +1,40 @@
+{
+  "title": "Inclusivity",
+  "description": "What does it mean to be inclusive? Explore a few takes on this question.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Answer the questions below and then hit the HACK button."
+    },
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Question 1:"
+    },
+    {
+      "name": "answer2",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Question 2:"
+    },
+    {
+      "name": "answer3",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Question 3:"
+    },
+    {
+      "name": "answer4",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Question 4:"
+    }
+    
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

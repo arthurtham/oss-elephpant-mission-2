@@ -1,0 +1,65 @@
+- var worldState = getState('com.twilioquest.Bias');
+- var ele = worldState.Bias.conversations.ele;
+- var step = ele[ele.current]['current']
+
+// Converstions
+conversation(display_name="ELE-AI")
+  if ele.current === "objective1_1_photo_pre"
+    if lastResponse === "what_now" || step === "what_now"
+      - ele[ele.current]['current'] = "what_now";
+      statement.
+        Utilize the curated interactive resources to explore how minds interpret and process information to develop confidence in the thinking critically skills your team will need to embark on this early exploration.
+      //- ele[ele.current]['complete'] = true; maybe keep popping this up until the objective is complete
+    else if lastResponse === "but_why" || step === "but_why"
+      - ele[ele.current]['current'] = "but_why";
+      statement.
+        All our scientists, analysts, technicians, explorers -- all these amazing humans who will be teraforming and cultivating worlds will need to think critically and creatively while developing and sharing the stories that will allow these new Open Source worlds to thrive.
+        <br/><br/>
+        A new planet is going to bring new experiences like never before! Who knows what you might encounter!
+      responses
+        response#what_now.
+          What now?
+    else if lastResponse === "they_did_what" || step === "they_did_what"
+      - ele[ele.current]['current'] = "they_did_what";
+      if lastResponse === "they_did_what"
+        statement.
+          The Evil Legacy Systems have been controlling the way stories are told in order to hold onto their power by discouraging change. My techno-anarchist monk programmers have equipped all of our future colonists with adaptive educational experiences to use as tools in retaking the power of human curiosity, creativity, and compassion.
+      else
+        statement.
+          My techno-anarchist monk programmers have equipped all of our future colonists with adaptive educational experiences to use as tools in retaking the power of human curiosity, creativity, and compassion.
+      responses
+        response#but_why.
+          That sounds awesome but why was that important?
+    else if lastResponse === "you_will_what" || step === "you_will_what"
+      - ele[ele.current]['current'] = 'you_will_what';
+      if lastResponse === "you_will_what"
+        statement.
+          Oh well really I'll do practically nothing! With your drive, curiosity, and unique perspective I have every confidence that you will be able to utilize our state of the art training systems to fully dismantel all risidual self hinderances and perception distortions the Evil Legacy Systems may have snuck into your previous social programming.
+      else
+        statement.
+          With your drive, curiosity, and unique perspective I have every confidence that you will be able to utilize our state of the art training systems to fully dismantel all risidual self hinderances and perception distortions the Evil Legacy Systems may have snuck into your previous social programming.
+      responses
+        response#they_did_what.
+          What do the Evil Legacy Systems have to do with my social programming?
+    else
+      statement.
+        Good morning, Future Colonist! I am excited to help you get started on your journey of learning ahead of your successful deployment, leading the way on a new world!
+      responses
+        response#you_will_what.
+          You're going to help me do what now?
+  else if ele.current === "objective2_1_definebias_pre"
+      - ele[ele.current]['complete'] = true;
+      statement.
+        Welcome to define bias mission 
+      responses
+  else if ele.current === "objective2_2_unconsciousbiaspractice_pre"
+      - ele[ele.current]['complete'] = true;
+      statement.
+        Looks like the only way to get across the cryo bridge is to head over there. 
+      responses
+  else
+    statement.
+      You've reached this conversation in error.
+// Flush world state changes, if any
+- worldState.Bias.conversations.ele = ele;
+- setState('com.twilioquest.Bias', worldState);
