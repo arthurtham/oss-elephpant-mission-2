@@ -48,12 +48,21 @@ function areLetterSelectionsValid(playerAnswer = '', possibleAnswers = '') {
     if (!playerAnswer || !possibleAnswers) {
         return false;
     }
+    var legalChar = false; // Flag to make sure there is at least one valid character
+    var answeredCharacters = "";
     for (var character of playerAnswer) {
-        if (!possibleAnswers.includes(character)) {
+        character = character.toLowerCase();
+        if (character === "," || character === " ") {
+            // Do nothing with commas; aka, allow players to
+            // input as "a, b, c"
+        } else if (!possibleAnswers.includes(character) || answeredCharacters.includes(character)) {
             return false;
+        } else {
+            legalChar = true;
+            answeredCharacters = answeredCharacters.concat("", character);
         }
     };
-    return true;
+    return legalChar;
 }
   
 module.exports = {

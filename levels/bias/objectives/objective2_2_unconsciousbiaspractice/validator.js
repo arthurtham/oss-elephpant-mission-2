@@ -19,7 +19,8 @@ module.exports = async function (helper) {
         areLetterSelectionsValid(answer3, "abcde") 
     )) {
         return helper.fail(`
-        Make sure to only use letter options provided (a, b, c, ...).
+        Make sure to only use letter options provided (a, b, c, ...), and 
+        to not duplicate letter responses.
         `);
     }
 
