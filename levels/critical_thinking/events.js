@@ -4,6 +4,10 @@ const { processConversationEvents, setupConversation } = require("./events/conve
 
 const levelJson = require("./level.json");
 
+const updateQuestLogWhenComplete = require("./events/updateQuestLogWhenComplete");
+
+const packageInfo = require("../../package.json");
+
 const DEFAULT_MISSION_STATE = {
   CriticalThinking: {
     conversations: {
@@ -231,6 +235,19 @@ module.exports = function(event, world) {
       element.style.whiteSpace = "normal";
     })
   }
+
+
+  // Update Quest Log When Complete
+  updateQuestLogWhenComplete({
+    notification:
+      'Yeah! I\'ve completed everything in the <span class="highlight">Critical Thinking challenge</span>!',
+    log: "I've completed everything in the Critical Thinking challenge!",
+    event,
+    world,
+    worldStateKey: "com.twilioquest.CriticalThinking",
+    version: packageInfo.version,
+  });
+
 
   // Save state
   world.setState("com.twilioquest.CriticalThinking", worldState);
