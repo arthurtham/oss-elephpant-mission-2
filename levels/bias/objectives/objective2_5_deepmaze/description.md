@@ -11,7 +11,7 @@ const deepMaze = worldState.Bias.deepMaze;
 </ul>
 </div>
 
-In order to pass this gate, you must interact with at least 3 deepening understanding stations, shown as computer stations on the cryo bridge, and get their questions correctly answered. Come back here and press __HACK__ once you have enough of those objectives completed!
+In order to pass this gate, you must interact with at least 4 deepening understanding stations, shown as computer stations on the cryo bridge, and get their questions correctly answered. Come back here and press __HACK__ once you have enough of those objectives completed!
 
 To help you out, Ele has provided you with a status table:
 

@@ -57,6 +57,11 @@ conversation(display_name="ELE-AI")
       statement.
         Looks like the only way to get across the cryo bridge is to head over there. 
       responses
+  else if ele.current === "objective2_5_deepmaze_post"
+      - ele[ele.current]['complete'] = true;
+      statement.
+        Simulator prep text
+      responses
   else
     statement.
       You've reached this conversation in error.

@@ -24,7 +24,7 @@ function viewpointEvent(world, worldState, event) {
             (world.isObjectiveCompleted("objective2_5_deepmaze")) && 
             (true) // TODO: Is objective 2.6 not completed?
         ) {
-            viewpointEventHelper(world, worldState, event, "viewpoint_3", "none")
+            viewpointEventHelper(world, worldState, event, "viewpoint_3", "objective2_5_deepmaze_post")
         }
     }
 }

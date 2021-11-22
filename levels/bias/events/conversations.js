@@ -11,7 +11,7 @@
     } else {
       console.log("continue ele chat: " + worldState.Bias.conversations.ele.current);
     }
-    if (name.indexOf("_pre") >= 0) {
+    if (name.indexOf("_pre") >= 0 || name.indexOf("_post") >= 0) {
       name = 'eleChats';
     }
     world.startConversation(name, eleGif());
@@ -19,7 +19,7 @@
 
   function processConversationEvents(event, world, worldState, name) {
     //console.log('processConversationEvents (' + name + ')');
-    const key = event.target ? event.target.key : name;
+    const key = (event.target && event.target.key !== undefined) ? event.target.key : name;
     console.log('key: ' + key);
     console.log(worldState.Bias.conversations.ele);
 

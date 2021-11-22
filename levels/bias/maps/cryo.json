@@ -234,42 +234,6 @@
                  "y":1711.84089629366
                 }, 
                 {
-                 "gid":11020,
-                 "height":32,
-                 "id":174,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":590,
-                 "y":1681.33333333333
-                }, 
-                {
-                 "gid":11022,
-                 "height":32,
-                 "id":175,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":513,
-                 "y":1725.33333333333
-                }, 
-                {
-                 "gid":11028,
-                 "height":32,
-                 "id":177,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":587.333333333333,
-                 "y":1720.33333333333
-                }, 
-                {
                  "height":0,
                  "id":179,
                  "name":"viewpoint",
@@ -650,8 +614,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":522,
-                 "y":430
+                 "x":517.333333333333,
+                 "y":642
                 }, 
                 {
                  "gid":10013,
@@ -742,6 +706,24 @@
                  "width":24,
                  "x":816,
                  "y":222
+                }, 
+                {
+                 "gid":11020,
+                 "height":32,
+                 "id":213,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"cedric_simulator_pre"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":476,
+                 "y":358
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -785,6 +767,12 @@
          "id":50,
          "name":"Animated Tiles",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"hidden",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":false,
          "width":44,
@@ -817,7 +805,7 @@
          "y":0
         }],
  "nextlayerid":51,
- "nextobjectid":213,
+ "nextobjectid":214,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

@@ -1,0 +1,17 @@
+conversation(display_name="Cedric")
+  case lastResponse
+    when "what_are_you_doing_here"
+      statement#what_are_you_doing_here
+    default
+      statement#default
+      responses
+        response#what_are_you_doing_here.
+          What are you doing here?
+
+  statements
+    statement#default
+      text.
+        Hey! Fancy seeing you here.
+    statement#what_are_you_doing_here
+      text.
+        I'll have more to say when my dialogue is fleshed out, but 

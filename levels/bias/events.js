@@ -20,6 +20,10 @@ const DEFAULT_MISSION_STATE = {
           current: 'none',
           complete: false
         },
+        objective2_5_deepmaze_post: {
+          current: 'none',
+          complete: false
+        },
         turtle_facts: {
           current: 'none',
           complete: false
@@ -87,7 +91,7 @@ module.exports = function(event, world) {
   // Some missions trigger after effects
   if (event.name === 'objectiveCompleted' || event.name === 'objectiveCompletedAgain') {
     // Some missions complete open or close conversation options even if they don't trigger new ones
-    const preObjectiveConversations = ["objective1_1_photo", "objective1_2_brainteaser", "objective1_3_fallacies"];
+    const preObjectiveConversations = ["", "", ""];
     if (preObjectiveConversations.includes(event.objective)) {
       let pre = event.objective + "_pre";
       worldState['Bias']['conversations']['ele'][pre]['current'] = "none";
@@ -95,7 +99,7 @@ module.exports = function(event, world) {
       worldState.Bias.conversations.ele.current = "none";
     }
     // Some missions can be completed and prompt a conversational dialogue from Ele.
-    const postObjectiveConversations = ["objective1_1_photo", "objective1_4_worstauntever", "objective1_4_knowledge"];
+    const postObjectiveConversations = ["", "", ""];
     if (postObjectiveConversations.includes(event.objective)) {
       let chat = event.objective + "_post";
       let post = 'ele_' + chat;
