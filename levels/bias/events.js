@@ -6,6 +6,8 @@ const levelJson = require("./level.json");
 
 const { viewpointEvent } = require("./events/viewpointcutscenes");
 
+const packageInfo = require("../../package.json");
+
 const DEFAULT_MISSION_STATE = {
   Bias: {
     conversations: {
@@ -179,6 +181,17 @@ module.exports = function(event, world) {
       element.style.whiteSpace = "normal";
     })
   }
+
+  // Update Quest Log When Complete
+  updateQuestLogWhenComplete({
+    notification:
+      'Yeah! I\'ve completed everything in the <span class="highlight">Bias challenge</span>!',
+    log: "I've completed everything in the Bias challenge!",
+    event,
+    world,
+    worldStateKey: "com.twilioquest.Bias",
+    version: packageInfo.version,
+  });
 
   // Save state
   world.setState("com.twilioquest.Bias", worldState);
