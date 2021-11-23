@@ -6,6 +6,8 @@ const levelJson = require("./level.json");
 
 const { viewpointEvent } = require("./events/viewpointcutscenes");
 
+const updateQuestLogWhenComplete = require("./events/updateQuestLogWhenComplete");
+
 const packageInfo = require("../../package.json");
 
 const DEFAULT_MISSION_STATE = {
@@ -128,6 +130,22 @@ module.exports = function(event, world) {
       worldState.Bias.deepMaze = deepMaze;
     }
 
+  }
+
+  // Change colors of completed deepmaze objects when an objective
+  // is completed or the map has loaded
+  if (
+    (event.name === 'mapDidLoad')
+    || (
+      (event.name === 'objectiveCompleted' || event.name === 'objectiveCompletedAgain')
+    && (event.objective.indexOf("objective2_5_deepmaze_") >= 0)
+    )
+   ) {
+     // Change tiles to green if the objective is complete
+     let deepMaze = worldState.Bias.deepMaze;
+     if (deepMaze.objective2_5_deepmaze_1) {
+      world.showEntites("deepmaze_green1")
+    }
   }
 
   // Some areas trigger Ele to say something
