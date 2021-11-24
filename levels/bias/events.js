@@ -138,6 +138,24 @@ module.exports = function(event, world) {
   // Green tile indicator
   greenTileHelper(world, worldState, event);
 
+  // Green tile sorter
+  if (
+    event.name === "mapDidLoad" &&
+    event.mapName === "cryo"
+  ) {
+    world.forEachEntities(entity => {
+      if (!entity.instance || !entity.instance.key) { 
+        return false;
+      } else {
+        return entity.instance.key.indexOf("deepmaze_green") >= 0;
+      }
+    }, instance => {
+      console.log("Found: ");
+      console.log(instance);
+      instance.sprite.body.height = 0;
+    })
+  }
+
   // Some areas trigger Ele to say something
   if (
     event.name === 'triggerAreaWasEntered' &&
@@ -158,7 +176,7 @@ module.exports = function(event, world) {
   ) {
     worldState.Bias.objective.hasEnoughTimePassed = false;
     worldState.Bias.objective.current = event.target.objectiveName;
-    world.scheduleTimerEvent(payload = {type: "objectiveTimer", objectiveName: event.target.objectiveName}, timeout = 5 * 1000);
+    world.scheduleTimerEvent(payload = {type: "objectiveTimer", objectiveName: event.target.objectiveName}, timeout = 1 * 1000);
     console.log("SCHEDULE TIMER");
   }
   // If the objective is closed, tell world state the objective isn't open anymore

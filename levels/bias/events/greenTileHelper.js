@@ -13,6 +13,7 @@ function greenTileSetter(world, listOfFlags, key) {
 }
 
 function greenTileHelper(world, worldState, event) {
+
   // Change colors of completed deepmaze objects when an objective
   // is completed or the map has loaded
   if (
@@ -31,6 +32,7 @@ function greenTileHelper(world, worldState, event) {
         deepMaze.objective2_5_deepmaze_5
       ];
       greenTileSetter(world, flags, "deepmaze_green");
+      greenTileSetter(world, [deepMaze.canPass], "deepmaze_greenCanPass");
   }
 }
 
