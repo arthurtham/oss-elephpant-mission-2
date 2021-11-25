@@ -51,6 +51,10 @@ const DEFAULT_MISSION_STATE = {
       objective2_5_deepmaze_5: false,
       canPass: false
     },
+    biasStation: {
+      stationsCompleted: 0,
+      canSimulate: false
+    },
     objective: {
       hasEnoughTimePassed: false,
       current: "none"
@@ -147,7 +151,10 @@ module.exports = function(event, world) {
       if (!entity.instance || !entity.instance.key) { 
         return false;
       } else {
-        return entity.instance.key.indexOf("deepmaze_green") >= 0;
+        return (
+          entity.instance.key.indexOf("deepmaze_green") >= 0 ||
+          entity.instance.key.indexOf("bias_pipe") >= 0
+        );
       }
     }, instance => {
       console.log("Found: ");

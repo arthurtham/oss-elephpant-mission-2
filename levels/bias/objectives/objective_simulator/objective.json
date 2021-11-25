@@ -1,0 +1,15 @@
+{
+  "title": "Objective Simulator",
+  "description": "Description",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "If your team is ready, press HACK!"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

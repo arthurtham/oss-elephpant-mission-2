@@ -24,15 +24,17 @@ function greenTileHelper(world, worldState, event) {
   ) {
     // Change tiles to green if the objective is complete
       let deepMaze = worldState.Bias.deepMaze;
-      let flags = [
+      let deepMazeFlags = [
         deepMaze.objective2_5_deepmaze_1,
         deepMaze.objective2_5_deepmaze_2,
         deepMaze.objective2_5_deepmaze_3,
         deepMaze.objective2_5_deepmaze_4,
         deepMaze.objective2_5_deepmaze_5
       ];
-      greenTileSetter(world, flags, "deepmaze_green");
+      greenTileSetter(world, deepMazeFlags, "deepmaze_green");
       greenTileSetter(world, [deepMaze.canPass], "deepmaze_greenCanPass");
+    //TODO: Change pipes for bias simulator pipes
+      //greenTileSetter(world, [], "bias_pipe");
   }
 }
 
