@@ -1,0 +1,33 @@
+{
+  "title": "カメの基本情報",
+  "description": "クリティカルシンキングを使って、自分の好きなカメについて考える。",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "メモを書く",
+      "label": "\"目的\"のタブに表示されている絵をもとに、以下の3つの質問に答えてから、__HACK__ボタンを押してください。"
+    },
+    {
+      "name": "answer1",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "私の好きなカメの名前は何ですか？"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "何を見てそう思うのですか？"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "私のカメの能力について、もっと何かわかりますか？"
+    }
+  ],
+  "rewards": {
+    "xp": 0
+  }
+}

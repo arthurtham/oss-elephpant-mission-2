@@ -1,0 +1,65 @@
+- var worldState = getState('com.twilioquest.CriticalThinking');
+- var ele = worldState.CriticalThinking.conversations.ele;
+- var step = ele[ele.current]['current']
+
+// Converstions
+conversation(display_name="ELE-AI")
+  if ele.current === "objective1_1_photo_pre"
+    if lastResponse === "what_now" || step === "what_now"
+      - ele[ele.current]['current'] = "what_now";
+      statement.
+        厳選されたインタラクティブなリソースを活用して、心がどのように情報を解釈し、処理するのかを探り、この初期の探究に乗り出すためにチームが必要とする思考力、批判力の自信を深めることができます。
+      //- ele[ele.current]['complete'] = true; maybe keep popping this up until the objective is complete
+    else if lastResponse === "but_why" || step === "but_why"
+      - ele[ele.current]['current'] = "but_why";
+      statement.
+        科学者やアナリストや技術者や探検家など、世界をテラフォーミングしたり育成したりする素晴らしい人間たちは、批判的かつ創造的に考えながら、新しいオープンソースの世界を繁栄させるためのストーリーを開発し、共有する必要がある。
+        <br/><br/>
+        新しい惑星では、今までにない新しい体験ができそうです。何が起こるかわからない！？
+      responses
+        response#what_now.
+          どうする？
+    else if lastResponse === "they_did_what" || step === "they_did_what"
+      - ele[ele.current]['current'] = "they_did_what";
+      if lastResponse === "they_did_what"
+        statement.
+          邪悪なレガシーシステムは、変化を阻止することで権力を維持するために、物語の語り方をコントロールしてきた。私の戦士である僧侶のプログラマーたちは、未来の入植者たちに、人間の好奇心、創造性、思いやりの力を取り戻すための道具として、適応性のある教育体験を提供した。
+      else
+        statement.
+          私の戦士である僧侶のプログラマーたちは、未来の入植者たちに、人間の好奇心、創造性、思いやりの力を取り戻すための道具として、適応性のある教育体験を提供した。
+      responses
+        response#but_why.
+          それはすごいことだけど、なぜそれが重要だったのか？
+    else if lastResponse === "you_will_what" || step === "you_will_what"
+      - ele[ele.current]['current'] = 'you_will_what';
+      if lastResponse === "you_will_what"
+        statement.
+          えと、私なら本当に何もしませんね。あなたの意欲と好奇心、そしてユニークな視点があれば、私たちのトレーニングシステムを活用して、これまでの社会的なプログラムに忍ばせてきた Legacy Systemsの知覚の歪みを完全に取り除くことができると確信している。
+      else
+        statement.
+          あなたの意欲と好奇心、そしてユニークな視点があれば、私たちのトレーニングシステムを活用して、これまでの社会的なプログラムに忍ばせてきた Legacy Systemsの知覚の歪みを完全に取り除くことができると確信している。
+      responses
+        response#they_did_what.
+          Legacy Systemsと私の社会的なプログラムとの関係は？
+    else
+      statement.
+        コロニーになる人、おはようございます。私は、あなたが新しい世界をリードするために、成功した展開に先立って、学習の旅を始めるお手伝いができることを楽しみにしている。
+      responses
+        response#you_will_what.
+          あの。。。何をするために協力してくれるの？
+  else if ele.current === "objective1_2_brainteaser_pre"
+      statement.
+        教室へようこそ! 右側にお進みください。
+      responses
+  else if ele.current === "objective1_3_fallacies_pre"
+      statement.
+        Legacy Systemsは、自分たちの邪悪な計画を隠すために誤った情報を使用し、混乱を引き起こして判断を鈍らせ、人々がしっかりとした批判的思考の習慣を身につけるのを妨げるようなトリックをコミュニケーションチャンネルに氾濫させている。
+        <br><br>
+        根拠のない憶測がチームに悪影響を及ぼす前に、それを認識して鎮めることができるようになる必要がある。そのためには、論理的誤謬（ごびゅう）についてしっかりと理解する必要がある。
+      responses
+  else
+    statement.
+      この会話はエラーになります。
+// Flush world state changes, if any
+- worldState.CriticalThinking.conversations.ele = ele;
+- setState('com.twilioquest.CriticalThinking', worldState);
