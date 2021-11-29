@@ -1,0 +1,21 @@
+{
+  "title": "Teammate Select",
+  "description": "Description",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Prompt \"Objective\" __HACK__ ."
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "",
+      "label": "Select member"
+    }
+  ],
+  "rewards": {
+    "xp": 0
+  }
+}

@@ -47,11 +47,12 @@ To help you out, Ele has provided you with a status table:
 <tr><td colspan="5"><h1>Bias Simulator Team Members</h1></td></tr>
 <tr><th colspan="5" style="text-align: center"># of 5 Team Members Selected</th></tr>
 <tr>
-  <td class="<%= deepMaze.objective2_5_deepmaze_1 ? 'solved-station' : 'unsolved-station' %>">Team member 1</td>
-  <td>Team member 2</td>
-  <td>Team member 3</td>
-  <td>Team member 4</td>
-  <td>Team member 5</td>
+  <!--<td class="<%= deepMaze.objective2_5_deepmaze_1 ? 'solved-station' : 'unsolved-station' %>">Team member 1<br><i>Top Left</i></td>-->
+  <td>Team member 1<br><small>#1) Top Left</small></td>
+  <td>Team member 2<br><small>#2) Middle Left</small></td>
+  <td>Team member 3<br><small>#3) Bottom Left</small></td>
+  <td>Team member 4<br><small>#4) Top Right</small></td>
+  <td>Team member 5<br><small>#5) Bottom Left</small></td>
 </tr>
 <% if (true) { %>
 <tr><td colspan="5" style="background-image: linear-gradient(0deg, rgba(62,214,167,1) 0%, rgba(0,255,59,1) 100%); border: 1px solid black"><h2>Team is ready to be deployed!</h2></td></tr>

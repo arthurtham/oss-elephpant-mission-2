@@ -34,7 +34,15 @@ function greenTileHelper(world, worldState, event) {
       greenTileSetter(world, deepMazeFlags, "deepmaze_green");
       greenTileSetter(world, [deepMaze.canPass], "deepmaze_greenCanPass");
     //TODO: Change pipes for bias simulator pipes
-      //greenTileSetter(world, [], "bias_pipe");
+      let biasStation = worldState.Bias.biasStation;
+      let biasStationFlags = [
+        biasStation.teammate_select_astrophysicist,
+        biasStation.teammate_select_biochemist,
+        biasStation.teammate_select_datascientist,
+        biasStation.teammate_select_medicaldoctor,
+        biasStation.teammate_select_xenobiologist
+      ]
+      greenTileSetter(world, biasStationFlags, "bias_pipe");
   }
 }
 

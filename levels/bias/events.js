@@ -53,6 +53,11 @@ const DEFAULT_MISSION_STATE = {
     },
     biasStation: {
       stationsCompleted: 0,
+      teammate_select_astrophysicist: false,
+      teammate_select_biochemist: false,
+      teammate_select_datascientist: false,
+      teammate_select_medicaldoctor: false,
+      teammate_select_xenobiologist: false,
       canSimulate: false
     },
     objective: {
@@ -135,6 +140,26 @@ module.exports = function(event, world) {
       )
       deepMaze.canPass = deepMaze.stationsCompleted >= 4;
       worldState.Bias.deepMaze = deepMaze;
+    }
+
+    // TODO: Convert into function the stuff above and below
+    // Bias simulator mission stuff
+    if (event.objective.indexOf("teammate_select_") >= 0) {
+      console.log("Bias Simulator");
+      let biasStation = worldState.Bias.biasStation;
+      
+      //Remove later
+      //biasStation[event.objective] = true;
+      
+      biasStation.stationsCompleted = (
+        biasStation.teammate_select_astrophysicist+
+        biasStation.teammate_select_biochemist+
+        biasStation.teammate_select_datascientist+
+        biasStation.teammate_select_medicaldoctor+
+        biasStation.teammate_select_xenobiologist
+      )
+      biasStation.canSimulate = biasStation.stationsCompleted >= 3;
+      worldState.Bias.biasStation = biasStation;
     }
 
   }
