@@ -64,6 +64,143 @@ const DEFAULT_MISSION_STATE = {
         teammate_select_medicaldoctor: false,
         teammate_select_xenobiologist: false
       },
+      team : {
+        astrophysicist: {
+          selected : "a",
+          a: {
+            archetype: "No one",
+            name: "No one"
+          },
+          b: {
+            archetype: "chad",
+            name: "Candidate 1"
+          },
+          c: {
+            archetype: "karen",
+            name: "Candidate 2"
+          },
+          d: {
+            archetype: "karen",
+            name: "Candidate 3"
+          },
+          e: {
+            archetype: "khai",
+            name: "Candidate 4"
+          },
+          f: {
+            archetype: "yodit",
+            name: "Candidate 5"
+          }
+        },
+        biochemist: {
+          selected : "a",
+          a: {
+            archetype: "No one",
+            name: "No one"
+          },
+          b: {
+            archetype: "chad",
+            name: "Candidate 1"
+          },
+          c: {
+            archetype: "chad",
+            name: "Candidate 2"
+          },
+          d: {
+            archetype: "chad",
+            name: "Candidate 3"
+          },
+          e: {
+            archetype: "chad",
+            name: "Candidate 4"
+          },
+          f: {
+            archetype: "chad",
+            name: "Candidate 5"
+          }
+        },
+        datascientist: {
+          selected : "a",
+          a: {
+            archetype: "No one",
+            name: "No one"
+          },
+          b: {
+            archetype: "chad",
+            name: "Candidate 1"
+          },
+          c: {
+            archetype: "chad",
+            name: "Candidate 2"
+          },
+          d: {
+            archetype: "chad",
+            name: "Candidate 3"
+          },
+          e: {
+            archetype: "chad",
+            name: "Candidate 4"
+          },
+          f: {
+            archetype: "chad",
+            name: "Candidate 5"
+          }
+        },
+        medicaldoctor: {
+          selected : "a",
+          a: {
+            archetype: "No one",
+            name: "No one"
+          },
+          b: {
+            archetype: "chad",
+            name: "Candidate 1"
+          },
+          c: {
+            archetype: "chad",
+            name: "Candidate 2"
+          },
+          d: {
+            archetype: "chad",
+            name: "Candidate 3"
+          },
+          e: {
+            archetype: "chad",
+            name: "Candidate 4"
+          },
+          f: {
+            archetype: "chad",
+            name: "Candidate 5"
+          }
+        },
+        xenobiologist: {
+          selected : "a",
+          a: {
+            archetype: "No one",
+            name: "No one"
+          },
+          b: {
+            archetype: "chad",
+            name: "Candidate 1"
+          },
+          c: {
+            archetype: "chad",
+            name: "Candidate 2"
+          },
+          d: {
+            archetype: "chad",
+            name: "Candidate 3"
+          },
+          e: {
+            archetype: "chad",
+            name: "Candidate 4"
+          },
+          f: {
+            archetype: "chad",
+            name: "Candidate 5"
+          }
+        }
+      },
       canPass: false
     },
     objective: {
