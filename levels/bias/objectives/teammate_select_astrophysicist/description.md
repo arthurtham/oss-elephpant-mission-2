@@ -11,14 +11,14 @@ Observation
 
 <table style="border:none !important">
 
-<tr><th style="border:none !important"><h1>Questions</h1></th></tr>
+<tr><th style="border:none !important"><h1>Team Member Selection</h1></th></tr>
 <tr><td>
-<strong>Select a team member </strong>
+<strong>Select a team member: </strong>
 <ol type="a">
+<li>No one</li>
 <li>Chad</li>
 <li>Karen</li>
 <li>Imani</li>
-<li>No one</li>
 
 </ol>
 </td></tr>

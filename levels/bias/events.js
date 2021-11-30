@@ -10,6 +10,8 @@ const updateQuestLogWhenComplete = require("./events/updateQuestLogWhenComplete"
 
 const { greenTileHelper } = require("./events/greenTileHelper");
 
+const stationsCompletedTracker = require("./events/stationsCompletedTracker")
+
 
 const packageInfo = require("../../package.json");
 
@@ -44,21 +46,25 @@ const DEFAULT_MISSION_STATE = {
     },
     deepMaze: {
       stationsCompleted: 0,
-      objective2_5_deepmaze_1: false,
-      objective2_5_deepmaze_2: false,
-      objective2_5_deepmaze_3: false,
-      objective2_5_deepmaze_4: false,
-      objective2_5_deepmaze_5: false,
+      stationFlags : {
+        objective2_5_deepmaze_1: false,
+        objective2_5_deepmaze_2: false,
+        objective2_5_deepmaze_3: false,
+        objective2_5_deepmaze_4: false,
+        objective2_5_deepmaze_5: false
+      },
       canPass: false
     },
     biasStation: {
       stationsCompleted: 0,
-      teammate_select_astrophysicist: false,
-      teammate_select_biochemist: false,
-      teammate_select_datascientist: false,
-      teammate_select_medicaldoctor: false,
-      teammate_select_xenobiologist: false,
-      canSimulate: false
+      stationFlags : {
+        teammate_select_astrophysicist: false,
+        teammate_select_biochemist: false,
+        teammate_select_datascientist: false,
+        teammate_select_medicaldoctor: false,
+        teammate_select_xenobiologist: false
+      },
+      canPass: false
     },
     objective: {
       hasEnoughTimePassed: false,
@@ -129,37 +135,15 @@ module.exports = function(event, world) {
     if (event.objective.indexOf("objective2_5_deepmaze_") >= 0) {
       console.log("Deep Maze");
       let deepMaze = worldState.Bias.deepMaze;
-      deepMaze[event.objective] = true;
-      // Update count of fallacyStationsCompleted
-      deepMaze.stationsCompleted = (
-        deepMaze.objective2_5_deepmaze_1+
-        deepMaze.objective2_5_deepmaze_2+
-        deepMaze.objective2_5_deepmaze_3+
-        deepMaze.objective2_5_deepmaze_4+
-        deepMaze.objective2_5_deepmaze_5
-      )
-      deepMaze.canPass = deepMaze.stationsCompleted >= 4;
-      worldState.Bias.deepMaze = deepMaze;
+      deepMaze.stationFlags[event.objective] = true;
+      worldState.Bias.deepMaze = stationsCompletedTracker(deepMaze, 4);
     }
 
-    // TODO: Convert into function the stuff above and below
     // Bias simulator mission stuff
     if (event.objective.indexOf("teammate_select_") >= 0) {
       console.log("Bias Simulator");
       let biasStation = worldState.Bias.biasStation;
-      
-      //Remove later
-      //biasStation[event.objective] = true;
-      
-      biasStation.stationsCompleted = (
-        biasStation.teammate_select_astrophysicist+
-        biasStation.teammate_select_biochemist+
-        biasStation.teammate_select_datascientist+
-        biasStation.teammate_select_medicaldoctor+
-        biasStation.teammate_select_xenobiologist
-      )
-      biasStation.canSimulate = biasStation.stationsCompleted >= 3;
-      worldState.Bias.biasStation = biasStation;
+      worldState.Bias.biasStation = stationsCompletedTracker(biasStation, 3);
     }
 
   }
@@ -182,8 +166,8 @@ module.exports = function(event, world) {
         );
       }
     }, instance => {
-      console.log("Found: ");
-      console.log(instance);
+      //console.log("Found: ");
+      //console.log(instance);
       instance.sprite.body.height = 0;
     })
   }

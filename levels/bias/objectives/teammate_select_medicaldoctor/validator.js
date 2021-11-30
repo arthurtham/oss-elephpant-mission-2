@@ -1,16 +1,6 @@
-const assert = require("assert");
-const R = require("ramda");
+const { isMCOptionCorrect } = require("../lib/answer_check_helper");
+const teamSelectHelper = require("../lib/team_select_helper");
 
 module.exports = async function (helper) {
-  const { answer1 } = helper.validationFields;
-
-  if (!answer1) {
-    return helper.fail(`
-      Wrong
-    `);
-  }
-
-  helper.success(`
-    Right
-  `);
+  return teamSelectHelper(helper, "teammate_select_medicaldoctor");
 };

@@ -9,4 +9,18 @@
 
 Observation
 
-![Turtle](https://upload.wikimedia.org/wikipedia/commons/3/34/Florida_Box_Turtle_Digon3.jpg)
+<table style="border:none !important">
+
+<tr><th style="border:none !important"><h1>Team Member Selection</h1></th></tr>
+<tr><td>
+<strong>Select a team member: </strong>
+<ol type="a">
+<li>No one</li>
+<li>Chad</li>
+<li>Karen</li>
+<li>Imani</li>
+
+</ol>
+</td></tr>
+
+</table>

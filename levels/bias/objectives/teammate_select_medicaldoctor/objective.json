@@ -11,8 +11,8 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "",
-      "label": "Select member"
+      "placeholder": "(a,b,c,d)",
+      "label": "Select member:"
     }
   ],
   "rewards": {

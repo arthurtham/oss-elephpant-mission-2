@@ -32,6 +32,11 @@
     "objective2_5_deepmaze_3",
     "objective2_5_deepmaze_4",
     "objective2_5_deepmaze_5",
-    "objective_simulator"
+    "objective_simulator",
+    "teammate_select_astrophysicist",
+    "teammate_select_biochemist",
+    "teammate_select_datascientist",
+    "teammate_select_medicaldoctor",
+    "teammate_select_xenobiologist"
   ]
 }
