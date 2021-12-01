@@ -64,18 +64,3 @@ To help you track your team member selection, Ele has provided you with a status
 <tr><td colspan="5" style="background-color: pink;font-size:18px">LOCKED: 3 TEAM MEMBERS REQUIRED</td></tr> 
 <% } %>
 </table>
-
-<br />
-
-<table style="border:none !important">
-
-<tr><th style="border:none !important"><h1>Question Block</h1></th></tr>
-<tr><td>
-<strong>Header </strong>
-<ol type="a">
-<li>Description</li>
-
-</ol>
-</td></tr>
-
-</table>

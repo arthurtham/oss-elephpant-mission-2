@@ -11,14 +11,13 @@ function teamSelectHelper(helper, stationName) {
 
     if (!answer1) {
         return helper.fail(`
-        Please answer the question before continuing
-        (this should never happen)
+        Please select a valid team member by using its corresponding letter!
     `);
     }
 
     if (!areLetterSelectionsValid(answer1, "abcdef")) {
         return helper.fail(`
-        INVALID LETTER TRY AGAIN >:(
+        Please select a valid team member by using its corresponding letter!
         `)
     }
 
@@ -31,8 +30,18 @@ function teamSelectHelper(helper, stationName) {
     let roleName = stationName.replace("teammate_select_","");
     biasTeamObject[roleName].selected = answer1;
 
+    const roles = {
+        astrophysicist: "astrophysicist",
+        biochemist: "biochemist",
+        datascientist: "data scientist",
+        medicaldoctor: "medical doctor",
+        xenobiologist: "xenobiologist"
+    }
+
     return helper.success(`
-    Right yay you did it
+    You have selected <strong>`
+    +(answer1 === "a" ? "no one" : biasTeamObject[roleName][answer1].name)
+    +`</strong> as your <strong>`+roles[roleName]+`</strong>!
   `);
 }
 module.exports = teamSelectHelper;
