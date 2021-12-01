@@ -73,23 +73,23 @@ const DEFAULT_MISSION_STATE = {
           },
           b: {
             archetype: "chad",
-            name: "Candidate 1"
+            name: "chad 1"
           },
           c: {
             archetype: "karen",
-            name: "Candidate 2"
+            name: "karen 2"
           },
           d: {
             archetype: "karen",
-            name: "Candidate 3"
+            name: "karen 3"
           },
           e: {
             archetype: "khai",
-            name: "Candidate 4"
+            name: "khai 4"
           },
           f: {
             archetype: "yodit",
-            name: "Candidate 5"
+            name: "yodit 5"
           }
         },
         biochemist: {
@@ -100,23 +100,23 @@ const DEFAULT_MISSION_STATE = {
           },
           b: {
             archetype: "imani",
-            name: "Candidate 1"
+            name: "imani 1"
           },
           c: {
             archetype: "karen",
-            name: "Candidate 2"
+            name: "karen 2"
           },
           d: {
             archetype: "karen",
-            name: "Candidate 3"
+            name: "karen 3"
           },
           e: {
             archetype: "karen",
-            name: "Candidate 4"
+            name: "karen 4"
           },
           f: {
             archetype: "chad",
-            name: "Candidate 5"
+            name: "chad 5"
           }
         },
         datascientist: {
@@ -127,23 +127,23 @@ const DEFAULT_MISSION_STATE = {
           },
           b: {
             archetype: "chad",
-            name: "Candidate 1"
+            name: "chad 1"
           },
           c: {
             archetype: "khai",
-            name: "Candidate 2"
+            name: "khai 2"
           },
           d: {
             archetype: "chad",
-            name: "Candidate 3"
+            name: "chad 3"
           },
           e: {
             archetype: "karen",
-            name: "Candidate 4"
+            name: "karen 4"
           },
           f: {
             archetype: "chad",
-            name: "Candidate 5"
+            name: "chad 5"
           }
         },
         medicaldoctor: {
@@ -154,23 +154,23 @@ const DEFAULT_MISSION_STATE = {
           },
           b: {
             archetype: "chad",
-            name: "Candidate 1"
+            name: "chad 1"
           },
           c: {
             archetype: "chad",
-            name: "Candidate 2"
+            name: "chad 2"
           },
           d: {
             archetype: "karen",
-            name: "Candidate 3"
+            name: "karen 3"
           },
           e: {
             archetype: "yodit",
-            name: "Candidate 4"
+            name: "yodit 4"
           },
           f: {
             archetype: "karen",
-            name: "Candidate 5"
+            name: "karen 5"
           }
         },
         xenobiologist: {
@@ -181,23 +181,23 @@ const DEFAULT_MISSION_STATE = {
           },
           b: {
             archetype: "imani",
-            name: "Candidate 1"
+            name: "imani 1"
           },
           c: {
             archetype: "karen",
-            name: "Candidate 2"
+            name: "karen 2"
           },
           d: {
             archetype: "karen",
-            name: "Candidate 3"
+            name: "karen 3"
           },
           e: {
             archetype: "chad",
-            name: "Candidate 4"
+            name: "chad 4"
           },
           f: {
             archetype: "chad",
-            name: "Candidate 5"
+            name: "chad 5"
           }
         }
       },

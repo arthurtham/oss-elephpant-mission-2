@@ -22,8 +22,8 @@ function runTeamSimulation(biasTeamObject) {
   Object.entries(biasTeamObject).forEach(entry => {
     const [roleName, roleObject] = entry;
     let candidate = roleObject.selected;
-    console.log(candidate);
-    console.log(roleObject);
+    //console.log(candidate);
+    //console.log(roleObject);
     let archetype = roleObject[candidate]["archetype"];
     let name = roleObject[candidate]["name"];
     archetypes[archetype]++;
@@ -32,11 +32,13 @@ function runTeamSimulation(biasTeamObject) {
 
   var story = "";
   // TODO: logic branch tree story thingy
+  // Story Crux 1
 
+  var isSuccess = false;
   var bigSuccess = "Big Success!";
-  var smallSuccess;
+  var smallSuccess = "Small Success.";
   var bigFailure = "Big Failure!";
-  var smallFailure;
+  var smallFailure = "Small Failure.";
 
   const notHelpers = ["chad", "karen", "No one"];
 
@@ -55,23 +57,53 @@ function runTeamSimulation(biasTeamObject) {
   var xenobiologistName = biasTeamObject["xenobiologist"][biasTeamObject["xenobiologist"]["selected"]]["name"];
   var xenobiologistType = biasTeamObject["xenobiologist"][biasTeamObject["xenobiologist"]["selected"]]["archetype"];
 
-  if (astrophysicistName === "No one" ||
+  // Big Failure
+  if (astrophysicistType === "No one" ||
       (
         ( astrophysicistType === "chad" || 
           astrophysicistType === "karen") 
         && 
-          notHelpers.includes(datascientistType) ||
+          (notHelpers.includes(datascientistType) ||
           (notHelpers.includes(biochemistType) &&
           notHelpers.includes(medicaldoctorType) &&
           notHelpers.includes(xenobiologistType))
+          )
       )
    ) {
     story = bigFailure;
-  } else {
+  } 
+  // Small Failure
+  else if (
+    (
+      ( astrophysicistType === "chad" || 
+        astrophysicistType === "karen") 
+      || 
+        (notHelpers.includes(datascientistType) &&
+        notHelpers.includes(biochemistType) &&
+        notHelpers.includes(medicaldoctorType) &&
+        notHelpers.includes(xenobiologistType))
+    )
+  ) {
+    story = smallFailure;
+  }
+  // Small Success
+  else if (
+    notHelpers.includes(datascientistType) 
+    || 
+        (notHelpers.includes(biochemistType) &&
+        notHelpers.includes(medicaldoctorType) &&
+        notHelpers.includes(xenobiologistType))
+  ) {
+    story = smallSuccess;
+    isSuccess = true
+  }
+  // Big Success
+  else {
     story = bigSuccess;
+    isSuccess = true
   }
 
-  return story;
+  return [story, isSuccess];
 }
 
 module.exports = async function (helper) {
@@ -85,7 +117,7 @@ module.exports = async function (helper) {
     `);
   }
 
-  const teamSimuluationStory = runTeamSimulation(worldState.Bias.biasStation.team);
+  const simulationData = runTeamSimulation(worldState.Bias.biasStation.team);
 
-  helper.success(teamSimuluationStory);
+  return simulationData[1] ? helper.success(simulationData[0]) : helper.fail(simulationData[0]);
 };
