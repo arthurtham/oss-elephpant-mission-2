@@ -6,13 +6,19 @@ const biasStation = worldState.Bias.biasStation;
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>list element</li>
+  <li>Select your <strong>team members</strong> that you would like to bring on your adventure by 
+  going to each individual <strong>team selection station</strong>.</li>
+  <li>Confirm your team members on this screen.</li>
+  <li>Press <i>HACK</i> to start your adventure with your supportive team.</li>
 </ul>
 </div>
 
-Description
+In order to show full understanding of the topic of biases, you must pass the **Bias Simulator challenge**.
 
-To help you out, Ele has provided you with a status table:
+You will need to select at least three team members to bring with you on your adventure. Choose wisely, because these team members will need to have good 
+chemistry with each other for them to be helpful on your team! 
+
+To help you track your team member selection, Ele has provided you with a status table listing your current team loadout. When you're ready to start the adventure simulation, press the __HACK__ button!
 
 <style>
 .puzzle-grid {
@@ -29,8 +35,7 @@ To help you out, Ele has provided you with a status table:
 .puzzle-grid td.unsolved-station {
   border: 1px solid black !important;
   line-neight: 1.0 !important;
-  background: rgb(180,58,58);
-  background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 39%, rgba(252,78,69,1) 100%);
+  background: rgb(128,128,128);
 }
 
 .puzzle-grid td.solved-station {
@@ -44,14 +49,14 @@ To help you out, Ele has provided you with a status table:
 </style>
 
 <table class="puzzle-grid" style="border:none">
-<tr><td colspan="5"><h1>Bias Simulator Team Members</h1></td></tr>
-<tr><th colspan="5" style="text-align: center"><%= biasStation.stationsCompleted %> of 5 Team Members Selected</th></tr>
+<tr><td colspan="5"><h1>Bias Simulator</h1></td></tr>
+<tr><th colspan="5" style="text-align: center"><%= biasStation.stationsCompleted %> Team Members Selected</th></tr>
 <tr>
-  <td class="<%= biasStation.stationFlags.teammate_select_astrophysicist ? 'solved-station' : 'unsolved-station' %>">Astrophysicist<br>Name<br><small>1: Top Left</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_biochemist ? 'solved-station' : 'unsolved-station' %>">Biochemist<br>Name<br><small>2: Middle Left</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_datascientist ? 'solved-station' : 'unsolved-station' %>">Data Scientist<br>Name<br><small>3: Bottom Left</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_medicaldoctor ? 'solved-station' : 'unsolved-station' %>">Medical Doctor<br>Name<br><small>4: Top Right</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_xenobiologist ? 'solved-station' : 'unsolved-station' %>">Xenobiologist<br>Name<br><small>5: Middle Right</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_astrophysicist ? 'solved-station' : 'unsolved-station' %>">Astrophysicist<br><%=biasStation["team"]["astrophysicist"][biasStation["team"]["astrophysicist"].selected]["name"] %><br><small>Top Left</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_biochemist ? 'solved-station' : 'unsolved-station' %>">Biochemist<br><%=biasStation["team"]["biochemist"][biasStation["team"]["biochemist"].selected]["name"] %><br><small>Middle Left</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_datascientist ? 'solved-station' : 'unsolved-station' %>">Data Scientist<br><%=biasStation["team"]["datascientist"][biasStation["team"]["datascientist"].selected]["name"] %><br><small>Bottom Left</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_medicaldoctor ? 'solved-station' : 'unsolved-station' %>">Medical Doctor<br><%=biasStation["team"]["medicaldoctor"][biasStation["team"]["medicaldoctor"].selected]["name"] %><br><small>Top Right</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_xenobiologist ? 'solved-station' : 'unsolved-station' %>">Xenobiologist<br><%=biasStation["team"]["xenobiologist"][biasStation["team"]["xenobiologist"].selected]["name"] %><br><small>Middle Right</small></td>
 </tr>
 <% if (biasStation.canPass) { %>
 <tr><td colspan="5" style="background-image: linear-gradient(0deg, rgba(62,214,167,1) 0%, rgba(0,255,59,1) 100%); border: 1px solid black"><h2>Ready to simulate!</h2></td></tr>

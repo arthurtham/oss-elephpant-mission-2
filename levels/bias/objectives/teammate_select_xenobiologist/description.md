@@ -1,4 +1,4 @@
-# Turtle Facts
+# Teammate Select: Xenobiologist
 
 <div class="aside">
 <h3>To-Do List</h3>
@@ -7,7 +7,7 @@
 </ul>
 </div>
 
-Observation
+
 
 <table style="border:none !important">
 
@@ -16,9 +16,11 @@ Observation
 <strong>Select a team member: </strong>
 <ol type="a">
 <li>No one</li>
-<li>Chad</li>
-<li>Karen</li>
-<li>Imani</li>
+<li>Candidate 1</li>
+<li>Candidate 2</li>
+<li>Candidate 3</li>
+<li>Candidate 4</li>
+<li>Candidate 5</li>
 
 </ol>
 </td></tr>

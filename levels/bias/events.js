@@ -99,19 +99,19 @@ const DEFAULT_MISSION_STATE = {
             name: "No one"
           },
           b: {
-            archetype: "chad",
+            archetype: "imani",
             name: "Candidate 1"
           },
           c: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 2"
           },
           d: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 3"
           },
           e: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 4"
           },
           f: {
@@ -130,7 +130,7 @@ const DEFAULT_MISSION_STATE = {
             name: "Candidate 1"
           },
           c: {
-            archetype: "chad",
+            archetype: "khai",
             name: "Candidate 2"
           },
           d: {
@@ -138,7 +138,7 @@ const DEFAULT_MISSION_STATE = {
             name: "Candidate 3"
           },
           e: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 4"
           },
           f: {
@@ -161,15 +161,15 @@ const DEFAULT_MISSION_STATE = {
             name: "Candidate 2"
           },
           d: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 3"
           },
           e: {
-            archetype: "chad",
+            archetype: "yodit",
             name: "Candidate 4"
           },
           f: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 5"
           }
         },
@@ -180,15 +180,15 @@ const DEFAULT_MISSION_STATE = {
             name: "No one"
           },
           b: {
-            archetype: "chad",
+            archetype: "imani",
             name: "Candidate 1"
           },
           c: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 2"
           },
           d: {
-            archetype: "chad",
+            archetype: "karen",
             name: "Candidate 3"
           },
           e: {

@@ -1,5 +1,5 @@
 {
-  "title": "Teammate Select",
+  "title": "Teammate Select: Biochemist",
   "description": "Description",
   "validation_fields": [
     {
@@ -11,7 +11,7 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "(a,b,c,d)",
+      "placeholder": "(a,b,c,d,e,f)",
       "label": "Select member:"
     }
   ],

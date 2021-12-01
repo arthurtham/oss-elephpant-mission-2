@@ -1,15 +1,15 @@
 {
-  "title": "Objective Simulator",
-  "description": "Description",
+  "title": "Bias Simulator",
+  "description": "Assemble a team to take on the bias simulation adventure!",
   "validation_fields": [
     {
       "name": "notes",
       "type": "prompt",
       "placeholder": "Answer all ",
-      "label": "If your team is ready, press HACK!"
+      "label": "If your team is ready to go, press HACK!"
     }
   ],
   "rewards": {
-    "xp": 100
+    "xp": 5000
   }
 }
