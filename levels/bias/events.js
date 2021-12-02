@@ -203,6 +203,10 @@ const DEFAULT_MISSION_STATE = {
       },
       canPass: false
     },
+    missionComplete: {
+      complete: false,
+      teleport: false
+    },
     objective: {
       hasEnoughTimePassed: false,
       current: "none"
@@ -276,13 +280,29 @@ module.exports = function(event, world) {
       worldState.Bias.deepMaze = stationsCompletedTracker(deepMaze, 4);
     }
 
-    // Bias simulator mission stuff
+    // Bias simulator team select mission stuff
     if (event.objective.indexOf("teammate_select_") >= 0) {
       console.log("Bias Simulator");
       let biasStation = worldState.Bias.biasStation;
       worldState.Bias.biasStation = stationsCompletedTracker(biasStation, 3);
     }
 
+    // If the main bias simulator terminal is complete, set a flag
+    if (event.objective.indexOf("objective_simulator") >= 0) {
+      worldState.Bias.missionComplete.complete = true;
+    }
+  }
+
+  // If the main bias simulator terminal is complete and a dialogue
+  // with Cedric is complete, teleport out.
+  if (event.name === "conversationDidEnd" && 
+      event.npc.conversation === "cedric_simulator_pre") {
+      //console.log("Check if we should teleport out");
+      if (worldState.Bias.missionComplete.complete &&
+        worldState.Bias.missionComplete.teleport) {
+          worldState.Bias.missionComplete.teleport = false;
+          world.warp("bias", "player_entry_right_upper", "objective1room");
+      }
   }
 
   // Green tile indicator
@@ -360,6 +380,8 @@ module.exports = function(event, world) {
       element.style.whiteSpace = "normal";
     })
   }
+
+  
 
   // Update Quest Log When Complete
   updateQuestLogWhenComplete({

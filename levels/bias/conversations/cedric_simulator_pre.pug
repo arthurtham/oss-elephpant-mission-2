@@ -1,12 +1,23 @@
+- var worldState = getState('com.twilioquest.Bias');
+- var missionComplete = worldState.Bias.missionComplete;
+
 conversation(display_name="Cedric")
   case lastResponse
     when "what_are_you_doing_here"
       statement#what_are_you_doing_here
+    when "teleport_out"
+      if missionComplete.complete
+        - missionComplete.teleport = true;
+        statement#teleport_out
+      else 
+        statement#teleport_out_cant
     default
       statement#default
       responses
         response#what_are_you_doing_here.
           What are you doing here?
+        response#teleport_out.
+          Teleport out
 
   statements
     statement#default
@@ -15,3 +26,12 @@ conversation(display_name="Cedric")
     statement#what_are_you_doing_here
       text.
         I'll have more to say when my dialogue is fleshed out, but 
+    statement#teleport_out 
+      text.
+        Time to teleport out!
+    statement#teleport_out_cant
+      text.
+        Teleport out? Not if you assemble your team first on the bias simulator.
+
+- worldState.Bias.missionComplete = missionComplete;
+- setState('com.twilioquest.Bias', worldState);
