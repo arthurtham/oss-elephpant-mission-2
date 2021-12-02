@@ -1,0 +1,15 @@
+{
+  "title": "Stories Gallery: Equality Trailblazers",
+  "description": "View these stories on marginalized folks and how bias in our world impacts them.",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "True or False: The companies with the most gender diverse executive teams were 21% more likely to outperform on profitability."
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "What Dark-Skinned People Will Never Tell You",
+  "description": "View these stories on marginalized folks and how bias in our world impacts them.",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "True or False: Eurocentric standards of beauty impact people all over the world."
+    },
+    {
+      "name": "answer2",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "True or False: One way we can combat colorism is to have more positive representations of dark skinned folks in the media."
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

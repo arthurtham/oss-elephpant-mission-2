@@ -1,0 +1,27 @@
+{
+  "title": "Power of a Single Story",
+  "description": "What is the power of a story? Explore the perspective of  Chimamanda Ngozi Adichie and find out more.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Think about a time when you were stereotyped:"
+    },
+    {
+      "name": "answer1",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "What part of this story was incomplete?"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "How would you like stories to be told on your team and in your colony?"
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

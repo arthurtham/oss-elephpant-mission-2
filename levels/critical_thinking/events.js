@@ -4,6 +4,10 @@ const { processConversationEvents, setupConversation } = require("./events/conve
 
 const levelJson = require("./level.json");
 
+const updateQuestLogWhenComplete = require("./events/updateQuestLogWhenComplete");
+
+const packageInfo = require("../../package.json");
+
 const DEFAULT_MISSION_STATE = {
   CriticalThinking: {
     conversations: {
@@ -70,7 +74,7 @@ module.exports = function(event, world) {
 
   let worldState = world.getState("com.twilioquest.CriticalThinking") || DEFAULT_MISSION_STATE;
 
-  /*if (event.name === 'levelDidLoad') {
+  if (event.name === 'levelDidLoad') {
     console.log("levelDidLoad: resetting default state for debugging");
     worldState = DEFAULT_MISSION_STATE;
     //DEBUG: Reset all objectives
@@ -81,7 +85,7 @@ module.exports = function(event, world) {
         world.removeObjective("critical_thinking", objective);
       }
     })
-  }*/
+  }
 
   //const worldState = DEFAULT_MISSION_STATE;
   console.log("World State");
@@ -231,6 +235,19 @@ module.exports = function(event, world) {
       element.style.whiteSpace = "normal";
     })
   }
+
+
+  // Update Quest Log When Complete
+  updateQuestLogWhenComplete({
+    notification:
+      'Yeah! I\'ve completed everything in the <span class="highlight">Critical Thinking challenge</span>!',
+    log: "I've completed everything in the Critical Thinking challenge!",
+    event,
+    world,
+    worldStateKey: "com.twilioquest.CriticalThinking",
+    version: packageInfo.version,
+  });
+
 
   // Save state
   world.setState("com.twilioquest.CriticalThinking", worldState);

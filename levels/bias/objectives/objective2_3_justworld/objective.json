@@ -1,0 +1,33 @@
+{
+  "title": "Just World Hypothesis",
+  "description": "Review the video about the Just World Hypothesis and reflect on what thoughts and ideas this brought up for you.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Watch the video and answer the reflection questions. Using the reflection protocol: triangle, square, and circle:"
+    },
+    {
+      "name": "answer1",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "**Triangle**: What three concepts am I taking away from this?"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "**Square**: What about this squares with my beliefs?"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "**Circle**: What questions are still circling my mind?"
+    }
+  ],
+  "rewards": {
+    "xp": 300
+  }
+}

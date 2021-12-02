@@ -1,0 +1,21 @@
+{
+  "title": "Stories Gallery: Redraw the Balance & Queen Rules",
+  "description": "View these stories on marginalized folks and how bias in our world impacts them.",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "True or False: Gender stereotypes are defined at around 5-7 years old."
+    },
+    {
+      "name": "answer2",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "The adults had a very hard time answering why the queen should always lose to the king in a game of cards."
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

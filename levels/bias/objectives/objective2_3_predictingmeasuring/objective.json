@@ -1,0 +1,33 @@
+{
+  "title": "Predicting vs Measuring",
+  "description": "Take the Implicit Bias Test (IAT) to evaluate your implicit bias.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Reflect on your results:"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "(yes, no)",
+      "label": "Did you take the Implicit Association Test?"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "How did your results match up with or not match up with the outcome you predicted for yourself?"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "How do you think your results could impact your contributions to the establishment of the new colony?"
+    }
+  ],
+  "rewards": {
+    "xp": 300
+  }
+}

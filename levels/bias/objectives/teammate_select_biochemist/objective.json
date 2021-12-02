@@ -1,0 +1,21 @@
+{
+  "title": "Teammate Select: Biochemist",
+  "description": "Description",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Prompt \"Objective\" __HACK__ ."
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "(a,b,c,d,e,f)",
+      "label": "Select member:"
+    }
+  ],
+  "rewards": {
+    "xp": 0
+  }
+}

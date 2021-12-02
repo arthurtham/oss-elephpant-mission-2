@@ -1,0 +1,45 @@
+{
+  "title": "Unconscious Bias- Workplace",
+  "description": "Review how unconscious bias can impact our behaviors and workplace environments.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Answer the 4 true or false questions and the 1 open response question."
+    },
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Unconscious bias affects our behavior and decisions."
+    },
+    {
+      "name": "answer2",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Humans naturally look at everyone as an individual and never as social categories."
+    },
+    {
+      "name": "answer3",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Affinity bias can make managers MORE likely to question past experience of people not in their group and LESS likely to question people from their group."
+    },
+    {
+      "name": "answer4",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Statistically people are very able to see things objectively."
+    },
+    {
+      "name": "answer5",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "When have you experienced affinity bias, either as the ‘in group’ or the ‘out group’ in the workplace? How did that impact you at work?"
+    }
+  ],
+  "rewards": {
+    "xp": 300
+  }
+}

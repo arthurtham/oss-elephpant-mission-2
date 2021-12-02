@@ -1,0 +1,33 @@
+{
+  "title": "How to Overcome our Bias? Walk Boldly Toward Them",
+  "description": "Learn a few strategies to overcome your bias and “walk boldly toward them”.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Answer the reflections questions in the boxes provided."
+    },
+    {
+      "name": "answer1",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "**Connect**: How are the ideas, concepts, strategies, etc., that you learned connected to what you already knew or believed?"
+    },
+    {
+      "name": "answer2",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "**Extend**: What new ideas, concepts, strategies, etc, have pushed or extended your thinking?"
+    },
+    {
+      "name": "answer3",
+      "type": "textarea",
+      "placeholder": "",
+      "label": "**Challenge**: What is now challenging your thinking? What questions or puzzles do you now have?"
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

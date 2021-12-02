@@ -1,0 +1,33 @@
+{
+  "title": "Decoupling",
+  "description": "Review some strategies for working to diminish your bias.",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Put notes here",
+      "label": "Answer the questions below and then hit the HACK button."
+    },
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "Question 1:"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "(a, b, c)",
+      "label": "Question 2:"
+    },
+    {
+      "name": "answer3",
+      "type": "text",
+      "placeholder": "(a, b, c)",
+      "label": "Question 3:"
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

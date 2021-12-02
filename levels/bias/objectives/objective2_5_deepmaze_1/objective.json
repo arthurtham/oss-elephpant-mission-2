@@ -1,0 +1,15 @@
+{
+  "title": "Stories Gallery: Widen the Screen",
+  "description": "View these stories on marginalized folks and how bias in our world impacts them.",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "True or False: The title and theme of the video “Widen the Screen” is asking us to not limit our view based on what images and stories are given to us."
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

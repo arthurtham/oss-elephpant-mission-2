@@ -1,0 +1,15 @@
+{
+  "title": "Deepening Understanding Through Stories #2: Gallery",
+  "description": "Examine factors that impact good critical thinking!",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "Complete the challenges in at least 4 *Deepening Understanding* stations. Press the __HACK__ button when you're done!"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

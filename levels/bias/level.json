@@ -1,0 +1,42 @@
+{
+  "title": "OSS ElePHPant",
+  "description": "Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.",
+  "questTitle": "OSS ElePHPant: Bias",
+  "questDescription": "Good morning, future colonist!",
+  "is_mission": false,
+  "priority": 10,
+  "backgroundMusic": "overture_b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "direction": "leftToRight"
+    }
+  },
+  "flavorTextOverrides": {
+  },
+  "objectives": [
+    "objective2_1_definebias",
+    "objective2_2_schemaseeds",
+    "objective2_2_blindspots",
+    "objective2_2_unconsciousbias",
+    "objective2_2_unconsciousbiaspractice",
+    "objective2_3_predictingmeasuring",
+    "objective2_3_justworld",
+    "objective2_3_overcomebias",
+    "objective2_3_decoupling",
+    "objective2_4_inclusivity",
+    "objective2_5_deepunderstanding",
+    "objective2_5_deepmaze",
+    "objective2_5_deepmaze_1",
+    "objective2_5_deepmaze_2",
+    "objective2_5_deepmaze_3",
+    "objective2_5_deepmaze_4",
+    "objective2_5_deepmaze_5",
+    "objective_simulator",
+    "teammate_select_astrophysicist",
+    "teammate_select_biochemist",
+    "teammate_select_datascientist",
+    "teammate_select_medicaldoctor",
+    "teammate_select_xenobiologist"
+  ]
+}

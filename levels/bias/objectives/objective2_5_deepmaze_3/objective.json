@@ -1,0 +1,15 @@
+{
+  "title": "Stories Gallery: Hearing Hands",
+  "description": "View these stories on marginalized folks and how bias in our world impacts them.",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "boolean",
+      "placeholder": "",
+      "label": "True or False: This video shows that the ability for Muharrem to interact with most people in his day to day life using sign language must be rare. It also shows how much of an impact it can have on folks to be inclusive and gives us a glimpse into how isolating it can be to be an outsider in society."
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Blind Spots: Prototype",
+  "description": "Review the video on blind spots and how prototype bias can impact decisions. ",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "What is the outcome of setting objective criteria around decision making in the workplace?"
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "a, b, c",
+      "label": "Enter the letter corresponding to the answer:"
+    },
+    {
+      "name": "choice1",
+      "type": "prompt",
+      "placeholder": "choice1",
+      "label": "a) It can help minimize prototype bias"
+    },
+    {
+      "name": "choice2",
+      "type": "prompt",
+      "placeholder": "choice2",
+      "label": "b) It can make prototype bias worse"
+    },
+    {
+      "name": "choice3",
+      "type": "prompt",
+      "placeholder": "choice3",
+      "label": "c) It can lead to better sales outcomes"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

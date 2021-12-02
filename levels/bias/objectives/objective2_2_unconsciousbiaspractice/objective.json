@@ -1,0 +1,33 @@
+{
+  "title": "Strategies to Reduce Implicit Bias in the Workplace",
+  "description": "Read the article and review how organizations can mitigate the effects of implicit bias. ",
+  "validation_fields": [
+    {
+      "name": "notes",
+      "type": "prompt",
+      "placeholder": "Answer all ",
+      "label": "From the 3 categories of strategies reported in the article, choose 1-2 strategies from each category that you think are the most important."
+    },
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "a, b, c, d, e, f",
+      "label": "Question 1:"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "a, b, c",
+      "label": "Question 2:"
+    },
+    {
+      "name": "answer3",
+      "type": "text",
+      "placeholder": "a, b, c, d, e",
+      "label": "Question 3:"
+    }
+  ],
+  "rewards": {
+    "xp": 200
+  }
+}
