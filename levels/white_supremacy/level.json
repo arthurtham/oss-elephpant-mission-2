@@ -1,16 +1,20 @@
 {
-  "title": "Destination Template",
-  "description": "This is an example of how to create a destination in the nav map aboard the Fog Owl!",
-  "questTitle": "A New World",
-  "questDescription": "This level will show in the nav map! Neat, huh?",
-  "navMap": {
-    "x": 10,
-    "y": 80,
-    "sprite": "nav_map/example_planet.png"
-  },
+  "title": "OSS ElePHPant",
+  "description": "Ele, the AI on a rogue Open Source colony ship mistakes you for one of her future colonists and begins your training to become an effective member of an early exploration team.",
+  "questTitle": "OSS ElePHPant: White Supremacy",
+  "questDescription": "Good morning, future colonist!",
   "is_mission": false,
-  "priority": 3,
-  "backgroundMusic": "fascinatingarea_108253b",
-  "flavorTextOverrides": {},
-  "objectives": []
+  "priority": 10,
+  "backgroundMusic": "takeabow_1615732b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "direction": "leftToRight"
+    }
+  },
+  "flavorTextOverrides": {
+  },
+  "objectives": [
+    "turtle_facts"
+  ]
 }
