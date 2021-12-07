@@ -1,0 +1,17 @@
+- var worldState = getState('com.twilioquest.WhiteSupremacy');
+- var ele = worldState.WhiteSupremacy.conversations.ele;
+- var step = ele[ele.current]['current'];
+
+// Conversations
+conversation(display_name="ELE-AI")
+  if ele.current === "objective1_1_pre"
+      - ele[ele.current]['complete'] = true;
+      statement.
+        Welcome to define white supremacy mission 
+      responses
+  else
+    statement.
+      You've reached this conversation in error.
+// Flush world state changes, if any
+- worldState.WhiteSupremacy.conversations.ele = ele;
+- setState('com.twilioquest.WhiteSupremacy', worldState);
