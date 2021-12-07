@@ -13,13 +13,19 @@ module.exports = async function (helper) {
     `);
   }
 
-  var library = [];
+  var library = [
+    "burn", "hot", "700", "frivilous", "top", 
+    "180", "190", "hot", "third-degree", "fair",
+    "lies", "media", "coverage", "silly"
+  ];
+
+  // Focus more on answer 2 
   var answer = (answer1 + " " + answer2 + " " + answer3);
   captionState = keywordsHelper(answer, library, captionState,
-    "words we identified in your response",
-    "no words identified in your response.",
-    "you didn't notice",
-    "you noticed all words.");
+    "We identified some words in your response that are important regarding the case",
+    "Looks like you didn't find any of the things that are important for this case.",
+    "Seems like you didn't identify some important key words about the case",
+    "Woah! You are spot on for your analysis.");
 
   worldState.CriticalThinking.conversations.ele.objective1_4_mcd_post = captionState;
   helper.world.setState('com.twilioquest.CriticalThinking', worldState);
