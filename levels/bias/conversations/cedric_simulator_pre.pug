@@ -15,23 +15,27 @@ conversation(display_name="Cedric")
       statement#default
       responses
         response#what_are_you_doing_here.
-          What are you doing here?
+          What do the side terminals do?
         response#teleport_out.
-          Teleport out
+          Teleport me back to the dock!
 
   statements
     statement#default
       text.
-        Hey! Fancy seeing you here.
+        Hey! Fancy seeing you here. May I help you out with the <b>bias simulator</b>?
     statement#what_are_you_doing_here
       text.
-        I'll have more to say when my dialogue is fleshed out, but 
+        Each terminal explores potential candidates to choose from for 
+        the most immediate roles you need filled to get started on your new planet. 
+        Ele has developed a simulator for you to test outcomes 
+        and success as a colony based on your team selections. 
+        Just interact with the side terminals to set your team up!
     statement#teleport_out 
       text.
-        Time to teleport out!
+        Alright! Let's bring you back to the dock! 
     statement#teleport_out_cant
       text.
-        Teleport out? Not if you assemble your team first on the bias simulator.
+        Teleport out? I can't do that. Let's focus on the bias simulator first!
 
 - worldState.Bias.missionComplete = missionComplete;
 - setState('com.twilioquest.Bias', worldState);

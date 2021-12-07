@@ -205,6 +205,7 @@ const DEFAULT_MISSION_STATE = {
     },
     missionComplete: {
       complete: false,
+      dialogueCompleted:false,
       teleport: false
     },
     objective: {
@@ -301,7 +302,7 @@ module.exports = function(event, world) {
       if (worldState.Bias.missionComplete.complete &&
         worldState.Bias.missionComplete.teleport) {
           worldState.Bias.missionComplete.teleport = false;
-          world.warp("bias", "player_entry_right_upper", "objective1room");
+          world.warp("critical_thinking", "player_entry1", "default");
       }
   }
 
@@ -370,6 +371,20 @@ module.exports = function(event, world) {
     } else {
       console.log("TIMER FAIL (objective name diff)");
     }
+  }
+
+
+  // If the bias simulator objective is closed and completed, trigger dialogue from Ele
+  if (
+    event.name === "objectiveDidClose" &&
+    event.target.objectiveName === "objective_simulator" &&
+    world.isObjectiveCompleted("objective_simulator") &&
+    !worldState.Bias.missionComplete.dialogueCompleted
+  ) {
+    worldState.Bias.conversations.ele.current = "none";
+    worldState.Bias.missionComplete.dialogueCompleted = true;
+    var chat = "cedric_simulator_post";
+    world.startConversation(chat, "cedricHappy.png");
   }
 
   // Get all textareas and wrap them around
