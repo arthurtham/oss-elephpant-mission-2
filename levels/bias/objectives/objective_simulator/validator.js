@@ -30,15 +30,6 @@ function runTeamSimulation(biasTeamObject) {
     team[roleName] = name;
   }) 
 
-  var story = "";
-  // TODO: logic branch tree story thingy
-  // Story Crux 1
-
-  var isSuccess = false;
-  var bigSuccess = "Big Success!";
-  var smallSuccess = "Small Success.";
-  var bigFailure = "Big Failure!";
-  var smallFailure = "Small Failure.";
 
   const notHelpers = ["chad", "karen", "No one"];
 
@@ -56,6 +47,23 @@ function runTeamSimulation(biasTeamObject) {
 
   var xenobiologistName = biasTeamObject["xenobiologist"][biasTeamObject["xenobiologist"]["selected"]]["name"];
   var xenobiologistType = biasTeamObject["xenobiologist"][biasTeamObject["xenobiologist"]["selected"]]["archetype"];
+
+  // *** START STORIES *** //
+  var isSuccess = false; 
+
+  // Big Failure
+  var bigFailure = "Big Failure!";
+
+  // Small Failure
+  var smallFailure = "Small Failure.";
+
+  // Small Success
+  var smallSuccess = "Small Success.";
+
+  // Big Success
+  var bigSuccess = "Big Success!";
+
+  // *** END STORIES *** //
 
   // Big Failure
   if (astrophysicistType === "No one" ||
@@ -113,7 +121,7 @@ module.exports = async function (helper) {
   // Validator 1: Are enough stations solved?
   if (!worldState.Bias.biasStation.canPass) {
     return helper.fail(`
-    Please visit the ....
+    Please select at least 3 team members before starting the simulator! 
     `);
   }
 
