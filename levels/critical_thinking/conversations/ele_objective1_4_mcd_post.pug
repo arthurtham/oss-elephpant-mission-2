@@ -1,0 +1,27 @@
+- const worldState = getState("com.twilioquest.CriticalThinking");
+- const captionState = worldState.CriticalThinking.conversations.ele.objective1_4_mcd_post;
+
+
+conversation(display_name="ELE-AI")
+  case lastResponse 
+    when "caption_description"
+      statement.
+        The news report made the case seem quite frivolous, but we learned from watching the video that the 
+        case was more serious than the media portrayed it as. Those third-degree burns are no joke. Hopefully,
+        these cases show how a public portrayal of a situation can change based on the facts that are presented to us.
+      responses
+    when "caption_not_found_text"
+      statement.
+        <p>#{captionState.captionNotFoundText}</p>
+      responses
+        response#caption_description.
+          What can we learn from this case?
+    default
+      statement.
+        <p>#{captionState.captionFoundText}</p>
+      responses
+        response#caption_not_found_text.
+          Did I miss anything?
+
+- worldState.CriticalThinking.conversations.ele.objective1_4_mcd_post = captionState;
+- setState('com.twilioquest.CriticalThinking', worldState);

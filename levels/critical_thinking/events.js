@@ -20,7 +20,9 @@ const DEFAULT_MISSION_STATE = {
         },
         objective1_1_photo_post: {
           current: 'none',
-          complete: false
+          complete: false,
+          captionFoundText: "none",
+          captionNotFoundText: "none"
         },
         objective1_2_brainteaser_pre: {
           current: 'none',
@@ -38,13 +40,21 @@ const DEFAULT_MISSION_STATE = {
           current: 'none',
           complete: false
         },
+        objective1_4_mcd_post: {
+          current: 'none',
+          complete: false,
+          captionFoundText: "none",
+          captionNotFoundText: "none"
+        },
         objective1_4_worstauntever_post: {
           current: 'none',
-          complete: false
+          complete: false,
+          captionFoundText: "none",
+          captionNotFoundText: "none"
         },
         turtle_facts: {
           current: 'none',
-          complete: false
+          complete: false,
         },
       },
       professor: {
@@ -113,7 +123,7 @@ module.exports = function(event, world) {
       worldState.CriticalThinking.conversations.ele.current = "none";
     }
     // Some missions can be completed and prompt a conversational dialogue from Ele.
-    const postObjectiveConversations = ["objective1_1_photo", "objective1_4_worstauntever", "objective1_4_knowledge"];
+    const postObjectiveConversations = ["objective1_1_photo", "objective1_4_worstauntever", "objective1_4_mcd", "objective1_4_knowledge"];
     if (postObjectiveConversations.includes(event.objective)) {
       let chat = event.objective + "_post";
       let post = 'ele_' + chat;

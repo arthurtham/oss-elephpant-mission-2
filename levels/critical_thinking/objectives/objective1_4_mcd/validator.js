@@ -1,11 +1,10 @@
+const keywordsHelper = require("../lib/keywords_helper");
 
 module.exports = async function (helper) {
-  // We start by getting the user input from the helper
+  const worldState = helper.world.getState("com.twilioquest.CriticalThinking");
+  let captionState = worldState.CriticalThinking.conversations.ele.objective1_4_mcd_post;
   const { answer1, answer2, answer3} = helper.validationFields;
 
-  // Next, you test the user input - fail fast if they get one of the
-  // answers wrong, or some aspect is wrong! Don't provide too much
-  // negative feedback at once, have the player iterate.
 
   // Validator 1: All question blocks must have some sort of answer in them
   if (!answer1 || !answer2 || !answer3) {
@@ -14,10 +13,22 @@ module.exports = async function (helper) {
     `);
   }
 
-  // 
+  var library = [
+    "burn", "hot", "700", "frivilous", "top", 
+    "180", "190", "hot", "third-degree", "fair",
+    "lies", "media", "coverage", "silly"
+  ];
 
-  // The way we usually write validators is to fail fast, and then if we reach
-  // the end, we know the user got all the answers right!
+  // Focus more on answer 2 
+  var answer = (answer1 + " " + answer2 + " " + answer3);
+  captionState = keywordsHelper(answer, library, captionState,
+    "We identified some words in your response that are important regarding the case",
+    "Looks like you didn't find any of the things that are important for this case.",
+    "Seems like you didn't identify some important key words about the case",
+    "Woah! You are spot on for your analysis.");
+
+  worldState.CriticalThinking.conversations.ele.objective1_4_mcd_post = captionState;
+  helper.world.setState('com.twilioquest.CriticalThinking', worldState);
 
   helper.success(`
     Nice thinking! Better remember those thoughts for a future objective...
