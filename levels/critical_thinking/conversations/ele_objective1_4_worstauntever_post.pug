@@ -1,9 +1,17 @@
 conversation(display_name="ELE-AI")
   case lastResponse 
-    default
+    when "more"
       statement.
-        <p>The aunt who sued her nephew for $127,000 for accidentally breaking her wrist as a result of an over-eager explained herself on the Today show.</p>
-        <p>In an on-air interview with NBC's Savannah Guthrie, Jennifer Connell and her nephew, Sean Tarala, appeared to say that the lawsuit was simply an insurance "formality" necessary to recover her medical costs and wasn't meant to be blown out of proportion. Despite headlines slamming Connell for her decision, dubbing her the "worst aunt ever," she explained that she and her nephew are completely fine.</p>
+        <p>Despite headlines slamming Connell for her decision, dubbing her the "worst aunt ever," she explained that she and her nephew are completely fine.</p>
         <p>"We love each other very much," she told Guthrie. "This was simply a formality with an insurance claim."</p>
         <p>Tarala also stood up for his aunt, hoping his words would quell the criticism. "She would never do anything to hurt the family or myself," the 12-year-old boy explained. "She loves us."</p>
       responses
+    default
+      statement.
+        <p>The aunt who sued her nephew for $127,000 for accidentally breaking her wrist as a result of 
+        an over-eager explained herself on the Today show. In an on-air interview with NBC's Savannah Guthrie, Jennifer Connell 
+        and her nephew, Sean Tarala, appeared to say that the lawsuit was simply an insurance "formality" necessary to recover
+        her medical costs and wasn't meant to be blown out of proportion.</p>
+      responses
+        response#more.
+          Is the family on good terms? 

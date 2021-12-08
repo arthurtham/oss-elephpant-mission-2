@@ -1,10 +1,28 @@
+- const worldState = getState("com.twilioquest.CriticalThinking");
+- const captionState = worldState.CriticalThinking.conversations.ele.objective1_1_photo_post;
+
 conversation(display_name="ELE-AI")
   case lastResponse
-    default
+    when "caption_description"
       statement.
-        <p>How'd you do? Here's what the caption reads:</p>
+        <p>Here's what the caption reads:</p>
         <p><blockquote>Chen Kecai, left and Jin Songhao, wearing shorts and standing in containers filled with ice on Tianmen Mountain in Zhangjiajie, China,
         competed for the record in enduring the cold. Mr. Jin, with 120 minutes, outscored Mr. Chen’s 118 minutes.
         On March 14, 2010 Mr. Chen set the record for the longest time spent in direct full body contact with ice: 1 hour 48 minutes 21 seconds.</blockquote></p>
         <p>What was different and similar between the original caption of the image and your analysis of the image? Notice these differences and explore what might have been driving your interpretations.</p>
+    when "caption_not_found_text"
+      statement.
+        <p>#{captionState.captionNotFoundText}</p>
       responses
+        response#caption_description.
+          What's the real story?
+    default
+      statement.
+        <p>#{captionState.captionFoundText}</p>
+      responses
+        response#caption_not_found_text.
+          Did I miss anything?
+
+
+- worldState.CriticalThinking.conversations.ele.objective1_1_photo_post = captionState;
+- setState('com.twilioquest.CriticalThinking', worldState);
