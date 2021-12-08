@@ -1,12 +1,12 @@
 {
   "title": "Teammate Select: Xenobiologist",
-  "description": "Description",
+  "description": "Select a teammate for the bias simulator.",
   "validation_fields": [
     {
       "name": "notes",
       "type": "prompt",
       "placeholder": "Put notes here",
-      "label": "Prompt \"Objective\" __HACK__ ."
+      "label": "Select a teammate from the \"Objective\"'s tab, then press __HACK__."
     },
     {
       "name": "answer1",

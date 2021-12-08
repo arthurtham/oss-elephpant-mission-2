@@ -66,138 +66,203 @@ const DEFAULT_MISSION_STATE = {
       },
       team : {
         astrophysicist: {
+          description: "Your team's astrophysicist will be responsible for keeping watch on your investigation satellites' navigation AI and sensor arrays to make adjustments as necessary to trajectories and anticipated physical events.",
           selected : "a",
           a: {
             archetype: "No one",
-            name: "No one"
+            name: "No one",
+            education: "None",
+            experience: "None"
           },
           b: {
             archetype: "chad",
-            name: "chad 1"
+            name: "Jeremy",
+            education: "1. Graduated from an Ivy League university with a strong Astrophysics program",
+            experience: "Likes Cheese"
           },
           c: {
             archetype: "karen",
-            name: "karen 2"
+            name: "Claudia",
+            education: "1. Graduated from an Ivy League university with a strong Astrophysics program",
+            experience: "Likes Apples"
           },
           d: {
             archetype: "karen",
-            name: "karen 3"
+            name: "Sharon",
+            education: "None",
+            experience: "None"
           },
           e: {
             archetype: "khai",
-            name: "khai 4"
+            name: "Jerome",
+            education: "None",
+            experience: "None"
           },
           f: {
             archetype: "yodit",
-            name: "yodit 5"
+            name: "Becky",
+            education: "None",
+            experience: "None"
           }
         },
         biochemist: {
+          description: "Your team's biochemist will be responsible for monitoring and maintaining the biochemical support systems in any artificial or augmented habitats utilized during transport, monitoring, or terraforming processes for the ecologies relied on by your team and potential future colonists.",
           selected : "a",
           a: {
             archetype: "No one",
-            name: "No one"
+            name: "No one",
+            education: "None",
+            experience: "None"
           },
           b: {
             archetype: "imani",
-            name: "imani 1"
+            name: "imani 1",
+            education: "None",
+            experience: "None"
           },
           c: {
             archetype: "karen",
-            name: "karen 2"
+            name: "karen 2",
+            education: "None",
+            experience: "None"
           },
           d: {
             archetype: "karen",
-            name: "karen 3"
+            name: "karen 3",
+            education: "None",
+            experience: "None"
           },
           e: {
             archetype: "karen",
-            name: "karen 4"
+            name: "karen 4",
+            education: "None",
+            experience: "None"
           },
           f: {
             archetype: "chad",
-            name: "chad 5"
+            name: "chad 5",
+            education: "None",
+            experience: "None"
           }
         },
         datascientist: {
+          description: "Your team's data scientist will be responsible for using programming and analysis to turn a combination of input from records, sensors, and the other team experts into actionable data in the form of maps and system models.",
           selected : "a",
           a: {
             archetype: "No one",
-            name: "No one"
+            name: "No one",
+            education: "None",
+            experience: "None"
           },
           b: {
             archetype: "chad",
-            name: "chad 1"
+            name: "chad 1",
+            education: "None",
+            experience: "None"
           },
           c: {
             archetype: "khai",
-            name: "khai 2"
+            name: "khai 2",
+            education: "None",
+            experience: "None"
           },
           d: {
             archetype: "chad",
-            name: "chad 3"
+            name: "chad 3",
+            education: "None",
+            experience: "None"
           },
           e: {
             archetype: "karen",
-            name: "karen 4"
+            name: "karen 4",
+            education: "None",
+            experience: "None"
           },
           f: {
             archetype: "chad",
-            name: "chad 5"
+            name: "chad 5",
+            education: "None",
+            experience: "None"
           }
         },
         medicaldoctor: {
+          description: "Your team's medical doctor will be responsible for monitoring the wellbeing of your team, intervening as necessary, and providing input on the suitability of potential situations and environments to the nurturance of humans across variable timescales and taking into account anticipated changes.",
           selected : "a",
           a: {
             archetype: "No one",
-            name: "No one"
+            name: "No one",
+            education: "None",
+            experience: "None"
           },
           b: {
             archetype: "chad",
-            name: "chad 1"
+            name: "chad 1",
+            education: "None",
+            experience: "None"
           },
           c: {
             archetype: "chad",
-            name: "chad 2"
+            name: "chad 2",
+            education: "None",
+            experience: "None"
           },
           d: {
             archetype: "karen",
-            name: "karen 3"
+            name: "karen 3",
+            education: "None",
+            experience: "None"
           },
           e: {
             archetype: "yodit",
-            name: "yodit 4"
+            name: "yodit 4",
+            education: "None",
+            experience: "None"
           },
           f: {
             archetype: "karen",
-            name: "karen 5"
+            name: "karen 5",
+            education: "None",
+            experience: "None"
           }
         },
         xenobiologist: {
+          description: "Your team's xenobiologist will be responsible for detecting, analyzing, and providing input on both any existing life detected during investigations as well as informing system models relating to adapting potential planets' environmental systems to the ecologies necessary to support human settlement.",
           selected : "a",
           a: {
             archetype: "No one",
-            name: "No one"
+            name: "No one",
+            education: "None",
+            experience: "None"
           },
           b: {
             archetype: "imani",
-            name: "imani 1"
+            name: "imani 1",
+            education: "None",
+            experience: "None"
           },
           c: {
             archetype: "karen",
-            name: "karen 2"
+            name: "karen 2",
+            education: "None",
+            experience: "None"
           },
           d: {
             archetype: "karen",
-            name: "karen 3"
+            name: "karen 3",
+            education: "None",
+            experience: "None"
           },
           e: {
             archetype: "chad",
-            name: "chad 4"
+            name: "chad 4",
+            education: "None",
+            experience: "None"
           },
           f: {
             archetype: "chad",
-            name: "chad 5"
+            name: "chad 5",
+            education: "None",
+            experience: "None"
           }
         }
       },
@@ -205,6 +270,7 @@ const DEFAULT_MISSION_STATE = {
     },
     missionComplete: {
       complete: false,
+      dialogueCompleted:false,
       teleport: false
     },
     objective: {
@@ -301,7 +367,7 @@ module.exports = function(event, world) {
       if (worldState.Bias.missionComplete.complete &&
         worldState.Bias.missionComplete.teleport) {
           worldState.Bias.missionComplete.teleport = false;
-          world.warp("bias", "player_entry_right_upper", "objective1room");
+          world.warp("critical_thinking", "player_entry1", "default");
       }
   }
 
@@ -370,6 +436,20 @@ module.exports = function(event, world) {
     } else {
       console.log("TIMER FAIL (objective name diff)");
     }
+  }
+
+
+  // If the bias simulator objective is closed and completed, trigger dialogue from Ele
+  if (
+    event.name === "objectiveDidClose" &&
+    event.target.objectiveName === "objective_simulator" &&
+    world.isObjectiveCompleted("objective_simulator") &&
+    !worldState.Bias.missionComplete.dialogueCompleted
+  ) {
+    worldState.Bias.conversations.ele.current = "none";
+    worldState.Bias.missionComplete.dialogueCompleted = true;
+    var chat = "cedric_simulator_post";
+    world.startConversation(chat, "cedricHappy.png");
   }
 
   // Get all textareas and wrap them around
