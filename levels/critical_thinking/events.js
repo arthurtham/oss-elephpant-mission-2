@@ -84,7 +84,7 @@ module.exports = function(event, world) {
 
   let worldState = world.getState("com.twilioquest.CriticalThinking") || DEFAULT_MISSION_STATE;
 
-  if (event.name === 'levelDidLoad') {
+  /*if (event.name === 'levelDidLoad') {
     console.log("levelDidLoad: resetting default state for debugging");
     worldState = DEFAULT_MISSION_STATE;
     //DEBUG: Reset all objectives
@@ -95,7 +95,7 @@ module.exports = function(event, world) {
         world.removeObjective("critical_thinking", objective);
       }
     })
-  }
+  }*/
 
   //const worldState = DEFAULT_MISSION_STATE;
   console.log("World State");
