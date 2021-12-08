@@ -113,7 +113,12 @@
                         {
                          "name":"levelName",
                          "type":"string",
-                         "value":"fog_owl"
+                         "value":"white_supremacy"
+                        }, 
+                        {
+                         "name":"mapName",
+                         "type":"string",
+                         "value":"objective2room"
                         }, 
                         {
                          "name":"playerEntryPoint",
