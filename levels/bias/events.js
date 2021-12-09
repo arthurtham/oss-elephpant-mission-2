@@ -72,37 +72,43 @@ const DEFAULT_MISSION_STATE = {
             archetype: "No one",
             name: "No one",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           b: {
             archetype: "chad",
             name: "Jeremy",
             education: "Graduated with their masters from a private university with a strong Astrophysics program including a state of the art observatory endowed by their father and bearing their family name.",
-            experience: "was awarded a highly competitive position in one of only three research teams within their focus field with access to orbital telescopes and has been cited as a contributor in multiple resulting publications."
+            experience: "was awarded a highly competitive position in one of only three research teams within their focus field with access to orbital telescopes and has been cited as a contributor in multiple resulting publications.",
+            avatar: "images/objective_images/shield.png"
           },
           c: {
             archetype: "karen",
             name: "Claudia",
             education: "Attended an Ivy League university for their undergraduate work before transferring as an international student to a private university with an Astrophysics program consistently rated in the top 5 globally.",
-            experience: "Since graduating, continued to travel internationally as a speaker and guest lecturer at prestigious universities across Europe."
+            experience: "Since graduating, continued to travel internationally as a speaker and guest lecturer at prestigious universities across Europe.",
+            avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "karen",
             name: "Sharon",
             education: "Early acceptance and graduation with a PhD from a prominent public university with a strong Astrophysics program through which they became a published researcher while still in their early 20s.",
-            experience: "After graduating six years ago they were recruited as a subject matter expert and reviewer at a leading journal of scientific publishing and has been cited as a contributor in multiple issues."
+            experience: "After graduating six years ago they were recruited as a subject matter expert and reviewer at a leading journal of scientific publishing and has been cited as a contributor in multiple issues.",
+            avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "khai",
             name: "Jerome",
             education: "Completed a Masters in Astrophysics at a local public university on an academic scholarship, and a PhD via a remote learning program at an international university in partnership with a regional observatory.",
-            experience: "Created a significant upgrade to a popular open source software package for analyzing long range telescope images, and was recruited by a well funded tech startup and worked on their experimental deep space imaging equipment on a foreign worker visa."
+            experience: "Created a significant upgrade to a popular open source software package for analyzing long range telescope images, and was recruited by a well funded tech startup and worked on their experimental deep space imaging equipment on a foreign worker visa.",
+            avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "yodit",
             name: "Becky",
             education: "Completed their undergraduate degree through a teacher recruiting program, and their Master in Astrophysics through a remote university program while fulfilling the five year commitment teaching math in secondary schools.",
-            experience: "Provided remote analysis support to research projects with access to functional observatories. Recruited and relocated to work onsite at an observatory after several years of notable published contributions."
+            experience: "Provided remote analysis support to research projects with access to functional observatories. Recruited and relocated to work onsite at an observatory after several years of notable published contributions.",
+            avatar: "images/objective_images/shield.png"
           }
         },
         biochemist: {
@@ -112,37 +118,43 @@ const DEFAULT_MISSION_STATE = {
             archetype: "No one",
             name: "No one",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           b: {
             archetype: "imani",
             name: "Sydette",
             education: "Graduated with her BS in Biochemistry from a state university having obtained multiple scholarship awards through local and regional science competitions. recruited into a graduate program by a well respected research professor and worked through her MS and PhD over ten years by working as a teaching fellow, lab tech, and research assistant.",
-            experience: "Hired by an international pharmaceutical company to work on a small cutting edge research team building on past experimental programs she assisted with during her studies."
+            experience: "Hired by an international pharmaceutical company to work on a small cutting edge research team building on past experimental programs she assisted with during her studies.",
+            avatar: "images/objective_images/shield.png"
           },
           c: {
             archetype: "karen",
             name: "Katie",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "karen",
             name: "Stephanie",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "karen",
             name: "Claire",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "chad",
             name: "Brandon",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           }
         },
         datascientist: {
@@ -152,37 +164,43 @@ const DEFAULT_MISSION_STATE = {
             archetype: "No one",
             name: "No one",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           b: {
             archetype: "chad",
             name: "Kyle",
             education: "Graduated with a Masters from an Ivy League university.",
-            experience: "Founded his own data analysis company with a couple of his university friends. Company tripled in size in a little over a year and was bought out by a big tech company. Kyle is still the director of this division under new ownership"
+            experience: "Founded his own data analysis company with a couple of his university friends. Company tripled in size in a little over a year and was bought out by a big tech company. Kyle is still the director of this division under new ownership",
+            avatar: "images/objective_images/shield.png"
           },
           c: {
             archetype: "khai",
             name: "Chee",
             education: "Initially graduated with an Education degree from a small college in the rural region of the economically challenged country in which they were born. Later received a grant from an international non profit to study Data Science via a new distance learning program pioneered by a well known university. They completed their Data Science degree while teaching locally.",
-            experience: "In the three years since graduation they've been employed by their local government to analyze their public education system, advise on achievable changes, and provide teacher training on data driven curriculum development. They've received numerous awards for improvements to student outcomes in that time."
+            experience: "In the three years since graduation they've been employed by their local government to analyze their public education system, advise on achievable changes, and provide teacher training on data driven curriculum development. They've received numerous awards for improvements to student outcomes in that time.",
+            avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "chad",
             name: "Chet",
             education: "Graduated from a private university with a strong Data Science program, receiving highly competitive unpaid internship positions during the summers preceding their Junior and Senior years.",
-            experience: "Was hired on full time at the company where he completed his unpaid internships. Has been promoted repeatedly during their five year tenure, and given several technical talks at big name industry conferences."
+            experience: "Was hired on full time at the company where he completed his unpaid internships. Has been promoted repeatedly during their five year tenure, and given several technical talks at big name industry conferences.",
+            avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "chad",
             name: "Lance",
             education: "Early acceptance and graduation from a university with a strong Data Science program through which they became a published researcher while still in their early 20s.",
-            experience: "Recruited into a well funded startup after graduation which had a successful IPO three years later. They've remained at the company as the paid maintainer of an open source software package they helped create for the company."
+            experience: "Recruited into a well funded startup after graduation which had a successful IPO three years later. They've remained at the company as the paid maintainer of an open source software package they helped create for the company.",
+            avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "karen",
             name: "Debra",
             education: "Graduated from a university with a top 5 Data Science program, and recruited into a prestigious research project being led by a world renowned professor of data science for their graduate work. They have already been cited in multiple publications relating to this research and are about to graduate with their PhD.",
-            experience: "Outside of their university experience, they have also been a paid speaker at numerous academic conferences."
+            experience: "Outside of their university experience, they have also been a paid speaker at numerous academic conferences.",
+            avatar: "images/objective_images/shield.png"
           }
         },
         medicaldoctor: {
@@ -192,37 +210,43 @@ const DEFAULT_MISSION_STATE = {
             archetype: "No one",
             name: "No one",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           b: {
             archetype: "chad",
             name: "chad 1",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           c: {
             archetype: "chad",
             name: "chad 2",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "karen",
             name: "karen 3",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "yodit",
             name: "yodit 4",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "karen",
             name: "karen 5",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           }
         },
         xenobiologist: {
@@ -232,37 +256,43 @@ const DEFAULT_MISSION_STATE = {
             archetype: "No one",
             name: "No one",
             education: "None",
-            experience: "None"
+            experience: "None",
+            avatar: "images/objective_images/shield.png"
           },
           b: {
             archetype: "imani",
             name: "Shea",
             education: "Graduated from a state university with an average Xenobiology program before transferring to another public school with better Xenobiology research opportunities where they completed their Masters on a merit scholarship.",
-            experience: "Worked their way through college doing project management for a tech company until they started their masters program. Here they landed an internship with well known professionals in their field during university training. Recruited into a small private research institution after graduation which has since developed a positive reputation for the quality of research, including several publications on which they're a cited contributor."
+            experience: "Worked their way through college doing project management for a tech company until they started their masters program. Here they landed an internship with well known professionals in their field during university training. Recruited into a small private research institution after graduation which has since developed a positive reputation for the quality of research, including several publications on which they're a cited contributor.",
+            avatar: "images/objective_images/shield.png"
           },
           c: {
             archetype: "karen",
             name: "Janet",
             education: "Graduated from top tier universities with strong Xenobiology programs where they obtained a PhD and assisted in multiple research projects resulting in publications as a contributor.",
-            experience: "Janet went on to publish her own book and is now on staff at the university as a professor who continues to conduct research."
+            experience: "Janet went on to publish her own book and is now on staff at the university as a professor who continues to conduct research.",
+            avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "karen",
             name: "Courtney",
             education: "Early acceptance and graduation with a Masters from an Ivy League university with a strong Xenobiology program through which they became a published researcher while still in their early 20s.",
-            experience: "She was quickly recruited by a large DNA commercial corporation. She now leads a team of biologists in maximizing the output and retention of DNA data as a business model to attract more customers."
+            experience: "She was quickly recruited by a large DNA commercial corporation. She now leads a team of biologists in maximizing the output and retention of DNA data as a business model to attract more customers.",
+            avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "chad",
             name: "Doug",
             education: "Graduated from a university with a Xenobiology program rated among the top 5 in the world.",
-            experience: "Spent many summers attending camps at NASA as his father is a well known Physicist there. After his internship at NASA, he was offered a full time position and has been there for 4 years now."
+            experience: "Spent many summers attending camps at NASA as his father is a well known Physicist there. After his internship at NASA, he was offered a full time position and has been there for 4 years now.",
+            avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "chad",
             name: "Steve",
             education: "Graduated from an Ivy League university with a strong Xenobiology program.",
-            experience: "Summer internships with well known professionals in their field during university training. Recruited into a private research institution funded by a multi-billion dollar pharmaceutical company immediately after graduation. Included as a contributor to a regular cadence of research publications. Fast tracked to leading their own research team after only five years."
+            experience: "Summer internships with well known professionals in their field during university training. Recruited into a private research institution funded by a multi-billion dollar pharmaceutical company immediately after graduation. Included as a contributor to a regular cadence of research publications. Fast tracked to leading their own research team after only five years.",
+            avatar: "images/objective_images/shield.png"
           }
         }
       },

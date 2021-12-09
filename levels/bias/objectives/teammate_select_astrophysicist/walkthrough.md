@@ -20,7 +20,16 @@ function getImageUrl(extRelativePath) {
     return 'images/app/shield.png'; 
   }
 }
+
+const avatarB = getImageUrl(candidates.b.avatar);
+const avatarC = getImageUrl(candidates.c.avatar);
+const avatarD = getImageUrl(candidates.d.avatar);
+const avatarE = getImageUrl(candidates.e.avatar);
+const avatarF = getImageUrl(candidates.f.avatar);
+
 %>
+
+
 
 # Think Critically!
 
@@ -50,7 +59,7 @@ To help you track your team member selection, Ele has provided you with a status
     <tr><th colspan=2 style="border:none !important"><h1>(b) <%=candidates["b"]["name"]%></h1></th></tr>
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
-            <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <img src=<%=avatarB%> />
             <br>
             <strong style="font-size:16px"><%=candidates["b"]["name"]%></strong>
             <em>Option B</em>
@@ -71,7 +80,7 @@ To help you track your team member selection, Ele has provided you with a status
     <tr><th colspan=2 style="border:none !important"><h1>(c) <%=candidates["c"]["name"]%></h1></th></tr>
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
-            <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <img src=<%=avatarC%> />
             <br>
             <strong style="font-size:16px"><%=candidates["c"]["name"]%></strong>
             <em>Option C</em>
@@ -92,7 +101,7 @@ To help you track your team member selection, Ele has provided you with a status
     <tr><th colspan=2 style="border:none !important"><h1>(d) <%=candidates["d"]["name"]%></h1></th></tr>
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
-            <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <img src=<%=avatarD%> />
             <br>
             <strong style="font-size:16px"><%=candidates["d"]["name"]%></strong>
             <em>Option D</em>
@@ -112,7 +121,7 @@ To help you track your team member selection, Ele has provided you with a status
     <tr><th colspan=2 style="border:none !important"><h1>(e) <%=candidates["e"]["name"]%></h1></th></tr>
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
-            <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <img src=<%=avatarE%> />
             <br>
             <strong style="font-size:16px"><%=candidates["e"]["name"]%></strong>
             <em>Option E</em>
@@ -132,7 +141,7 @@ To help you track your team member selection, Ele has provided you with a status
     <tr><th colspan=2 style="border:none !important"><h1>(f) <%=candidates["f"]["name"]%></h1></th></tr>
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
-            <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <img src=<%=avatarF%> />
             <br>
             <strong style="font-size:16px"><%=candidates["f"]["name"]%></strong>
             <em>Option F</em>
