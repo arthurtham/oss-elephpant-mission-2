@@ -1,12 +1,12 @@
 {
   "title": "Teammate Select: Biochemist",
-  "description": "Select a candidate for your team that you will bring into the bias simulator.",
+  "description": "Select a teammate for the bias simulator.",
   "validation_fields": [
     {
       "name": "notes",
       "type": "prompt",
       "placeholder": "Put notes here",
-      "label": "Select a candidate, then press __HACK__ to confirm your selection."
+      "label": "Select a teammate from the \"Objective\"'s tab, then press __HACK__."
     },
     {
       "name": "answer1",
