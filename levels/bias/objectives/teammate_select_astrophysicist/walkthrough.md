@@ -51,6 +51,9 @@ To help you track your team member selection, Ele has provided you with a status
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
             <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <br>
+            <strong style="font-size:16px"><%=candidates["b"]["name"]%></strong>
+            <em>Option B</em>
         </td>
         <td>
             <ul>
@@ -69,6 +72,9 @@ To help you track your team member selection, Ele has provided you with a status
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
             <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <br>
+            <strong style="font-size:16px"><%=candidates["c"]["name"]%></strong>
+            <em>Option C</em>
         </td>
         <td>
             <ul>
@@ -87,6 +93,9 @@ To help you track your team member selection, Ele has provided you with a status
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
             <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <br>
+            <strong style="font-size:16px"><%=candidates["d"]["name"]%></strong>
+            <em>Option D</em>
         </td>
         <td>
             <ul>
@@ -104,6 +113,9 @@ To help you track your team member selection, Ele has provided you with a status
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
             <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <br>
+            <strong style="font-size:16px"><%=candidates["e"]["name"]%></strong>
+            <em>Option E</em>
         </td>
         <td>
             <ul>
@@ -117,10 +129,13 @@ To help you track your team member selection, Ele has provided you with a status
 <br>
 
 <table style="border:none !important">
-    <tr><th colspan=2 style="border:none !important"><h1>(e) <%=candidates["f"]["name"]%></h1></th></tr>
+    <tr><th colspan=2 style="border:none !important"><h1>(f) <%=candidates["f"]["name"]%></h1></th></tr>
     <tr>
         <td width="20%" style="text-align:center; vertical-align: middle;">
             <img src="<%=getImageUrl('images/objective_images/shield.png') %>" />
+            <br>
+            <strong style="font-size:16px"><%=candidates["f"]["name"]%></strong>
+            <em>Option F</em>
         </td>
         <td>
             <ul>
