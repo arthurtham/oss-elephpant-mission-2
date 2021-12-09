@@ -20,7 +20,7 @@ At this station, you will select the following team member:
 > <h1>Biochemist</h1>
 > <%=candidates["description"]%>
 
-The following is a candidate list for this position. Choose wisely and confirm your option on the right!
+The following is a candidate list for this position. Choose wisely and confirm your option on the right! Read more about each candidate in the **Help** tab.
 
 <br>
 
@@ -30,23 +30,12 @@ The following is a candidate list for this position. Choose wisely and confirm y
 <tr><td>
 <strong>Select a team member: </strong>
 <ol type="a">
-<li><b>No one</b><br>Select this option to keep this team position vacant.</li>
-<li><b><%=candidates["b"]["name"]%></b><br>
-  Education: <%=candidates["b"]["education"]%><br>
-  Experience: <%=candidates["b"]["experience"]%></li>
-<li><b><%=candidates["c"]["name"]%></b><br>
-  Education: <%=candidates["c"]["education"]%><br>
-  Experience: <%=candidates["c"]["experience"]%></li>
-<li><b><%=candidates["d"]["name"]%></b><br>
-  Education: <%=candidates["d"]["education"]%><br>
-  Experience: <%=candidates["d"]["experience"]%></li>
-<li><b><%=candidates["e"]["name"]%></b><br>
-  Education: <%=candidates["e"]["education"]%><br>
-  Experience: <%=candidates["e"]["experience"]%></li>
-<li><b><%=candidates["f"]["name"]%></b><br>
-  Education: <%=candidates["f"]["education"]%><br>
-  Experience: <%=candidates["f"]["experience"]%></li>
-
+<li><b>No one</b></li>
+<li><b><%=candidates["b"]["name"]%></b></li>
+<li><b><%=candidates["c"]["name"]%></b></li>
+<li><b><%=candidates["d"]["name"]%></b></li>
+<li><b><%=candidates["e"]["name"]%></b></li>
+<li><b><%=candidates["f"]["name"]%></b></li>
 </ol>
 </td></tr>
 
