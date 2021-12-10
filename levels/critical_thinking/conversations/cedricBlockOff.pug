@@ -1,0 +1,14 @@
+conversation(display_name="Cedric")
+    case lastResponse
+        when "why"
+            statement 
+                text.
+                    There's something wrong on the other side. I don't think it's safe to
+                    go over there. Maybe you should check out the gate next to the dock instead.
+        default
+            statement
+                text.
+                    Hey! Fancy seeing you here.
+            responses 
+                response#why.
+                    Why is this blocked off?
