@@ -1,0 +1,37 @@
+conversation(display_name="Margaret")
+  case lastResponse
+    when "both"
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#cedric
+      responses
+        response#nice_to_meet.
+          Great work, Arthur!
+        response#you_seem_nice.
+          Great work, Jayla!
+        response#both.
+          Great work, everyone!
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          What's going on?
+
+  statements
+    statement#default
+      text.
+        Hi operator!
+    statement#cedric
+      text.
+        I just wanted to see what progress Arthur and Jayla had made in this non-technical 
+        content. Come to think of it, we've come a long way and I'm glad we have this content 
+        being worked on by our wonderful team!
+    statement#final
+      text.
+        Well, I have a couple of meetings to do and my brain is stimulated with neutrons on how to 
+        expand this great ship to explore the entire galaxy, so I'll leave you to it!

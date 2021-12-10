@@ -1,0 +1,32 @@
+conversation(display_name="Cedric")
+  case lastResponse
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#cedric
+      responses
+        response#nice_to_meet.
+          Sounds like a plan!
+        response#you_seem_nice.
+          I hope they're on board for that.
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          What's going on?
+
+  statements
+    statement#default
+      text.
+        Hey! Fancy seeing you here.
+    statement#cedric
+      text.
+        You see, I ran out of things to do, so I wanted to hang out here and let 
+        this be the message for the next developer to take our work to the next level!
+    statement#final
+      text.
+        Great! Let's get exploring then!

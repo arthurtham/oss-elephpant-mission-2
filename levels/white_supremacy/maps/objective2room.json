@@ -320,6 +320,14 @@
         {
          "firstgid":11019,
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
+        }, 
+        {
+         "firstgid":11031,
+         "source":"..\/..\/..\/tilesets\/TwilioQuestTileset_New.json"
+        }, 
+        {
+         "firstgid":21031,
+         "source":"..\/..\/..\/tilesets\/OSSElephpant_Tileset.json"
         }],
  "tilewidth":24,
  "type":"map",
