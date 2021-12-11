@@ -131,29 +131,29 @@ const DEFAULT_MISSION_STATE = {
           c: {
             archetype: "karen",
             name: "Katie",
-            education: "None",
-            experience: "None",
+            education: "Graduated with a BS in Chemistry from a popular state school, and took a gap year focusing on scuba diving in Hawaii before completing her MS in Biochemistry from a university with a globally well regarded program.",
+            experience: "Unavailable",
             avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "karen",
             name: "Stephanie",
-            education: "None",
-            experience: "None",
+            education: "Graduated with a BS in Biophysics and an MS in Biochemistry from a prestigious private school as a third generation legacy student.",
+            experience: "Unavailable",
             avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "karen",
             name: "Claire",
-            education: "None",
-            experience: "None",
+            education: "Went straight through her undergraduate, MS, and PhD in Biochemistry at a top 10 school",
+            experience: "Recruited into a well funded bioscience startup researching DNA therapies for anti-aging treatments. Promoted to leading her own team after three years and a division of teams after five years.",
             avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "chad",
             name: "Brandon",
-            education: "None",
-            experience: "None",
+            education: "Graduated with a BS in Microbiology from an Ivy League university, and their MS in Biochemistry at a university consistently ranked top 10 in the world.",
+            experience: "He returned to his undergraduate alma mater to join a widely respected research group where he was included in team publications for the three years preceding his enrollment in the colonization effort.",
             avatar: "images/objective_images/shield.png"
           }
         },
@@ -215,37 +215,37 @@ const DEFAULT_MISSION_STATE = {
           },
           b: {
             archetype: "chad",
-            name: "chad 1",
-            education: "None",
-            experience: "None",
+            name: "Craig",
+            education: "Received his MS and MD from the top rated medical program in the region and served as the VP for the Student Medical Association chapter.",
+            experience: "Performed internship and residency at a well equipped private hospital in the same region before accepting a position as a Physician specializing in internal medicine at an exclusive private clinic where they increased referrals by 17% through networking with other physicians and medical executives in the area.",
             avatar: "images/objective_images/shield.png"
           },
           c: {
             archetype: "chad",
-            name: "chad 2",
-            education: "None",
-            experience: "None",
+            name: "David",
+            education: "Graduated from an Ivy League university for his BS in Biology and his MD and served as the social chair for a prestigious student club.",
+            experience: "Assistant professor in diagnostic and interventional radiology while maintaining an active Medical License and multiple certifications.",
             avatar: "images/objective_images/shield.png"
           },
           d: {
             archetype: "karen",
-            name: "karen 3",
-            education: "None",
-            experience: "None",
+            name: "Elaine",
+            education: "Graduated from a well known private university with a BS in Biology and Psychology. While pursuing her MD, with a focus on Microsurgery, she conducted experiments pertaining to reconstructive surgery and developed research data which led to improved surgical techniques.",
+            experience: "Performed an internship and residency at a well respected teaching hospital before being recruited as a researcher for a private med-tech company where she oversaw a small team of medical interns and a large team of lab technicians developing cancer treatments.",
             avatar: "images/objective_images/shield.png"
           },
           e: {
             archetype: "yodit",
-            name: "yodit 4",
-            education: "None",
-            experience: "None",
+            name: "Yodit",
+            education: "Obtained an MD from the top medical school in their country and, after relocating to a more economically prosperous and technologically advanced country, a second MD from a public university on a partial scholarship.",
+            experience: "Before their relocation they were a physician in a regional hospital for three years. During their second MD studies they worked as a physician's assistant at the hospital associated with their university. After completing their internship and residency, they spent a year with Doctors without Borders before joining a private family practice clinic in a small town on the border with a large refugee community.",
             avatar: "images/objective_images/shield.png"
           },
           f: {
             archetype: "karen",
-            name: "karen 5",
-            education: "None",
-            experience: "None",
+            name: "Ashley",
+            education: "Graduated Magna Cum Laude with a BS in Biology and Cum Laude with their MD, with a focus on Sport Medicine, from the top public university in her region",
+            experience: "Recruited after residency to serve as the on staff Sport Medicine Doctor overseeing the health, fitness, injury treatment, and recovery of student athletes across the extensive sporting programs of a top 10 regional school.",
             avatar: "images/objective_images/shield.png"
           }
         },

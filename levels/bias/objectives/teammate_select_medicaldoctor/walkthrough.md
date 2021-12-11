@@ -27,6 +27,15 @@ const avatarD = getImageUrl(candidates.d.avatar);
 const avatarE = getImageUrl(candidates.e.avatar);
 const avatarF = getImageUrl(candidates.f.avatar);
 
+const emojis = {
+    "chad" : "",
+    "karen" : "👩",
+    "imani" : "🧑🏽♿",
+    "khai" : "🎖️♿",
+    "yodit" : "🌈👩🏾"
+}
+
+
 %>
 
 # Think Critically!
@@ -60,7 +69,8 @@ To help you track your team member selection, Ele has provided you with a status
             <img src=<%=avatarB%> />
             <br>
             <strong style="font-size:16px"><%=candidates["b"]["name"]%></strong>
-            <em>Option B</em>
+            <em>Option B</em><br>
+            <%=emojis[candidates["b"]["archetype"]]%>
         </td>
         <td>
             <ul>
@@ -81,7 +91,8 @@ To help you track your team member selection, Ele has provided you with a status
             <img src=<%=avatarC%> />
             <br>
             <strong style="font-size:16px"><%=candidates["c"]["name"]%></strong>
-            <em>Option C</em>
+            <em>Option C</em><br>
+            <%=emojis[candidates["c"]["archetype"]]%>
         </td>
         <td>
             <ul>
@@ -103,6 +114,8 @@ To help you track your team member selection, Ele has provided you with a status
             <br>
             <strong style="font-size:16px"><%=candidates["d"]["name"]%></strong>
             <em>Option D</em>
+            <br>
+            <%=emojis[candidates["d"]["archetype"]]%>
         </td>
         <td>
             <ul>
@@ -122,7 +135,8 @@ To help you track your team member selection, Ele has provided you with a status
             <img src=<%=avatarE%> />
             <br>
             <strong style="font-size:16px"><%=candidates["e"]["name"]%></strong>
-            <em>Option E</em>
+            <em>Option E</em><br>
+            <%=emojis[candidates["e"]["archetype"]]%>
         </td>
         <td>
             <ul>
@@ -142,7 +156,8 @@ To help you track your team member selection, Ele has provided you with a status
             <img src=<%=avatarF%> />
             <br>
             <strong style="font-size:16px"><%=candidates["f"]["name"]%></strong>
-            <em>Option F</em>
+            <em>Option F</em><br>
+            <%=emojis[candidates["f"]["archetype"]]%>
         </td>
         <td>
             <ul>
