@@ -1,6 +1,32 @@
 <%
+const path = require('path');
+const fileUrl = require('file-url');
+
 const worldState = levelState["com.twilioquest.Bias"];
 const biasStation = worldState.Bias.biasStation;
+
+function getImageUrl(extRelativePath) {
+  try {
+    const imagePath = path.join(
+      context.extensions.directory,
+      'oss-elephpant-mission-2',
+      extRelativePath
+    );
+    return fileUrl(imagePath)
+  } catch (e) {
+    console.log('embedded image path not found:', path);
+    console.log(e);
+    // A default image that exists in the app bundle
+    return 'images/app/shield.png'; 
+  }
+}
+
+const avatarAstrophysicist =  getImageUrl(biasStation["team"]["astrophysicist"][biasStation["team"]["astrophysicist"].selected]["avatar"]);
+const avatarBiochemist =      getImageUrl(biasStation["team"]["biochemist"][biasStation["team"]["biochemist"].selected]["avatar"]);
+const avatarDatascientist =   getImageUrl(biasStation["team"]["datascientist"][biasStation["team"]["datascientist"].selected]["avatar"]);
+const avatarMedicaldoctor =   getImageUrl(biasStation["team"]["medicaldoctor"][biasStation["team"]["medicaldoctor"].selected]["avatar"]);
+const avatarXenobiologist =   getImageUrl(biasStation["team"]["xenobiologist"][biasStation["team"]["xenobiologist"].selected]["avatar"]);
+
 %>
 
 <div class="aside">
@@ -52,11 +78,11 @@ To help you track your team member selection, Ele has provided you with a status
 <tr><td colspan="5"><h1>Bias Simulator</h1></td></tr>
 <tr><th colspan="5" style="text-align: center"><%= biasStation.stationsCompleted %> Team Members Selected</th></tr>
 <tr>
-  <td class="<%= biasStation.stationFlags.teammate_select_astrophysicist ? 'solved-station' : 'unsolved-station' %>">Astrophysicist<br><%=biasStation["team"]["astrophysicist"][biasStation["team"]["astrophysicist"].selected]["name"] %><br><small>Top Left</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_biochemist ? 'solved-station' : 'unsolved-station' %>">Biochemist<br><%=biasStation["team"]["biochemist"][biasStation["team"]["biochemist"].selected]["name"] %><br><small>Middle Left</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_datascientist ? 'solved-station' : 'unsolved-station' %>">Data Scientist<br><%=biasStation["team"]["datascientist"][biasStation["team"]["datascientist"].selected]["name"] %><br><small>Bottom Left</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_medicaldoctor ? 'solved-station' : 'unsolved-station' %>">Medical Doctor<br><%=biasStation["team"]["medicaldoctor"][biasStation["team"]["medicaldoctor"].selected]["name"] %><br><small>Top Right</small></td>
-  <td class="<%= biasStation.stationFlags.teammate_select_xenobiologist ? 'solved-station' : 'unsolved-station' %>">Xenobiologist<br><%=biasStation["team"]["xenobiologist"][biasStation["team"]["xenobiologist"].selected]["name"] %><br><small>Middle Right</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_astrophysicist ? 'solved-station' : 'unsolved-station' %>"><img src=<%=avatarAstrophysicist %> style="width:100px;height:100px;background-color:white"><br>Astrophysicist<br><%=biasStation["team"]["astrophysicist"][biasStation["team"]["astrophysicist"].selected]["name"] %><br><small>Top Left</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_biochemist ? 'solved-station' : 'unsolved-station' %>"><img src=<%=avatarAstrophysicist %> style="width:100px;height:100px;background-color:white">Biochemist<br><%=biasStation["team"]["biochemist"][biasStation["team"]["biochemist"].selected]["name"] %><br><small>Middle Left</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_datascientist ? 'solved-station' : 'unsolved-station' %>"><img src=<%=avatarDatascientist %> style="width:100px;height:100px;background-color:white">Data Scientist<br><%=biasStation["team"]["datascientist"][biasStation["team"]["datascientist"].selected]["name"] %><br><small>Bottom Left</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_medicaldoctor ? 'solved-station' : 'unsolved-station' %>"><img src=<%=avatarMedicaldoctor %> style="width:100px;height:100px;background-color:white">Medical Doctor<br><%=biasStation["team"]["medicaldoctor"][biasStation["team"]["medicaldoctor"].selected]["name"] %><br><small>Top Right</small></td>
+  <td class="<%= biasStation.stationFlags.teammate_select_xenobiologist ? 'solved-station' : 'unsolved-station' %>"><img src=<%=avatarXenobiologist %> style="width:100px;height:100px;background-color:white">Xenobiologist<br><%=biasStation["team"]["xenobiologist"][biasStation["team"]["xenobiologist"].selected]["name"] %><br><small>Middle Right</small></td>
 </tr>
 <% if (biasStation.canPass) { %>
 <tr><td colspan="5" style="background-image: linear-gradient(0deg, rgba(62,214,167,1) 0%, rgba(0,255,59,1) 100%); border: 1px solid black"><h2>Ready to simulate!</h2></td></tr>
